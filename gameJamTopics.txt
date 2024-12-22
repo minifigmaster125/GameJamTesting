@@ -1,0 +1,36 @@
+
+other camera tracking modes
+shadows look like garbage
+
+
+--Programming--
+CameraController
+CharacterController - point and click - Isaac
+CollisionHandling
+UI input handling/management
+HUD
+Signal/Event stuff
+AI/Bot behavior
+Scene Transitions
+Animations
+Lighting 
+Procedurally generated art/assets
+skybox + parrallax background
+apply sounds
+change sound/music
+
+--Art--
+Basic Animation
+Import pipeline - textures/materials/object data - (Texture path for GLB)
+Which assets + how to easily change assets
+UI art (can AI help here)
+Lighting Type (baked, dynamic, unshaded...) what is the actual direction/aesthetic we want? - Suchaaver
+
+
+--Soundfx/Music--
+where to get sfx
+how about background music
+can AI help
+
+
+

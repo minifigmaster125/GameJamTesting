@@ -1,0 +1,64 @@
+[gd_scene load_steps=6 format=3 uid="uid://ccbyxm7j7tlyn"]
+
+[ext_resource type="PackedScene" uid="uid://eu15yv26173u" path="res://block_grass.tscn" id="1_b4rl4"]
+[ext_resource type="Script" path="res://Scripts/CharacterController.cs" id="2_ce02u"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_4r222"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_oiht6"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ob4nw"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="BlockGrass" parent="." instance=ExtResource("1_b4rl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
+
+[node name="BlockGrass2" parent="." instance=ExtResource("1_b4rl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, -1)
+
+[node name="BlockGrass3" parent="." instance=ExtResource("1_b4rl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1, -1)
+
+[node name="BlockGrass4" parent="." instance=ExtResource("1_b4rl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1, 0)
+
+[node name="BlockGrass5" parent="." instance=ExtResource("1_b4rl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, -1, 1)
+
+[node name="BlockGrass6" parent="." instance=ExtResource("1_b4rl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 1)
+
+[node name="BlockGrass7" parent="." instance=ExtResource("1_b4rl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1, 1)
+
+[node name="BlockGrass8" parent="." instance=ExtResource("1_b4rl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1, 0)
+
+[node name="BlockGrass9" parent="." instance=ExtResource("1_b4rl4")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1, -1)
+
+[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
+script = ExtResource("2_ce02u")
+
+[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
+transform = Transform3D(0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, -0.5, 0.5, -10, 15, 10)
+projection = 1
+size = 15.0
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+shape = SubResource("CapsuleShape3D_4r222")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_oiht6")
+skeleton = NodePath("../..")
+surface_material_override/0 = SubResource("StandardMaterial3D_ob4nw")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.866025, 0.12941, 0.482963, -0.5, 0.224144, 0.836516, 0, -0.965926, 0.258819, 7, 10, 0)
+light_energy = 1.323
+shadow_enabled = true
+shadow_bias = 0.05
+shadow_blur = 0.333

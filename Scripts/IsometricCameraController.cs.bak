@@ -1,0 +1,93 @@
+using Godot;
+using System;
+
+public enum IsometricCameraMode
+{
+    Locked,
+    SoftLock,
+    FreeLook,
+    RTSCursorScroll
+}
+
+public class IsometricCameraController : Camera3D
+{
+    public bool _DEBUG = false;
+    // public static float IsometricProjectionAngle = 35.264f;//sqrt(2)
+    // public static Vector3 BaseLookRotation = Vector3(45f, 45f, 35.264f);
+    public static Vector3 LookProjectionVector = new Vector3(1, 1, 1);
+    public float CameraHeight = 10f;
+    public float CameraMaxSpeed = 10f;
+    public float CameraSpeedScalingSetting = .5f;
+    private Node3D _rotationHelper;
+    private Vector2 moveDelta = Vector2.Zero;
+
+    public IsometricCameraMode cameraMode = IsometricCameraMode.Locked;
+    public Vector3 currentPOI;
+    
+    
+	public override void _Ready()
+	{
+		_rotationHelper = GetNode<Node3D>("Rotation_Helper");
+        _rotationHelper.RotationDegrees = cameraRot;
+
+        cameraMode = IsometricCameraMode.Locked;
+		Input.MouseMode = Input.MouseModeEnum.Captured;
+
+	}
+
+	public override void _PhysicsProcess(float delta)
+	{
+		switch (cameraMode)
+        {
+            case Locked:
+                UpdateLock()
+                break;
+            case SoftLock:
+                UpdateSoftLock()
+                break;
+            case FreeLook:
+                UpdateConsoleFreeLook()
+                break;
+            case RTSCursorScroll;
+                UpdateRTSCursorScroll()
+                break;
+            default:
+        }
+
+        LookAtFromPosition((Vector3.UP + Vector3.BACK) * camera_distance,        
+                       get_parent().translation, Vector3.UP)
+	}
+
+    private void LookAtFromPosition(Vector3 pointOfInterest)
+    {
+        // https://stackoverflow.com/questions/18558910/direction-vector-to-rotation-matrix#18574797
+        //cross prod of azimuth and diff between POI and DesiredCameraPosition => rotation for assignment?
+        //need to see if z y need swap before and after calc??
+        //may want to reset y or height to default value
+
+        //easy "hack" solution is 2 chained euler rotations, but solving the above allows for a more generalized solution 
+        //that can be applied to solve other problems later
+    }
+    
+    private void UpdateLock(Vector3 pointOfInterest)
+    {
+        LookAtFromPosition(pointOfInterest);
+    }
+
+    private void UpdateSoftLock(Vector3 pointOfInterest)
+    {
+        //calculate difference between currrent POI and new POI, if greater than some threshold, update
+    }
+
+    private void UpdateConsoleFreeLook()
+    {
+        //adjust POI based on input, then update
+    }
+
+    private void UpdateRTSCursorScroll(Vector2 ScreenVector)
+    {
+        //detects if cursor is on edge of screen
+        //if so, shift POI by normalized diff between cursor and center of screen
+        //then mul by speed and update
+    }
+}

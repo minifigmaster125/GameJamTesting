@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://dq8sgnhj2wokp"]
+
+[ext_resource type="Script" path="res://Node3d.cs" id="1_rvjqp"]
+[ext_resource type="PackedScene" uid="uid://udj5vdga7aei" path="res://block-grass.glb" id="2_dx4ll"]
+
+[node name="Node3D" type="Node3D"]
+script = ExtResource("1_rvjqp")
+
+[node name="block-grass2" parent="." instance=ExtResource("2_dx4ll")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.639778, 0, 0.223248)
+
+[node name="block-grass3" parent="." instance=ExtResource("2_dx4ll")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.372596, 0, 0.223248)
+
+[node name="block-grass4" parent="." instance=ExtResource("2_dx4ll")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.35602, 0, 0.220485)
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(-0.570151, -0.342729, 0.746636, 0.0209451, 0.902465, 0.430254, -0.821273, 0.260948, -0.507363, 2.85251, 2.19432, -1.64277)
