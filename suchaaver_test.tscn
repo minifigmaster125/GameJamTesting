@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://ccbyxm7j7tlyn"]
+[gd_scene load_steps=10 format=3 uid="uid://ccbyxm7j7tlyn"]
 
 [ext_resource type="PackedScene" uid="uid://eu15yv26173u" path="res://block_grass.tscn" id="1_b4rl4"]
-[ext_resource type="Script" path="res://Scripts/CharacterController.cs" id="2_ce02u"]
+[ext_resource type="Script" path="res://Scripts/PlayerController.cs" id="2_gx3br"]
+[ext_resource type="ArrayMesh" uid="uid://deu06eho4c74" path="res://meshes/dust.res" id="3_2qc6a"]
+[ext_resource type="AudioStream" uid="uid://cydjn1ct3hps2" path="res://sounds/walking.ogg" id="4_epwvk"]
+[ext_resource type="Script" path="res://Scripts/View.cs" id="5_tvfmq"]
 
 [sub_resource type="Environment" id="Environment_rwxnu"]
 background_mode = 1
@@ -96,16 +99,10 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, -1, -2)
 [node name="BlockGrass16" parent="." instance=ExtResource("1_b4rl4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, -1, -2)
 
-[node name="CharacterBody3D" type="CharacterBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-script = ExtResource("2_ce02u")
-
-[node name="Camera3D" type="Camera3D" parent="CharacterBody3D"]
-transform = Transform3D(0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, -0.5, 0.5, -5, 10, 5)
-projection = 1
-current = true
-size = 15.0
-far = 250.0
+[node name="CharacterBody3D" type="CharacterBody3D" parent="." node_paths=PackedStringArray("View")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.682246, 0)
+script = ExtResource("2_gx3br")
+View = NodePath("../View")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
@@ -117,6 +114,24 @@ mesh = SubResource("CapsuleMesh_aldey")
 skeleton = NodePath("../..")
 surface_material_override/0 = SubResource("StandardMaterial3D_ob4nw")
 
+[node name="ParticlesTrail" type="CPUParticles3D" parent="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, -2)
+mesh = ExtResource("3_2qc6a")
+
+[node name="SoundFootsteps" type="AudioStreamPlayer" parent="CharacterBody3D"]
+stream = ExtResource("4_epwvk")
+
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.707107, -0.5, 0.5, 0, 0.707107, 0.707107, -0.707107, -0.5, 0.5, 7, 6.51592, 0)
 shadow_enabled = true
+
+[node name="View" type="Node3D" parent="." node_paths=PackedStringArray("Target")]
+script = ExtResource("5_tvfmq")
+Target = NodePath("../CharacterBody3D")
+
+[node name="Camera" type="Camera3D" parent="View"]
+transform = Transform3D(0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, -0.5, 0.5, -5, 10.6822, 5)
+projection = 1
+current = true
+size = 15.0
+far = 250.0
