@@ -17,6 +17,8 @@ public partial class PlayerController : CharacterBody3D
     [Export]
     public float JumpStrength = 7f;
 
+    [Export] private float PushForce = 0.5f;
+
     private Vector3 _movementVelocity;
     private float _rotationDirection;
     private float _gravity = 0f;
@@ -24,6 +26,8 @@ public partial class PlayerController : CharacterBody3D
     private bool _previouslyFloored = false;
     private bool _jumpSingle = true;
     private bool _jumpDouble = true;
+
+
 
     private int _coins = 0;
 
@@ -36,6 +40,7 @@ public partial class PlayerController : CharacterBody3D
     {
         _particlesTrail = GetNode<CpuParticles3D>("ParticlesTrail");
         _soundFootsteps = GetNode<AudioStreamPlayer>("SoundFootsteps");
+        _soundFootsteps.Playing = true;
         // _model = GetNode<Node3D>("Character");
         // _animation = GetNode<AnimationPlayer>("Character/AnimationPlayer");
     }
@@ -78,6 +83,18 @@ public partial class PlayerController : CharacterBody3D
         }
 
         _previouslyFloored = IsOnFloor();
+
+        // Check for collisions
+        int collisionCount = GetSlideCollisionCount();
+        for (int i = 0; i < collisionCount; i++)
+        {
+            var collision = GetSlideCollision(i);
+            if (collision.GetCollider() is RigidBody3D rigidBody)
+            {
+                Vector3 force = -collision.GetNormal() * PushForce;
+                rigidBody.ApplyCentralImpulse(force);
+            }
+        }
     }
     private void HandleEffects(float delta)
     {

@@ -1,0 +1,15 @@
+[gd_scene load_steps=3 format=3 uid="uid://cki5l8r44tl4v"]
+
+[ext_resource type="PackedScene" uid="uid://d3v7fuoqfl7j2" path="res://models/column.glb" id="1_35xt2"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_38sys"]
+height = 1.0
+
+[node name="Column" type="RigidBody3D"]
+mass = 0.1
+
+[node name="column2" parent="." instance=ExtResource("1_35xt2")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50465, 0)
+shape = SubResource("CylinderShape3D_38sys")
