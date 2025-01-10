@@ -36,11 +36,15 @@ public partial class PlayerController : CharacterBody3D
     private Node3D _model;
     private AnimationPlayer _animation;
 
+    private AnimationPlayer _squirrelAnimationPlayer;
+
     public override void _Ready()
     {
         _particlesTrail = GetNode<CpuParticles3D>("ParticlesTrail");
         _soundFootsteps = GetNode<AudioStreamPlayer>("SoundFootsteps");
         _soundFootsteps.Playing = true;
+
+        _squirrelAnimationPlayer = GetNode<AnimationPlayer>("Squirrel/AnimationPlayer");
         // _model = GetNode<Node3D>("Character");
         // _animation = GetNode<AnimationPlayer>("Character/AnimationPlayer");
     }
@@ -100,6 +104,7 @@ public partial class PlayerController : CharacterBody3D
     {
         _particlesTrail.Emitting = false;
         _soundFootsteps.StreamPaused = true;
+        _squirrelAnimationPlayer.Pause();
 
         if (IsOnFloor())
         {
@@ -108,6 +113,8 @@ public partial class PlayerController : CharacterBody3D
 
             if (speedFactor > 0.05f)
             {
+                _squirrelAnimationPlayer.Play("Walk");
+
                 // if (_animation.CurrentAnimation != "walk")
                 // {
                 //     _animation.Play("walk", 0.1f);

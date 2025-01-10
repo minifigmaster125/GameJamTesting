@@ -1,10 +1,9 @@
-[gd_scene load_steps=16 format=3 uid="uid://ccbyxm7j7tlyn"]
+[gd_scene load_steps=12 format=3 uid="uid://ccbyxm7j7tlyn"]
 
 [ext_resource type="PackedScene" uid="uid://eu15yv26173u" path="res://block_grass.tscn" id="1_b4rl4"]
-[ext_resource type="Script" path="res://Scripts/AssetSpawner.cs" id="1_kroaf"]
 [ext_resource type="Script" path="res://Scripts/PlayerController.cs" id="2_gx3br"]
 [ext_resource type="ArrayMesh" uid="uid://deu06eho4c74" path="res://meshes/dust.res" id="3_2qc6a"]
-[ext_resource type="PackedScene" uid="uid://b78p34gheefj1" path="res://Squirrel.glb" id="3_jml44"]
+[ext_resource type="PackedScene" uid="uid://bsf2nsikavso0" path="res://models/Squirrel.glb" id="3_vgogk"]
 [ext_resource type="AudioStream" uid="uid://cydjn1ct3hps2" path="res://sounds/walking.ogg" id="4_epwvk"]
 [ext_resource type="AudioStream" uid="uid://bq3xpqefgp6o7" path="res://sfx/Recording.ogg" id="5_icqo7"]
 [ext_resource type="Script" path="res://Scripts/View.cs" id="5_tvfmq"]
@@ -20,14 +19,7 @@ ssao_enabled = true
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jutbc"]
 
-[sub_resource type="CapsuleMesh" id="CapsuleMesh_aldey"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ob4nw"]
-
-[sub_resource type="BoxMesh" id="BoxMesh_ity1m"]
-
-[node name="Node3D" type="Node3D"]
-script = ExtResource("1_kroaf")
+[node name="Node3D2" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_rwxnu")
@@ -112,19 +104,12 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.682246, 0)
 script = ExtResource("2_gx3br")
 View = NodePath("../View")
 
-[node name="Squirrel" parent="CharacterBody3D" instance=ExtResource("3_jml44")]
+[node name="Squirrel" parent="CharacterBody3D" instance=ExtResource("3_vgogk")]
 transform = Transform3D(-2.18557e-08, 0, -0.5, 0, 0.5, 0, 0.5, 0, -2.18557e-08, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.315775, 0)
 shape = SubResource("CapsuleShape3D_jutbc")
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="CharacterBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
-visible = false
-mesh = SubResource("CapsuleMesh_aldey")
-skeleton = NodePath("../..")
-surface_material_override/0 = SubResource("StandardMaterial3D_ob4nw")
 
 [node name="ParticlesTrail" type="CPUParticles3D" parent="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1.5, -2)
@@ -225,6 +210,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.05737, 4.2735, 3.22605)
 
 [node name="Column23" parent="." instance=ExtResource("7_i4mvk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.47872, 5.53916, 2.51464)
-
-[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
-mesh = SubResource("BoxMesh_ity1m")
