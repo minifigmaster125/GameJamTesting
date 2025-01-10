@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://b78p34gheefj1"
-path="res://.godot/imported/Squirrel.glb-e1fdb0be442f4c177a2d44dff8e4fa97.scn"
+uid="uid://b6u37vhej3q3h"
+path="res://.godot/imported/ShelfHalf.glb-55029caab39987b493957441308b0d22.scn"
 
 [deps]
 
-source_file="res://Squirrel.glb"
-dest_files=["res://.godot/imported/Squirrel.glb-e1fdb0be442f4c177a2d44dff8e4fa97.scn"]
+source_file="res://ShelfHalf.glb"
+dest_files=["res://.godot/imported/ShelfHalf.glb-55029caab39987b493957441308b0d22.scn"]
 
 [params]
 
@@ -26,7 +26,7 @@ meshes/lightmap_texel_size=0.2
 meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
-animation/fps=60.0
+animation/fps=30
 animation/trimming=false
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
