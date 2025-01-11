@@ -38,6 +38,8 @@ public partial class PlayerController : CharacterBody3D
 
     private AnimationPlayer _squirrelAnimationPlayer;
 
+    private KinematicCollision3D collisionData;
+
     public override void _Ready()
     {
         _particlesTrail = GetNode<CpuParticles3D>("ParticlesTrail");
@@ -100,6 +102,27 @@ public partial class PlayerController : CharacterBody3D
             }
         }
     }
+    private void HandleCollisions(double delta)
+    {
+        collisionData = MoveAndCollide(Velocity * new Vector3((float)delta, (float)delta, (float)delta));
+
+		if (collisionData != null)
+		{
+			//randomize the y value a little
+			RandomNumberGenerator r = new RandomNumberGenerator();
+			Vector3 tempVelocity = Velocity;
+			tempVelocity.Y += r.RandfRange(-20, 20);
+			Velocity = tempVelocity;
+
+			//bounce
+			Velocity = Velocity.Bounce(collisionData.GetNormal());
+
+			string colliderMetaName = collisionData.GetCollider().GetMeta("Name").AsString();
+		
+			GD.Print($"Collided with: {collisionData.GetCollider().GetMeta("Name").AsString()}");
+			//handle Ball collision
+        }
+    }
     private void HandleEffects(float delta)
     {
         _particlesTrail.Emitting = false;
@@ -148,6 +171,13 @@ public partial class PlayerController : CharacterBody3D
         var inputDirection = Vector3.Zero;
         inputDirection.X = Input.GetAxis("move_left", "move_right");
         inputDirection.Z = Input.GetAxis("move_forward", "move_back");
+
+        // Example in the subscene script
+        Node parent = GetParent();  // Get the parent node of the subscene instance
+
+        // // Now you can search for nodes in the parent scene, assuming the parent is the root scene
+        Node3D View = (Node3D)parent.GetNode("View");  // Replace "View" with the actual node name/path
+
 
         inputDirection = inputDirection.Rotated(Vector3.Up, View.Rotation.Y);
 

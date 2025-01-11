@@ -1,0 +1,70 @@
+using Godot;
+using System;
+using System.Collections.Generic;
+
+public partial class MeshVertexFinder : Node3D
+{
+    public static Vector3[] GetMeshVertices(Mesh mesh)
+    {
+        // Handle PrimitiveMesh types
+        if (mesh is PrimitiveMesh primitiveMesh)
+        {
+            var arrayMesh = new ArrayMesh();
+            arrayMesh.AddSurfaceFromArrays(Mesh.PrimitiveType.Triangles, primitiveMesh.GetMeshArrays());
+            mesh = arrayMesh;
+        }
+
+        // Get surface count
+        int surfaceCount = mesh.GetSurfaceCount();
+        var allVertices = new List<Vector3>();
+
+        // Collect vertices from all surfaces
+        for (int surface = 0; surface < surfaceCount; surface++)
+        {
+            var arrays = mesh.SurfaceGetArrays(surface);
+            var surfaceVertices = (Vector3[])arrays[(int)Mesh.ArrayType.Vertex];
+            allVertices.AddRange(surfaceVertices);
+        }
+
+        return allVertices.ToArray();
+    }
+
+    // Get indices similarly
+    public static int[] GetMeshIndices(Mesh mesh, int surface = 0)
+    {
+        var arrays = mesh.SurfaceGetArrays(surface);
+        return (int[])arrays[(int)Mesh.ArrayType.Index];
+    }
+
+   // Function to find the min and max vertices along each axis (x, y, z)
+    public (Vector3 min, Vector3 max) GetMinMaxVertices(Mesh mesh)
+    {
+        // Initialize min and max values with extreme values
+        Vector3 min = new Vector3(float.MaxValue, float.MaxValue, float.MaxValue);
+        Vector3 max = new Vector3(float.MinValue, float.MinValue, float.MinValue);
+
+        Visible = false;
+        //https://docs.godotengine.org/en/stable/classes/class_meshdatatool.html
+        // Add this node to the terrain_modifier group for easy finding
+        AddToGroup("terrain_modifier");
+        
+        Vector3[] MeshPoints = GetMeshVertices(mesh);
+
+
+        // Iterate through each vertex and update min/max values
+        foreach (Vector3 vertex in MeshPoints)
+        {
+            // Update min and max values for each axis
+            min.X = Math.Min(min.X, vertex.X);
+            min.Y = Math.Min(min.Y, vertex.Y);
+            min.Z = Math.Min(min.Z, vertex.Z);
+
+            max.X = Math.Max(max.X, vertex.X);
+            max.Y = Math.Max(max.Y, vertex.Y);
+            max.Z = Math.Max(max.Z, vertex.Z);
+        }
+
+        // Return the min and max values
+        return (min, max);
+    }
+}

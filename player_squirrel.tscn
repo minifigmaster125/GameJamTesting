@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://8n4pcv45j4bn"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerController.cs" id="1_pa0au"]
+[ext_resource type="PackedScene" uid="uid://dos4183hpq6e7" path="res://squirrel.tscn" id="2_ycc5r"]
+[ext_resource type="ArrayMesh" uid="uid://deu06eho4c74" path="res://meshes/dust.res" id="3_iewrg"]
+[ext_resource type="AudioStream" uid="uid://bq3xpqefgp6o7" path="res://sfx/Recording.ogg" id="4_1hh52"]
+[ext_resource type="AudioStream" uid="uid://cydjn1ct3hps2" path="res://sounds/walking.ogg" id="5_p37tb"]
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jutbc"]
+
+[node name="CharacterBody3D" type="CharacterBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.682246, 0)
+script = ExtResource("1_pa0au")
+
+[node name="Squirrel" parent="." instance=ExtResource("2_ycc5r")]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.315775, 0)
+shape = SubResource("CapsuleShape3D_jutbc")
+
+[node name="ParticlesTrail" type="CPUParticles3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -1)
+mesh = ExtResource("3_iewrg")
+
+[node name="SoundFootsteps" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_1hh52")
+volume_db = 3.302
+autoplay = true
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
+stream = ExtResource("5_p37tb")

@@ -4,47 +4,94 @@ using System.Collections.Generic;
 
 public partial class AssetSpawner: Node3D
 {
+    private Vector3 shelfHalfDimensions = new Vector3(5.6f, 6.3f, 1.9f);
     public override void _Ready()
     {
-        
-        SpawnByDimensions("ShelfHalf.tscn", new Vector3(0, .5f, 0), new Vector3(30, 1, 30), new Vector3(3, 3, 3));
-        SpawnByDimensions("column.tscn", new Vector3(0, 3, 0), new Vector3(5,5,5), new Vector3(0f, 0f, 0f));
+        //create floor 30x30
+        SpawnByDimensions("floor_tile.tscn", new Vector3(0, -.1f, 0), new Vector3(50, .1f, 50), new Vector3(0f, 0f, 0f));
+
+        // SpawnByDimensions("column.tscn", new Vector3(0, 1.5, 0), new Vector3(2,2,2), new Vector3(0f, 0f, 0f));
 
         // SpawnByDimensionsGroups("column.tscn", new Vector3(0, 3, 0), new Vector3(5,5,5), new Vector3(0f, 0f, 0f),
         //     new Vector3(1,5,1), new Vector3(2f, 0f, 2f));
+
+        // SpawnByDimensions("shelf_half.tscn",  new Vector3(0, 2f, 0), new Vector3(15, .1f,15), new Vector3(0f, 0f, 7f), -90);
+
+        // SpawnByDimensions("column.tscn", new Vector3(0, 1f, 0), new Vector3(5, .1f, .1f), new Vector3(0f, 0f, 0f));
+        // SpawnByDimensions("column.tscn", new Vector3(0, 2.2f, 0), new Vector3(5, .1f, .1f), new Vector3(0f, 0f, 0f));
+        // SpawnByDimensions("column.tscn", new Vector3(0, 3.4f, 0), new Vector3(5, .1f, .1f), new Vector3(0f, 0f, 0f));
+
+        //test spawn fit for shelf at origin
+        // string[] shelfContentAssetPaths = {"column.tscn", "column.tscn", "column.tscn", "column.tscn", "column.tscn"};
+        // SpawnShelfContents(new Vector3(0, 0, 0), 0, shelfContentAssetPaths);
+
+        SpawnShelves();
+        
     }
 
-    private void SpawnByDimensionsGroups(String assetPath, 
-        Vector3 position, Vector3 dimensions, Vector3 offsetHard, 
-        Vector3 dimensionsInner, Vector3 OffestInner)
+    private void SpawnShelves()
     {
-        // GD.Print("colliderDimensions: " + colliderDimensions);
-        Vector3 startPosition = new Vector3(position.X - dimensions.X/2, position.Y - dimensions.Y/2, position.Z - dimensions.Z/2);
-        Vector3 endPosition = new Vector3(startPosition.X + dimensions.X, startPosition.Y + dimensions.Y, startPosition.Z + dimensions.Z);
-        // GD.Print("startPosition: " + startPosition);
-        // GD.Print("endPosition: " + endPosition);
-        for(float x = startPosition.X; x <= endPosition.X; x+=offsetHard.X)
-        {
-            for(float y = startPosition.Y; y <= endPosition.Y; y+=offsetHard.Y)
-            {
-                for(float z = startPosition.Z; z <= endPosition.Z; z+=offsetHard.Z)
-                {
+        float rotationAboutAzimuthDegrees = 0;
+        string[] shelfContentAssetPaths = {"column.tscn", "column.tscn", "column.tscn", "column.tscn", "column.tscn"};
+        Vector3 shelfHalfOffset = new Vector3(shelfHalfDimensions.X, 0f, 0f);
+        int shelfRotationDeg = -90;//?
+        shelfHalfOffset = DimensionsRotated(shelfRotationDeg, shelfHalfOffset);
 
-                    SpawnByDimensions(assetPath, position + new Vector3(x, y, z), dimensionsInner, OffestInner);
-                }
-            }
+        Vector3 dimensions = new Vector3(30, .1f,30);
+        Vector3 offsets = new Vector3(.1f, 0f, 8f);
+
+        List<Vector3> shelfPositions1 = SpawnByDimensions("shelf_half.tscn", Vector3.Zero, dimensions, offsets, shelfRotationDeg);
+        // List<Vector3> shelfPositions2 = SpawnByDimensions("shelf_half.tscn",  Vector3.Zero+shelfHalfOffset, dimensions, offsets, -shelfRotationDeg);
+
+        foreach(Vector3 shelfPosition1 in shelfPositions1)
+        {
+            SpawnShelfContents(shelfPosition1, shelfRotationDeg, shelfContentAssetPaths);
+        }
+        // foreach(Vector3 shelfPosition2 in shelfPositions2)
+        // {
+        //     SpawnShelfContents(shelfPosition2, shelfRotationDeg, shelfContentAssetPaths);
+        // }
+    }
+
+//note shelf bottom edge needs to be 0f in scene
+    private void SpawnShelfContents(Vector3 position, float rotationAboutAzimuthDegrees, string[] shelfContentAssetPaths)
+    {
+        
+        float offsetPerRow = 1.2f;
+        float offset = 1f;
+
+        Vector3 baseShelfDimension = new Vector3(5, .1f, .1f);
+
+        for(int row = 0; row < 5; row++)
+        {
+            PackedScene shelfContent = (PackedScene)ResourceLoader.Load<PackedScene>(shelfContentAssetPaths[row]);
+            PhysicsBody3D _shelfContent = (PhysicsBody3D)shelfContent.Instantiate();
+            
+            Vector3 _shelfDimensions = DimensionsRotated(rotationAboutAzimuthDegrees, baseShelfDimension);//?check rotationAboutAzimuthDegrees
+            SpawnByDimensions(shelfContentAssetPaths[row], position+new Vector3(0f, offset, 0f), _shelfDimensions, Vector3.Zero, rotationAboutAzimuthDegrees);
+            offset+=offsetPerRow;
         }
     }
 
-    private Vector3 FindColliderDimensions(RigidBody3D rigidBody3D)
+    private Vector3 DimensionsRotated(float rotationAboutAzimuthDegrees, Vector3 dimensions)//suitable approx for symmetrical??
+    {
+        if(rotationAboutAzimuthDegrees % 90 == 0)
+        {
+            return new Vector3(dimensions.Z, dimensions.Y, dimensions.X);
+        }
+        return dimensions;
+    }
+
+
+    private Vector3 FindColliderDimensions(PhysicsBody3D physicsBody3D)
     {
 
-        var collisionShape = rigidBody3D.GetNode<CollisionShape3D>("CollisionShape3D");
+        var collisionShape = physicsBody3D.GetNode<CollisionShape3D>("CollisionShape3D");
 
         if (collisionShape.Shape is BoxShape3D boxShape)
         {
             // Access box dimensions (size)
-            Vector3 boxDimensions = boxShape.Size * 2;  // Extents is half the size, so multiply by 2
+            Vector3 boxDimensions = boxShape.Size;  // Extents is half the size, so multiply by 2
             GD.Print("Box Dimensions: " + boxDimensions);
             return boxDimensions;
         }
@@ -69,70 +116,18 @@ public partial class AssetSpawner: Node3D
         return Vector3.Zero;
     }
 
-    public static Vector3[] GetMeshVertices(Mesh mesh)
+    private Transform3D RotateAboutAzimuth(float degrees, Transform3D transform)
     {
-        // Handle PrimitiveMesh types
-        if (mesh is PrimitiveMesh primitiveMesh)
-        {
-            var arrayMesh = new ArrayMesh();
-            arrayMesh.AddSurfaceFromArrays(Mesh.PrimitiveType.Triangles, primitiveMesh.GetMeshArrays());
-            mesh = arrayMesh;
-        }
+        Vector3 axis = new Vector3(0, 1, 0); // Or Vector3.Right
+        float rotationAmount = Mathf.DegToRad(degrees/2);
 
-        // Get surface count
-        int surfaceCount = mesh.GetSurfaceCount();
-        var allVertices = new List<Vector3>();
-
-        // Collect vertices from all surfaces
-        for (int surface = 0; surface < surfaceCount; surface++)
-        {
-            var arrays = mesh.SurfaceGetArrays(surface);
-            var surfaceVertices = (Vector3[])arrays[(int)Mesh.ArrayType.Vertex];
-            allVertices.AddRange(surfaceVertices);
-        }
-
-        return allVertices.ToArray();
+        transform.Basis = new Basis(axis, rotationAmount) * transform.Basis;
+        // shortened
+        transform.Basis = transform.Basis.Rotated(axis, rotationAmount);
+        return transform;
     }
-
-    // Get indices similarly
-    public static int[] GetMeshIndices(Mesh mesh, int surface = 0)
-    {
-        var arrays = mesh.SurfaceGetArrays(surface);
-        return (int[])arrays[(int)Mesh.ArrayType.Index];
-    }
-
-   // Function to find the min and max vertices along each axis (x, y, z)
-    public (Vector3 min, Vector3 max) GetMinMaxVertices(Mesh mesh)
-    {
-        // Initialize min and max values with extreme values
-        Vector3 min = new Vector3(float.MaxValue, float.MaxValue, float.MaxValue);
-        Vector3 max = new Vector3(float.MinValue, float.MinValue, float.MinValue);
-
-        Visible = false;
-        //https://docs.godotengine.org/en/stable/classes/class_meshdatatool.html
-        // Add this node to the terrain_modifier group for easy finding
-        AddToGroup("terrain_modifier");
-        
-        Vector3[] MeshPoints = GetMeshVertices(mesh);
-
-
-        // Iterate through each vertex and update min/max values
-        foreach (Vector3 vertex in MeshPoints)
-        {
-            // Update min and max values for each axis
-            min.X = Math.Min(min.X, vertex.X);
-            min.Y = Math.Min(min.Y, vertex.Y);
-            min.Z = Math.Min(min.Z, vertex.Z);
-
-            max.X = Math.Max(max.X, vertex.X);
-            max.Y = Math.Max(max.Y, vertex.Y);
-            max.Z = Math.Max(max.Z, vertex.Z);
-        }
-
-        // Return the min and max values
-        return (min, max);
-    }
-    public void SpawnByDimensions(String assetPath, Vector3 position, Vector3 dimensions, Vector3 offset)
+    
+    public List<Vector3> SpawnByDimensions(String assetPath, Vector3 position, Vector3 dimensions, Vector3 offset, float rotationAboutAzimuthDegrees=0)
     {
         PackedScene packedScene = (PackedScene)ResourceLoader.Load(assetPath);
         // if(packedScene == null)
@@ -140,11 +135,15 @@ public partial class AssetSpawner: Node3D
         //     throw new NullReferenceException();
         //     return;
         // }
-
+        List<Vector3> spawnPositions = new List<Vector3>();
         // Instance the scene
         //TypeCheck Needed before this to check castability?
-        RigidBody3D sceneInstance = (RigidBody3D)packedScene.Instantiate();
+        PhysicsBody3D sceneInstance = (PhysicsBody3D)packedScene.Instantiate();
         Vector3 colliderDimensions = FindColliderDimensions(sceneInstance);
+
+        colliderDimensions = DimensionsRotated(rotationAboutAzimuthDegrees, colliderDimensions);
+        offset = DimensionsRotated(rotationAboutAzimuthDegrees, offset);//?
+
         // GD.Print("colliderDimensions: " + colliderDimensions);
         Vector3 startPosition = new Vector3(position.X - dimensions.X/2, position.Y - dimensions.Y/2, position.Z - dimensions.Z/2);
         Vector3 endPosition = new Vector3(startPosition.X + dimensions.X, startPosition.Y + dimensions.Y, startPosition.Z + dimensions.Z);
@@ -156,17 +155,21 @@ public partial class AssetSpawner: Node3D
             {
                 for(float z = startPosition.Z; z <= endPosition.Z; z+=colliderDimensions.Z+offset.Z)
                 {
-                    sceneInstance = (RigidBody3D)packedScene.Instantiate();
+                    sceneInstance = (PhysicsBody3D)packedScene.Instantiate();
                     Vector3 spawnPosition = new Vector3(x, y, z);
                     // GD.Print("Spawning at: " + spawnPosition);
                     sceneInstance.Position = spawnPosition;
+                    Transform3D t = sceneInstance.Transform;
+                    sceneInstance.Transform = RotateAboutAzimuth(rotationAboutAzimuthDegrees, sceneInstance.Transform);
                     
                     // Add the scene instance to the current node tree
                     AddChild(sceneInstance);
+
+                    spawnPositions.Add(spawnPosition);
                 }
             }
         }
-
+        return spawnPositions;
     }
 
     // public void SpawnByNumbers(String assetPath, Vector3 position, Vector3 numbers)
@@ -190,5 +193,28 @@ public partial class AssetSpawner: Node3D
     public void FindAndSpawnInAllMeshes()
     {
 
+    }
+
+    //needs full impl/debug
+    private void SpawnByDimensionsGroups(String assetPath, 
+        Vector3 position, Vector3 dimensions, Vector3 offsetHard, 
+        Vector3 dimensionsInner, Vector3 OffestInner)
+    {
+        // GD.Print("colliderDimensions: " + colliderDimensions);
+        Vector3 startPosition = new Vector3(position.X - dimensions.X/2, position.Y - dimensions.Y/2, position.Z - dimensions.Z/2);
+        Vector3 endPosition = new Vector3(startPosition.X + dimensions.X, startPosition.Y + dimensions.Y, startPosition.Z + dimensions.Z);
+        // GD.Print("startPosition: " + startPosition);
+        // GD.Print("endPosition: " + endPosition);
+        for(float x = startPosition.X; x <= endPosition.X; x+=offsetHard.X)
+        {
+            for(float y = startPosition.Y; y <= endPosition.Y; y+=offsetHard.Y)
+            {
+                for(float z = startPosition.Z; z <= endPosition.Z; z+=offsetHard.Z)
+                {
+
+                    SpawnByDimensions(assetPath, position + new Vector3(x, y, z), dimensionsInner, OffestInner);
+                }
+            }
+        }
     }
 }
