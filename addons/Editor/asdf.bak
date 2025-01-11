@@ -1,0 +1,128 @@
+using Godot;
+using System;
+
+[Tool]
+public partial class AssetSpawnerEditorPlugin : EditorPlugin
+{
+    private LineEdit textInput;
+    private SpinBox xInput, yInput, zInput, floatInput;
+    private Button triggerButton;
+    private Label resultLabel;
+
+    public override void _Ready()
+    {
+        // Create a vertical container for all elements
+        var vbox = new VBoxContainer();
+        AddChild(vbox);
+
+        // Vector3 input section
+        var vectorLabel = new Label { Text = "Vector3 Input:" };
+        vbox.AddChild(vectorLabel);
+
+        var vectorContainer = new HBoxContainer();
+        vbox.AddChild(vectorContainer);
+
+        // X input
+        var xLabel = new Label { Text = "X:" };
+        vectorContainer.AddChild(xLabel);
+        xInput = new SpinBox
+        {
+            MinValue = -100,
+            MaxValue = 100,
+            Step = 0.1f,
+            CustomMinimumSize = new Vector2(100, 0)
+        };
+        vectorContainer.AddChild(xInput);
+
+        // Y input
+        var yLabel = new Label { Text = "Y:" };
+        vectorContainer.AddChild(yLabel);
+        yInput = new SpinBox
+        {
+            MinValue = -100,
+            MaxValue = 100,
+            Step = 0.1f,
+            CustomMinimumSize = new Vector2(100, 0)
+        };
+        vectorContainer.AddChild(yInput);
+
+        // Z input
+        var zLabel = new Label { Text = "Z:" };
+        vectorContainer.AddChild(zLabel);
+        zInput = new SpinBox
+        {
+            MinValue = -100,
+            MaxValue = 100,
+            Step = 0.1f,
+            CustomMinimumSize = new Vector2(100, 0)
+        };
+        vectorContainer.AddChild(zInput);
+
+        // Float input section
+        var floatLabel = new Label { Text = "Float Input:" };
+        vbox.AddChild(floatLabel);
+
+        floatInput = new SpinBox
+        {
+            MinValue = -100,
+            MaxValue = 100,
+            Step = 0.1f,
+            CustomMinimumSize = new Vector2(150, 0)
+        };
+        vbox.AddChild(floatInput);
+
+        // Text input section
+        var textLabel = new Label { Text = "Text Input:" };
+        vbox.AddChild(textLabel);
+
+        textInput = new LineEdit
+        {
+            CustomMinimumSize = new Vector2(200, 0),
+            PlaceholderText = "Enter text here..."
+        };
+        vbox.AddChild(textInput);
+
+        // Add some spacing
+        vbox.AddChild(new HSeparator());
+
+        // Trigger button
+        triggerButton = new Button
+        {
+            Text = "Process Input",
+            CustomMinimumSize = new Vector2(150, 40)
+        };
+        triggerButton.Pressed += OnTriggerButtonPressed;
+        vbox.AddChild(triggerButton);
+
+        // Result label
+        resultLabel = new Label { Text = "" };
+        vbox.AddChild(resultLabel);
+    }
+
+    private void OnTriggerButtonPressed()
+    {
+        var vector = new Vector3(
+            (float)xInput.Value,
+            (float)yInput.Value,
+            (float)zInput.Value
+        );
+        
+        float floatValue = (float)floatInput.Value;
+        string textValue = textInput.Text;
+
+        // Process the input values
+        ProcessInput(vector, floatValue, textValue);
+    }
+
+    private void ProcessInput(Vector3 vector, float floatValue, string textValue)
+    {
+        // Example processing - you can modify this method to suit your needs
+        string result = $"Processed Input:\n" +
+                       $"Vector3: {vector}\n" +
+                       $"Float: {floatValue}\n" +
+                       $"Text: {textValue}";
+        
+        resultLabel.Text = result;
+        GD.Print(result);
+    }
+}
