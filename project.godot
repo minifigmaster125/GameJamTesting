@@ -23,6 +23,10 @@ Audio="*res://Scripts/Audio.cs"
 
 project/assembly_name="CSharpo"
 
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/Editor/plugin.cfg")
+
 [input]
 
 move_forward={

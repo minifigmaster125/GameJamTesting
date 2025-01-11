@@ -1,6 +1,6 @@
 using Godot;
 using System;
-
+#if TOOLS
 [Tool]
 public partial class AssetSpawnerEditorPlugin : EditorPlugin
 {
@@ -21,17 +21,18 @@ public partial class AssetSpawnerEditorPlugin : EditorPlugin
         
         // Set up the Text Field (LineEdit)
         textField.PlaceholderText = "Enter a number";
-        // textField.RectMinSize = new Vector2(200, 30);  // Make the text field larger
+        textField.SetSize(new Vector2(200, 30));
+        // textField.PreferredSize = new Vector2(200, 30);  // Make the text field larger
         textField.Position = new Vector2(10, 10);
 
         // Set up the Button
         actionButton.Text = "Update Value";
-        // actionButton.RectMinSize = new Vector2(200, 30);
+        // actionButton.PreferredSize = new Vector2(200, 30);
         actionButton.Position = new Vector2(10, 50);
         
         // Set up the result label to show the current value
         resultLabel.Text = "Current Value: 0";
-        // resultLabel.RectMinSize = new Vector2(200, 30);
+        // resultLabel.PreferredSize = new Vector2(200, 30);
         resultLabel.Position = new Vector2(10, 90);
 
         // Connect the button's signal to an event handler
@@ -73,3 +74,4 @@ public partial class AssetSpawnerEditorPlugin : EditorPlugin
         resultLabel.QueueFree();
     }
 }
+#endif

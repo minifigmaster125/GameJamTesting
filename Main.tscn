@@ -1,8 +1,10 @@
-[gd_scene load_steps=4 format=3 uid="uid://btyjlkgx4wr54"]
+[gd_scene load_steps=6 format=3 uid="uid://btyjlkgx4wr54"]
 
 [ext_resource type="Script" path="res://Scripts/AssetSpawner.cs" id="1_vei2e"]
 [ext_resource type="Script" path="res://Scripts/View.cs" id="2_tsv3o"]
 [ext_resource type="PackedScene" uid="uid://8n4pcv45j4bn" path="res://player_squirrel.tscn" id="3_luuuk"]
+[ext_resource type="PackedScene" uid="uid://cki5l8r44tl4v" path="res://column.tscn" id="4_ukah2"]
+[ext_resource type="Script" path="res://Scripts/ScoreableShelfContent.cs" id="5_r4e2k"]
 
 [node name="Node3D" type="Node3D"]
 script = ExtResource("1_vei2e")
@@ -24,3 +26,45 @@ far = 250.0
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("3_luuuk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25729, 5.5449, 13.9311)
+
+[node name="column_tscn3576785073323" type="RigidBody3D" parent="." instance=ExtResource("4_ukah2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, -0.450001, -0.450001)
+mass = 0.1
+script = ExtResource("5_r4e2k")
+ScoreValue = 20
+metadata/ScoreableItem = true
+
+[node name="column_tscn3576852182188" type="RigidBody3D" parent="." instance=ExtResource("4_ukah2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, -0.450001, -0.450001)
+mass = 0.1
+script = ExtResource("5_r4e2k")
+ScoreValue = 20
+metadata/ScoreableItem = true
+
+[node name="column_tscn3576919292979" type="RigidBody3D" parent="." instance=ExtResource("4_ukah2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.500001, -0.450001, -0.450001)
+mass = 0.1
+script = ExtResource("5_r4e2k")
+ScoreValue = 20
+metadata/ScoreableItem = true
+
+[node name="column_tscn3576986401784" type="RigidBody3D" parent="." instance=ExtResource("4_ukah2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.499999, -0.450001, -0.450001)
+mass = 0.1
+script = ExtResource("5_r4e2k")
+ScoreValue = 20
+metadata/ScoreableItem = true
+
+[node name="column_tscn3577053508776" type="RigidBody3D" parent="." instance=ExtResource("4_ukah2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, -0.450001, -0.450001)
+mass = 0.1
+script = ExtResource("5_r4e2k")
+ScoreValue = 20
+metadata/ScoreableItem = true
+
+[node name="column_tscn3577120618373" type="RigidBody3D" parent="." instance=ExtResource("4_ukah2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.5, -0.450001, -0.450001)
+mass = 0.1
+script = ExtResource("5_r4e2k")
+ScoreValue = 20
+metadata/ScoreableItem = true
