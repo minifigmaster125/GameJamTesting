@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://uyfj82csbkqb"]
+
+[ext_resource type="Script" path="res://Scripts/ScoreableComponent.cs" id="1_nyd23"]
+
+[node name="ScoreableComponent" type="Node3D"]
+script = ExtResource("1_nyd23")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

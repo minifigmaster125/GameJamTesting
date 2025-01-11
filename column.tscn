@@ -1,6 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://cki5l8r44tl4v"]
+[gd_scene load_steps=5 format=3 uid="uid://cki5l8r44tl4v"]
 
 [ext_resource type="PackedScene" uid="uid://d3v7fuoqfl7j2" path="res://models/column.glb" id="1_35xt2"]
+[ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://scoreable_component.tscn" id="2_ddxc2"]
+[ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="3_0bnpb"]
 
 [sub_resource type="CylinderShape3D" id="CylinderShape3D_38sys"]
 height = 1.0
@@ -13,3 +15,7 @@ mass = 0.1
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50465, 0)
 shape = SubResource("CylinderShape3D_38sys")
+
+[node name="ScoreableComponent" parent="." instance=ExtResource("2_ddxc2")]
+ScoreValue = 20
+ScoreSound = ExtResource("3_0bnpb")

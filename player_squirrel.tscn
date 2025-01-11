@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://8n4pcv45j4bn"]
+[gd_scene load_steps=8 format=3 uid="uid://8n4pcv45j4bn"]
 
 [ext_resource type="Script" path="res://Scripts/PlayerController.cs" id="1_pa0au"]
+[ext_resource type="PackedScene" uid="uid://c4eeqhvet6na0" path="res://shopping_cart.tscn" id="2_q0p1e"]
 [ext_resource type="PackedScene" uid="uid://dos4183hpq6e7" path="res://squirrel.tscn" id="2_ycc5r"]
 [ext_resource type="ArrayMesh" uid="uid://deu06eho4c74" path="res://meshes/dust.res" id="3_iewrg"]
 [ext_resource type="AudioStream" uid="uid://bq3xpqefgp6o7" path="res://sfx/Recording.ogg" id="4_1hh52"]
@@ -11,6 +12,10 @@
 [node name="CharacterBody3D" type="CharacterBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.682246, 0)
 script = ExtResource("1_pa0au")
+MovementSpeed = 800.0
+
+[node name="Shopping Cart" parent="." instance=ExtResource("2_q0p1e")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.643949, 1.42866)
 
 [node name="Squirrel" parent="." instance=ExtResource("2_ycc5r")]
 

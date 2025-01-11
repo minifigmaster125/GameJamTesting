@@ -1,10 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://btyjlkgx4wr54"]
+[gd_scene load_steps=6 format=3 uid="uid://btyjlkgx4wr54"]
 
 [ext_resource type="Script" path="res://Scripts/AssetSpawner.cs" id="1_vei2e"]
 [ext_resource type="Script" path="res://Scripts/View.cs" id="2_tsv3o"]
 [ext_resource type="PackedScene" uid="uid://8n4pcv45j4bn" path="res://player_squirrel.tscn" id="3_luuuk"]
+[ext_resource type="PackedScene" uid="uid://dnqqwuxtluif3" path="res://UI/main_ui.tscn" id="4_y5kwx"]
 
-[node name="Node3D" type="Node3D"]
+[sub_resource type="Environment" id="Environment_n10v7"]
+background_mode = 1
+background_color = Color(0.868848, 0.794698, 0.828402, 1)
+background_energy_multiplier = 0.9
+
+[node name="Main" type="Node3D"]
 script = ExtResource("1_vei2e")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -24,3 +30,11 @@ far = 250.0
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("3_luuuk")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25729, 5.5449, 13.9311)
+MovementSpeed = 500.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_n10v7")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="MainUI" parent="." instance=ExtResource("4_y5kwx")]
