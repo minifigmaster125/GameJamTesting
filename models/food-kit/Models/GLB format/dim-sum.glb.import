@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c11e6e6sbujmy"
-path="res://.godot/imported/dim-sum.glb-6bcf7652c1b0dab829ae5d737b911fb2.scn"
+path="res://.godot/imported/dim-sum.glb-17448c9a04d2917821860cf0e2490121.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/dim-sum.glb"
-dest_files=["res://.godot/imported/dim-sum.glb-6bcf7652c1b0dab829ae5d737b911fb2.scn"]
+source_file="res://Models/food-kit/Models/GLB format/dim-sum.glb"
+dest_files=["res://.godot/imported/dim-sum.glb-17448c9a04d2917821860cf0e2490121.scn"]
 
 [params]
 

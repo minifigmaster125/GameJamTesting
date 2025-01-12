@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dbox3j3o0o0sl"
-path="res://.godot/imported/cookie-chocolate.glb-b2e2ec20fd59416e9d9691d5be189ace.scn"
+path="res://.godot/imported/cookie-chocolate.glb-0d366467763399cb0e702b397d06b87e.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/cookie-chocolate.glb"
-dest_files=["res://.godot/imported/cookie-chocolate.glb-b2e2ec20fd59416e9d9691d5be189ace.scn"]
+source_file="res://Models/food-kit/Models/GLB format/cookie-chocolate.glb"
+dest_files=["res://.godot/imported/cookie-chocolate.glb-0d366467763399cb0e702b397d06b87e.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bi8d6bm3oo6eb"
-path="res://.godot/imported/broccoli.glb-7c7a7addcf35a59645bfd43619cf634b.scn"
+path="res://.godot/imported/broccoli.glb-e9c76fe760248cf20a514af3eaa83e08.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/broccoli.glb"
-dest_files=["res://.godot/imported/broccoli.glb-7c7a7addcf35a59645bfd43619cf634b.scn"]
+source_file="res://Models/food-kit/Models/GLB format/broccoli.glb"
+dest_files=["res://.godot/imported/broccoli.glb-e9c76fe760248cf20a514af3eaa83e08.scn"]
 
 [params]
 

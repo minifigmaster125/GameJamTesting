@@ -14,7 +14,7 @@ radius = 0.2
 transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, -0.2, 0)
 
 [node name="ScoreableComponent" parent="." instance=ExtResource("2_m13eb")]
-ScoreValue = 20
+ScoreValue = 33
 ScoreSound = ExtResource("3_vstje")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

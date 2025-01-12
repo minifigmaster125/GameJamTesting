@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cf60tvp26wbu7"
-path="res://.godot/imported/tajine-lid.glb-47186cd2de819f6b42e7052671c5c7e7.scn"
+path="res://.godot/imported/tajine-lid.glb-a5e10ec532d387d578c9a887c8394a03.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/tajine-lid.glb"
-dest_files=["res://.godot/imported/tajine-lid.glb-47186cd2de819f6b42e7052671c5c7e7.scn"]
+source_file="res://Models/food-kit/Models/GLB format/tajine-lid.glb"
+dest_files=["res://.godot/imported/tajine-lid.glb-a5e10ec532d387d578c9a887c8394a03.scn"]
 
 [params]
 

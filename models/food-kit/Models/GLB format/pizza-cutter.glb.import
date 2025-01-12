@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://lggyvko14xk6"
-path="res://.godot/imported/pizza-cutter.glb-cb7a88dd94f30bed9a9957e887b8c0ea.scn"
+path="res://.godot/imported/pizza-cutter.glb-cef7bbaa6744b6461fa6789443bedb57.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/pizza-cutter.glb"
-dest_files=["res://.godot/imported/pizza-cutter.glb-cb7a88dd94f30bed9a9957e887b8c0ea.scn"]
+source_file="res://Models/food-kit/Models/GLB format/pizza-cutter.glb"
+dest_files=["res://.godot/imported/pizza-cutter.glb-cef7bbaa6744b6461fa6789443bedb57.scn"]
 
 [params]
 

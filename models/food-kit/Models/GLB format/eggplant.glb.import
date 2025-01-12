@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d3y16mffytqfb"
-path="res://.godot/imported/eggplant.glb-56d099f14844892a26663767136d76be.scn"
+path="res://.godot/imported/eggplant.glb-9f5a8a2e866e409eb2044654e31bd5ec.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/eggplant.glb"
-dest_files=["res://.godot/imported/eggplant.glb-56d099f14844892a26663767136d76be.scn"]
+source_file="res://Models/food-kit/Models/GLB format/eggplant.glb"
+dest_files=["res://.godot/imported/eggplant.glb-9f5a8a2e866e409eb2044654e31bd5ec.scn"]
 
 [params]
 

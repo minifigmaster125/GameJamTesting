@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c4psscchtw3q7"
-path="res://.godot/imported/fence-door-rotate.glb-ea866f5aade46c397379bdf9baff2286.scn"
+path="res://.godot/imported/fence-door-rotate.glb-b1a89a2a460f353e28b5191451b62b50.scn"
 
 [deps]
 
-source_file="res://models/minimart/Models/GLB format/fence-door-rotate.glb"
-dest_files=["res://.godot/imported/fence-door-rotate.glb-ea866f5aade46c397379bdf9baff2286.scn"]
+source_file="res://Models/minimart/Models/GLB format/fence-door-rotate.glb"
+dest_files=["res://.godot/imported/fence-door-rotate.glb-b1a89a2a460f353e28b5191451b62b50.scn"]
 
 [params]
 

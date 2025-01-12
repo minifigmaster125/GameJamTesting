@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bbm8lm73chkas"
-path="res://.godot/imported/plate-deep.glb-7698b04ffed5e70070e494287b879370.scn"
+path="res://.godot/imported/plate-deep.glb-4a6a14a0a4fcde2a4e20dd4467d79308.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/plate-deep.glb"
-dest_files=["res://.godot/imported/plate-deep.glb-7698b04ffed5e70070e494287b879370.scn"]
+source_file="res://Models/food-kit/Models/GLB format/plate-deep.glb"
+dest_files=["res://.godot/imported/plate-deep.glb-4a6a14a0a4fcde2a4e20dd4467d79308.scn"]
 
 [params]
 

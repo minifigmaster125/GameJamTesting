@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://opn127okdr6g"
-path="res://.godot/imported/shopping-cart.glb-913013cb0555ec2540911dc80f36502c.scn"
+path="res://.godot/imported/shopping-cart.glb-bc6ac6697a7ed223ad291c1b767b5c0a.scn"
 
 [deps]
 
-source_file="res://models/minimart/Models/GLB format/shopping-cart.glb"
-dest_files=["res://.godot/imported/shopping-cart.glb-913013cb0555ec2540911dc80f36502c.scn"]
+source_file="res://Models/minimart/Models/GLB format/shopping-cart.glb"
+dest_files=["res://.godot/imported/shopping-cart.glb-bc6ac6697a7ed223ad291c1b767b5c0a.scn"]
 
 [params]
 

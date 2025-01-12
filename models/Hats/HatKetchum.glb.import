@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://4fnnmxb1uklx"
-path="res://.godot/imported/HatKetchum.glb-5e198945d030cc9f405458f15a802083.scn"
+path="res://.godot/imported/HatKetchum.glb-76f1161f6311bdc6837f3399ac267faa.scn"
 
 [deps]
 
-source_file="res://models/Hats/HatKetchum.glb"
-dest_files=["res://.godot/imported/HatKetchum.glb-5e198945d030cc9f405458f15a802083.scn"]
+source_file="res://Models/Hats/HatKetchum.glb"
+dest_files=["res://.godot/imported/HatKetchum.glb-76f1161f6311bdc6837f3399ac267faa.scn"]
 
 [params]
 

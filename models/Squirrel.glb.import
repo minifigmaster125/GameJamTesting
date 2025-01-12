@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b78p34gheefj1"
-path="res://.godot/imported/Squirrel.glb-a60aa4e9a7a8605a75df079c35f29235.scn"
+path="res://.godot/imported/Squirrel.glb-02881744b21013c4f9abd6c89a97bd5c.scn"
 
 [deps]
 
-source_file="res://models/Squirrel.glb"
-dest_files=["res://.godot/imported/Squirrel.glb-a60aa4e9a7a8605a75df079c35f29235.scn"]
+source_file="res://Models/Squirrel.glb"
+dest_files=["res://.godot/imported/Squirrel.glb-02881744b21013c4f9abd6c89a97bd5c.scn"]
 
 [params]
 

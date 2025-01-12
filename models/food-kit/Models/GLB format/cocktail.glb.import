@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cacovssckdlt1"
-path="res://.godot/imported/cocktail.glb-c167ef1fbb9c3daec0acc88eaca70078.scn"
+path="res://.godot/imported/cocktail.glb-4ed772644cab9b59ef86fe892daf9946.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/cocktail.glb"
-dest_files=["res://.godot/imported/cocktail.glb-c167ef1fbb9c3daec0acc88eaca70078.scn"]
+source_file="res://Models/food-kit/Models/GLB format/cocktail.glb"
+dest_files=["res://.godot/imported/cocktail.glb-4ed772644cab9b59ef86fe892daf9946.scn"]
 
 [params]
 
