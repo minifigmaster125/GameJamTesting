@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://b0e4dfq6nguq8"]
+
+[ext_resource type="PackedScene" uid="uid://cagq7keyge5qj" path="res://Models/Shelves/Carton.glb" id="1_gwwvy"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2nwgh"]
+size = Vector3(2, 0.2, 2)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_v0ey2"]
+size = Vector3(0.1, 1.4, 2)
+
+[node name="Carton" type="RigidBody3D"]
+
+[node name="Carton" parent="." instance=ExtResource("1_gwwvy")]
+transform = Transform3D(1, 0, 0, 0, 0.8, 0, 0, 0, 1, 0, 0.8, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.1, 0)
+shape = SubResource("BoxShape3D_2nwgh")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.950223, 0.9, 0)
+shape = SubResource("BoxShape3D_v0ey2")
+
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.949777, 0.9, 0)
+shape = SubResource("BoxShape3D_v0ey2")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0.9, 0.95)
+shape = SubResource("BoxShape3D_v0ey2")
+
+[node name="CollisionShape3D5" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0.9, -0.95)
+shape = SubResource("BoxShape3D_v0ey2")

@@ -43,3 +43,10 @@ MAIN THING simulation off driving into asset pile (or shelves), things falling o
 THEFT: make items fall into pickup truck maybe, leave store
 CRASH: get as many items to hit the ground as possible?
 
+
+Dimensions:
+
+shelf_cheese:
+11, 7, 2
+.1, 1.5, .1
+

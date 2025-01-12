@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=3 uid="uid://buliwdptjfmcj"]
+
+[ext_resource type="PackedScene" uid="uid://k73y306ns8gw" path="res://Models/Shelves/HFreezer.glb" id="1_sfciq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1t4s2"]
+size = Vector3(5.7, 0.7, 3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xtl43"]
+size = Vector3(5.7, 0.6, 0.3)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5cigh"]
+size = Vector3(0.2, 0.6, 3)
+
+[node name="HFreezer" type="StaticBody3D"]
+
+[node name="HFreezer" parent="." instance=ExtResource("1_sfciq")]
+transform = Transform3D(0.6, 0, 0, 0, 0.6, 0, 0, 0, 0.6, 0, 0, -0.00652337)
+
+[node name="Base" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25, 0)
+shape = SubResource("BoxShape3D_1t4s2")
+
+[node name="Beam" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 1.34838)
+shape = SubResource("BoxShape3D_xtl43")
+
+[node name="Beam2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, -1.15193)
+shape = SubResource("BoxShape3D_xtl43")
+
+[node name="Strut" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.74371, 0.3, 0)
+shape = SubResource("BoxShape3D_5cigh")
+
+[node name="Strut2" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.915552, 0.3, 0)
+shape = SubResource("BoxShape3D_5cigh")
+
+[node name="Strut3" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.918231, 0.3, 0)
+shape = SubResource("BoxShape3D_5cigh")
+
+[node name="Strut4" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.77119, 0.3, 0)
+shape = SubResource("BoxShape3D_5cigh")

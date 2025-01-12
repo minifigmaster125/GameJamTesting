@@ -10,11 +10,13 @@ size = Vector3(0.5, 0.6, 0.8)
 [node name="ShelfLoaf" type="RigidBody3D"]
 
 [node name="loaf2" parent="." instance=ExtResource("1_4lhfh")]
-transform = Transform3D(-6.11959e-08, 0, -1.4, 0, 1.4, 0, 1.4, 0, -6.11959e-08, 0, -0.3, 0)
+transform = Transform3D(-1.4, 0, 1.22392e-07, 0, 1.4, 0, -1.22392e-07, 0, -1.4, 0, -0.3, 0)
 
 [node name="ScoreableComponent" parent="." instance=ExtResource("2_ems5r")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 ScoreValue = 14
 ScoreSound = ExtResource("3_3jesc")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
 shape = SubResource("BoxShape3D_8pn0d")

@@ -1,6 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dqb20annynatm"]
+[gd_scene load_steps=5 format=3 uid="uid://dqb20annynatm"]
 
 [ext_resource type="PackedScene" uid="uid://k1ktg04mtj0a" path="res://Models/Shelves/ShelfLarge.glb" id="1_sgbuq"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_t7rjj"]
+size = Vector3(11.5, 1, 2.5)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_l3utg"]
 size = Vector3(11.5, 0.3, 2.5)
@@ -15,8 +18,8 @@ mass = 200.0
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
 
 [node name="Beam" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
-shape = SubResource("BoxShape3D_l3utg")
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.127931, 0.709966, 0)
+shape = SubResource("BoxShape3D_t7rjj")
 
 [node name="Beam2" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3.3, 0)
@@ -31,33 +34,33 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 7.7, 0)
 shape = SubResource("BoxShape3D_l3utg")
 
 [node name="Strut" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6, 4, 1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6, 4.2603, 1.1)
 shape = SubResource("BoxShape3D_tjol6")
 
 [node name="Strut2" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6, 4, -1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.6, 4.2603, -1.1)
 shape = SubResource("BoxShape3D_tjol6")
 
 [node name="Strut3" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 4, 1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 4.2603, 1.1)
 shape = SubResource("BoxShape3D_tjol6")
 
 [node name="Strut4" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 4, -1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.8, 4.2603, -1.1)
 shape = SubResource("BoxShape3D_tjol6")
 
 [node name="Strut5" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4, 1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4.2603, 1.1)
 shape = SubResource("BoxShape3D_tjol6")
 
 [node name="Strut6" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4, -1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 4.2603, -1.1)
 shape = SubResource("BoxShape3D_tjol6")
 
 [node name="Strut7" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8, 4, 1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8, 4.2603, 1.1)
 shape = SubResource("BoxShape3D_tjol6")
 
 [node name="Strut8" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8, 4, -1.1)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.8, 4.2603, -1.1)
 shape = SubResource("BoxShape3D_tjol6")

@@ -338,10 +338,36 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
         }
     }
 
+    // Dictionary<string, Vector3> shelfToColliderDimensions = new Dictionary<string, Vector3>
+    // {
+    //     {"shelf_half.tscn", new Vector3(,,)},
+    //     {"shelf_large.tscn", new Vector3(,,)},
+    //     {"Carton.tscn", new Vector3(2,1.6f,2)},
+    //     {"HFreezer.tscn", new Vector3(,,)},
+    // };
+
+    // Dictionary<string, Vector3> shelfSectionDimensions = new Dictionary<string, Vector3>
+    // {
+    //     {"shelf_half.tscn", new Vector3(,,)},
+    //     {"shelf_large.tscn", new Vector3(,,)},
+    //     {"Carton.tscn", new Vector3(2,3f,2)},
+    //     {"HFreezer.tscn", new Vector3(,,)},
+    // };
+
+    // Dictionary<string, Vector3> shelfSectionOffsets = new Dictionary<string, Vector3>
+    // {
+    //     {"shelf_half.tscn", new Vector3(0,1.2f,0)},
+    //     {"shelf_large.tscn", new Vector3(0,1.6,0)},
+    //     {"Carton.tscn", new Vector3(0,0,0)},
+    //     {"HFreezer.tscn", new Vector3(,0,)},
+    // };
+
+
     public List<Vector3> SpawnByDimensions(String assetPath, Vector3 position, Vector3 dimensions, Vector3 offset, float rotationAboutAzimuthDegrees=0)
     {
-        assetPath = "Assets/" +assetPath;
-        PackedScene packedScene = (PackedScene)ResourceLoader.Load(assetPath);
+        String _assetPath = "Assets/" +assetPath;
+
+        PackedScene packedScene = (PackedScene)ResourceLoader.Load(_assetPath);
 
         
         List<Vector3> spawnPositions = new List<Vector3>();
