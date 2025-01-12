@@ -11,9 +11,10 @@ height = 1.0
 mass = 0.1
 
 [node name="column2" parent="." instance=ExtResource("1_35xt2")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.50465, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00464999, 0)
 shape = SubResource("CylinderShape3D_38sys")
 
 [node name="ScoreableComponent" parent="." instance=ExtResource("2_ddxc2")]

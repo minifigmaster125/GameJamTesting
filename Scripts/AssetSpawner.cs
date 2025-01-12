@@ -7,8 +7,7 @@ public partial class AssetSpawner: Node3D
     private Vector3 shelfHalfDimensions = new Vector3(5.6f, 6.3f, 1.9f);
     public override void _Ready()
     {
-        //create floor 30x30
-        SpawnByDimensions("floor_tile.tscn", new Vector3(0, -.1f, 0), new Vector3(50, .1f, 50), new Vector3(0f, 0f, 0f));
+        
 
         // SpawnByDimensions("column.tscn", new Vector3(0, 1.5, 0), new Vector3(2,2,2), new Vector3(0f, 0f, 0f));
 
@@ -25,7 +24,10 @@ public partial class AssetSpawner: Node3D
         // string[] shelfContentAssetPaths = {"column.tscn", "column.tscn", "column.tscn", "column.tscn", "column.tscn"};
         // SpawnShelfContents(new Vector3(0, 0, 0), 0, shelfContentAssetPaths);
 
-        SpawnShelves();
+
+        //auto generate demo level
+        // SpawnByDimensions("floor_tile.tscn", new Vector3(0, -.1f, 0), new Vector3(50, .1f, 50), new Vector3(0f, 0f, 0f));
+        // SpawnShelves();
         
     }
 

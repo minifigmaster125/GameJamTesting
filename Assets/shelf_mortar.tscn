@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://dlb67a1tba0ec"]
+
+[ext_resource type="PackedScene" uid="uid://do3py3b07q7ud" path="res://Models/food-kit/Models/GLB format/mortar.glb" id="1_0ovid"]
+[ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://Assets/scoreable_component.tscn" id="2_7od23"]
+[ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="3_cnlig"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_ljnto"]
+height = 0.3
+radius = 0.4
+
+[node name="ShelfMortar" type="RigidBody3D"]
+
+[node name="mortar2" parent="." instance=ExtResource("1_0ovid")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, -0.2, 0)
+
+[node name="ScoreableComponent" parent="." instance=ExtResource("2_7od23")]
+ScoreValue = 20
+ScoreSound = ExtResource("3_cnlig")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_ljnto")
