@@ -80,7 +80,7 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
         {
             Title = "Custom Input Plugin",
             // InitialPosition = WindowInitialPosition.CenterScreen,
-            Size = new Vector2I(500, 500),
+            Size = new Vector2I(500, 1080),
             Exclusive = true,
             Unresizable = true,
             AlwaysOnTop = true,
@@ -121,11 +121,57 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
         (SpinBox offX, SpinBox offY, SpinBox offZ) = GenerateVectorInputs("offsets", vbox);
 
         // Float input section
-        var floatLabel = new Label { Text = "Float Input:" };
+        var floatLabel = new Label { Text = "RotationAboutAzimuthDegrees" };
         vbox.AddChild(floatLabel);
 
         var floatInput = GenerateSpinBox(150);
         vbox.AddChild(floatInput);
+
+        // Text input section
+        var assetTextLabel1 = new Label { Text = "Asset Pathname:" };
+        vbox.AddChild(assetTextLabel1);
+
+        var assetTextInput1 = new LineEdit
+        {
+            CustomMinimumSize = new Vector2(200, 0),
+            PlaceholderText = "Enter text here..."
+        };
+        vbox.AddChild(assetTextInput1);
+
+
+        var assetTextLabel2 = new Label { Text = "Asset Pathname:" };
+        vbox.AddChild(assetTextLabel2);
+
+        var assetTextInput2 = new LineEdit
+        {
+            CustomMinimumSize = new Vector2(200, 0),
+            PlaceholderText = "Enter text here..."
+        };
+        vbox.AddChild(assetTextInput2);
+
+
+        var assetTextLabel3 = new Label { Text = "Asset Pathname:" };
+        vbox.AddChild(assetTextLabel3);
+
+        var assetTextInput3 = new LineEdit
+        {
+            CustomMinimumSize = new Vector2(200, 0),
+            PlaceholderText = "Enter text here..."
+        };
+        vbox.AddChild(assetTextInput3);
+
+
+        var assetTextLabel4 = new Label { Text = "Asset Pathname:" };
+        vbox.AddChild(assetTextLabel4);
+
+        var assetTextInput4 = new LineEdit
+        {
+            CustomMinimumSize = new Vector2(200, 0),
+            PlaceholderText = "Enter text here..."
+        };
+        vbox.AddChild(assetTextInput4);
+
+
 
         // Add some spacing
         vbox.AddChild(new HSeparator());
@@ -135,15 +181,45 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
         buttonContainer.AddThemeConstantOverride("separation", 10);
         vbox.AddChild(buttonContainer);
 
-        // Process button
-        var processButton = new Button
+        // SpawnShelves button
+        var spawnShelvesButton = new Button
         {
-            Text = "Process Input",
+            Text = "Spawn Group",
             CustomMinimumSize = new Vector2(150, 40)
         };
 
-        assetSpawner = new AssetSpawner();
-        var editedRoot = GetEditorInterface().GetEditedSceneRoot();
+
+        spawnShelvesButton.Pressed += () =>
+        {
+            var position = new Vector3(
+                (float)posX.Value,
+                (float)posY.Value,
+                (float)posZ.Value
+            );
+            var dimensions = new Vector3(
+                (float)dimX.Value,
+                (float)dimY.Value,
+                (float)dimZ.Value
+            );
+            var offsets = new Vector3(
+                (float)offX.Value,
+                (float)offY.Value,
+                (float)offZ.Value
+            );
+            GD.Print("Process Button Pressed!");
+            string[] shelfContents = {assetTextInput.Text, assetTextInput1.Text, assetTextInput2.Text, assetTextInput3.Text, assetTextInput4.Text}; 
+            SpawnShelves(dimensions, (float)floatInput.Value, shelfContents);
+        };
+        buttonContainer.AddChild(spawnShelvesButton);
+
+        // Process button
+        var processButton = new Button
+        {
+            Text = "Process Button",
+            CustomMinimumSize = new Vector2(150, 40)
+        };
+
+
         processButton.Pressed += () =>
         {
             var position = new Vector3(
@@ -162,6 +238,7 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
                 (float)offZ.Value
             );
             GD.Print("Process Button Pressed!");
+            
             // SpawnObject();
             SpawnByDimensions(assetTextInput.Text, position, 
                 dimensions, offsets, (float)floatInput.Value);
@@ -215,15 +292,53 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
         editedRoot.AddChild(sceneInstance);
         sceneInstance.Owner = editedRoot;
     }
-
-
-
     private void ShowPluginWindow()
     {
         if (pluginWindow != null)
         {
             pluginWindow.Show();
             pluginWindow.GrabFocus();
+        }
+    }
+    private Vector3 shelfHalfDimensions = new Vector3(5.6f, 6.3f, 1.9f);
+    private void SpawnShelves(Vector3 dimensions, float rotationAboutAzimuthDegrees, string[] shelfContentAssetPaths)
+    {
+        Vector3 shelfHalfOffset = new Vector3(shelfHalfDimensions.X, 0f, 0f);
+        shelfHalfOffset = DimensionsRotated(rotationAboutAzimuthDegrees, shelfHalfOffset);
+
+        // Vector3 dimensions = new Vector3(30, .1f,30);
+        Vector3 offsets = new Vector3(.1f, 0f, 8f);
+
+        List<Vector3> shelfPositions1 = SpawnByDimensions("shelf_half.tscn", Vector3.Zero, dimensions, offsets, rotationAboutAzimuthDegrees);
+        // List<Vector3> shelfPositions2 = SpawnByDimensions("shelf_half.tscn",  Vector3.Zero+shelfHalfOffset, dimensions, offsets, -shelfRotationDeg);
+
+        foreach(Vector3 shelfPosition1 in shelfPositions1)
+        {
+            SpawnShelfContents(shelfPosition1, rotationAboutAzimuthDegrees, shelfContentAssetPaths);
+        }
+        // foreach(Vector3 shelfPosition2 in shelfPositions2)
+        // {
+        //     SpawnShelfContents(shelfPosition2, shelfRotationDeg, shelfContentAssetPaths);
+        // }
+    }
+
+//note shelf bottom edge needs to be 0f in scene
+    private void SpawnShelfContents(Vector3 position, float rotationAboutAzimuthDegrees, string[] shelfContentAssetPaths)
+    {
+        
+        float offsetPerRow = 1.2f;
+        float offset = 1f;
+
+        Vector3 baseShelfDimension = new Vector3(5, .1f, .1f);
+
+        for(int row = 0; row < 5; row++)
+        {
+            PackedScene shelfContent = (PackedScene)ResourceLoader.Load<PackedScene>(shelfContentAssetPaths[row]);
+            PhysicsBody3D _shelfContent = (PhysicsBody3D)shelfContent.Instantiate();
+            
+            Vector3 _shelfDimensions = DimensionsRotated(rotationAboutAzimuthDegrees, baseShelfDimension);//?check rotationAboutAzimuthDegrees
+            SpawnByDimensions(shelfContentAssetPaths[row], position+new Vector3(0f, offset, 0f), baseShelfDimension, Vector3.Zero, rotationAboutAzimuthDegrees);
+            offset+=offsetPerRow;
         }
     }
 

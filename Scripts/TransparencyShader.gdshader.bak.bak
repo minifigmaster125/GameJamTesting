@@ -1,0 +1,45 @@
+shader_type spatial;
+
+// Parameters that can be adjusted in the material
+uniform float min_opacity : hint_range(0.0, 1.0) = 0.0;
+uniform float max_opacity : hint_range(0.0, 1.0) = 1.0;
+uniform float fade_speed : hint_range(0.1, 10.0) = 5.0;
+
+// Variables passed from the game
+uniform vec3 camera_position;
+uniform vec3 character_position;
+
+uniform bool ray_is_colliding;
+
+varying float transparency;
+
+void vertex() {
+    // Calculate world position of the current vertex
+    vec3 world_pos = (MODEL_MATRIX * vec4(VERTEX, 1.0)).xyz;
+    
+    // Create a ray from camera to character
+    vec3 camera_to_character = normalize(character_position - camera_position);
+    vec3 camera_to_vertex = normalize(world_pos - camera_position);
+    
+    // Calculate distance from vertex to ray
+    vec3 cross_product = cross(camera_to_character, camera_to_vertex);
+    float distance_to_ray = length(cross_product);
+    
+    // Check if vertex is between camera and character
+    float dot_product = dot(camera_to_character, camera_to_vertex);
+    float distance_camera_to_character = distance(camera_position, character_position);
+    float distance_camera_to_vertex = distance(camera_position, world_pos);
+    
+    // Set transparency based on whether this object is occluding the character
+    if (dot_product > 0.0 && distance_camera_to_vertex < distance_camera_to_character) {
+        transparency = min_opacity;
+    } else {
+        transparency = max_opacity;
+    }
+}
+
+void fragment() {
+    // Apply base color and transparency
+    ALBEDO = COLOR.rgb;
+    ALPHA = transparency;
+}
