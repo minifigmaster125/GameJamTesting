@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ckrho5ij78b8v"
-path="res://.godot/imported/beet.glb-95923c37cc4cfb4bd0a07bd2291c204e.scn"
+path="res://.godot/imported/beet.glb-5b7022cfb1bb90acd85f5b8e63f0a50a.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/beet.glb"
-dest_files=["res://.godot/imported/beet.glb-95923c37cc4cfb4bd0a07bd2291c204e.scn"]
+source_file="res://models/food-kit/Models/GLB format/beet.glb"
+dest_files=["res://.godot/imported/beet.glb-5b7022cfb1bb90acd85f5b8e63f0a50a.scn"]
 
 [params]
 

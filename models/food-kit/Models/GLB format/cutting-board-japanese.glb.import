@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cnkwpwj2rm6xg"
-path="res://.godot/imported/cutting-board-japanese.glb-4b470825c4b697f002623f9c5c7d9558.scn"
+path="res://.godot/imported/cutting-board-japanese.glb-aab7967c011da6f3dcae2ef3ee85f12a.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/cutting-board-japanese.glb"
-dest_files=["res://.godot/imported/cutting-board-japanese.glb-4b470825c4b697f002623f9c5c7d9558.scn"]
+source_file="res://models/food-kit/Models/GLB format/cutting-board-japanese.glb"
+dest_files=["res://.godot/imported/cutting-board-japanese.glb-aab7967c011da6f3dcae2ef3ee85f12a.scn"]
 
 [params]
 

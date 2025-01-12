@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dgn12oyma3jwm"
-path="res://.godot/imported/loaf-baguette.glb-1eac143fa401b277826e0bc836927f51.scn"
+path="res://.godot/imported/loaf-baguette.glb-7f64e0058ff0a3c715a61ffb23eba15a.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/loaf-baguette.glb"
-dest_files=["res://.godot/imported/loaf-baguette.glb-1eac143fa401b277826e0bc836927f51.scn"]
+source_file="res://models/food-kit/Models/GLB format/loaf-baguette.glb"
+dest_files=["res://.godot/imported/loaf-baguette.glb-7f64e0058ff0a3c715a61ffb23eba15a.scn"]
 
 [params]
 

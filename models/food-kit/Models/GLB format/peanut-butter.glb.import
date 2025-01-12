@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://12hu1ha815kf"
-path="res://.godot/imported/peanut-butter.glb-10297bda69cb9c285f51a911eaa31de4.scn"
+path="res://.godot/imported/peanut-butter.glb-11e958cff7756643e6cd4473e186b353.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/peanut-butter.glb"
-dest_files=["res://.godot/imported/peanut-butter.glb-10297bda69cb9c285f51a911eaa31de4.scn"]
+source_file="res://models/food-kit/Models/GLB format/peanut-butter.glb"
+dest_files=["res://.godot/imported/peanut-butter.glb-11e958cff7756643e6cd4473e186b353.scn"]
 
 [params]
 

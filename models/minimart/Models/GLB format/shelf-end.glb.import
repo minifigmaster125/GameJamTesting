@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bngiliwdhq17l"
-path="res://.godot/imported/shelf-end.glb-3024460040a94026364e83effc14a8e9.scn"
+path="res://.godot/imported/shelf-end.glb-3e4523646bafab4fb0d9cea8c61dd7f9.scn"
 
 [deps]
 
-source_file="res://Models/minimart/Models/GLB format/shelf-end.glb"
-dest_files=["res://.godot/imported/shelf-end.glb-3024460040a94026364e83effc14a8e9.scn"]
+source_file="res://models/minimart/Models/GLB format/shelf-end.glb"
+dest_files=["res://.godot/imported/shelf-end.glb-3e4523646bafab4fb0d9cea8c61dd7f9.scn"]
 
 [params]
 

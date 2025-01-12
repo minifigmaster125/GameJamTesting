@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://da3ucdji2wnsr"
-path="res://.godot/imported/meat-tenderizer.glb-10591a8f615e4e580654c359169fc382.scn"
+path="res://.godot/imported/meat-tenderizer.glb-1913ca6f2475c35fccd89e679d049a8f.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/meat-tenderizer.glb"
-dest_files=["res://.godot/imported/meat-tenderizer.glb-10591a8f615e4e580654c359169fc382.scn"]
+source_file="res://models/food-kit/Models/GLB format/meat-tenderizer.glb"
+dest_files=["res://.godot/imported/meat-tenderizer.glb-1913ca6f2475c35fccd89e679d049a8f.scn"]
 
 [params]
 

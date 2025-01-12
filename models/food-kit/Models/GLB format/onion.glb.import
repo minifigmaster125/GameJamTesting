@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bdm3qignyngxs"
-path="res://.godot/imported/onion.glb-c0064f5542bdcd71afe4b7d91361105a.scn"
+path="res://.godot/imported/onion.glb-9c00f17160aafed385f605d10bc298ba.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/onion.glb"
-dest_files=["res://.godot/imported/onion.glb-c0064f5542bdcd71afe4b7d91361105a.scn"]
+source_file="res://models/food-kit/Models/GLB format/onion.glb"
+dest_files=["res://.godot/imported/onion.glb-9c00f17160aafed385f605d10bc298ba.scn"]
 
 [params]
 

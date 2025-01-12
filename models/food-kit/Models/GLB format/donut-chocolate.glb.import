@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://m6hppmafr02p"
-path="res://.godot/imported/donut-chocolate.glb-40eca9e64f4dc3db5a975e26d4f92ede.scn"
+path="res://.godot/imported/donut-chocolate.glb-def701116df4f3ed99d96bc8462e11ac.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/donut-chocolate.glb"
-dest_files=["res://.godot/imported/donut-chocolate.glb-40eca9e64f4dc3db5a975e26d4f92ede.scn"]
+source_file="res://models/food-kit/Models/GLB format/donut-chocolate.glb"
+dest_files=["res://.godot/imported/donut-chocolate.glb-def701116df4f3ed99d96bc8462e11ac.scn"]
 
 [params]
 

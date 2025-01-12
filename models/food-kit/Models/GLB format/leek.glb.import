@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bks45qkwj1ci1"
-path="res://.godot/imported/leek.glb-186ee54b6d10c129ff77cdd106e495ed.scn"
+path="res://.godot/imported/leek.glb-9104beb932dbc1886567eefe8eab9027.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/leek.glb"
-dest_files=["res://.godot/imported/leek.glb-186ee54b6d10c129ff77cdd106e495ed.scn"]
+source_file="res://models/food-kit/Models/GLB format/leek.glb"
+dest_files=["res://.godot/imported/leek.glb-9104beb932dbc1886567eefe8eab9027.scn"]
 
 [params]
 

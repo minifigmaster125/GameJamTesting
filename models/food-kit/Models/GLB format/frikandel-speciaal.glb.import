@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://t2jxe01u1unj"
-path="res://.godot/imported/frikandel-speciaal.glb-c8295be5636f3939279b789d42e3ea78.scn"
+path="res://.godot/imported/frikandel-speciaal.glb-bb938b648f48fbf3a16ceeeda8624601.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/frikandel-speciaal.glb"
-dest_files=["res://.godot/imported/frikandel-speciaal.glb-c8295be5636f3939279b789d42e3ea78.scn"]
+source_file="res://models/food-kit/Models/GLB format/frikandel-speciaal.glb"
+dest_files=["res://.godot/imported/frikandel-speciaal.glb-bb938b648f48fbf3a16ceeeda8624601.scn"]
 
 [params]
 

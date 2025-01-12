@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://brl45ds4u2ddg"
-path="res://.godot/imported/knife-block.glb-ddd673e855e129821026d3d13491dbce.scn"
+path="res://.godot/imported/knife-block.glb-3487de3d58ed81bc33b09d4e189b611b.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/knife-block.glb"
-dest_files=["res://.godot/imported/knife-block.glb-ddd673e855e129821026d3d13491dbce.scn"]
+source_file="res://models/food-kit/Models/GLB format/knife-block.glb"
+dest_files=["res://.godot/imported/knife-block.glb-3487de3d58ed81bc33b09d4e189b611b.scn"]
 
 [params]
 

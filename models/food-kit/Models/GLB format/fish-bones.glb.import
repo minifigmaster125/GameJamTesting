@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ca7i43xxxvxon"
-path="res://.godot/imported/fish-bones.glb-103db7cf250d6aed56d02686ee8cd4c8.scn"
+path="res://.godot/imported/fish-bones.glb-61ca3f6439b2eedae369f26205c05102.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/fish-bones.glb"
-dest_files=["res://.godot/imported/fish-bones.glb-103db7cf250d6aed56d02686ee8cd4c8.scn"]
+source_file="res://models/food-kit/Models/GLB format/fish-bones.glb"
+dest_files=["res://.godot/imported/fish-bones.glb-61ca3f6439b2eedae369f26205c05102.scn"]
 
 [params]
 

@@ -26,9 +26,9 @@ public partial class AssetSpawner : Node3D
 
 
         //auto generate demo level
-        // SpawnByDimensions("floor_tile.tscn", new Vector3(0, -.1f, 0), new Vector3(50, .1f, 50), new Vector3(0f, 0f, 0f));
-        // SpawnShelves();
-        
+        SpawnByDimensions("floor_tile.tscn", new Vector3(0, -.1f, 0), new Vector3(50, .1f, 50), new Vector3(0f, 0f, 0f));
+        SpawnShelves();
+
         // SpawnByDimensions("floor_tile.tscn", new Vector3(0, -.1f, 0), new Vector3(50, .1f, 50), new Vector3(0f, 0f, 0f));
         // SpawnShelves();
     }

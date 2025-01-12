@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://uf3iymqlm5gl"
-path="res://.godot/imported/whole-ham.glb-069f019d0eddcb746963e8afb17d122c.scn"
+path="res://.godot/imported/whole-ham.glb-30ebffa6bb9d61ad39231e3b170a6529.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/whole-ham.glb"
-dest_files=["res://.godot/imported/whole-ham.glb-069f019d0eddcb746963e8afb17d122c.scn"]
+source_file="res://models/food-kit/Models/GLB format/whole-ham.glb"
+dest_files=["res://.godot/imported/whole-ham.glb-30ebffa6bb9d61ad39231e3b170a6529.scn"]
 
 [params]
 

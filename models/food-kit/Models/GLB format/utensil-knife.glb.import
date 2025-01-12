@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://pnjrtjs7u83e"
-path="res://.godot/imported/utensil-knife.glb-1f9809d44b6126804a4f8652a8ac0bbb.scn"
+path="res://.godot/imported/utensil-knife.glb-8c8a5265ce0a45161b9f55454d87dac3.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/utensil-knife.glb"
-dest_files=["res://.godot/imported/utensil-knife.glb-1f9809d44b6126804a4f8652a8ac0bbb.scn"]
+source_file="res://models/food-kit/Models/GLB format/utensil-knife.glb"
+dest_files=["res://.godot/imported/utensil-knife.glb-8c8a5265ce0a45161b9f55454d87dac3.scn"]
 
 [params]
 
