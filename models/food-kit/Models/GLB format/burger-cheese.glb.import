@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dfewjbs7dhvuf"
-path="res://.godot/imported/burger-cheese.glb-0c5ed0817243dfd43036fe1fb341e023.scn"
+path="res://.godot/imported/burger-cheese.glb-a6b51c0b645312237ee164a51b9e379c.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/burger-cheese.glb"
-dest_files=["res://.godot/imported/burger-cheese.glb-0c5ed0817243dfd43036fe1fb341e023.scn"]
+source_file="res://models/food-kit/Models/GLB format/burger-cheese.glb"
+dest_files=["res://.godot/imported/burger-cheese.glb-a6b51c0b645312237ee164a51b9e379c.scn"]
 
 [params]
 

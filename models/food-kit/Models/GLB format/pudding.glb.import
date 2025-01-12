@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dp5ic6kfckfqm"
-path="res://.godot/imported/pudding.glb-de2a90d164281664444cb04d179e75a9.scn"
+path="res://.godot/imported/pudding.glb-98c74f0df5fec50e8902c2a6af6cc388.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/pudding.glb"
-dest_files=["res://.godot/imported/pudding.glb-de2a90d164281664444cb04d179e75a9.scn"]
+source_file="res://models/food-kit/Models/GLB format/pudding.glb"
+dest_files=["res://.godot/imported/pudding.glb-98c74f0df5fec50e8902c2a6af6cc388.scn"]
 
 [params]
 

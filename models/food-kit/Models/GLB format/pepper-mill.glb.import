@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://wo871514kx55"
-path="res://.godot/imported/pepper-mill.glb-0774e14d93fc342809e432f56855842f.scn"
+path="res://.godot/imported/pepper-mill.glb-263483af0e9b175b10fdaf1a3c065d78.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/pepper-mill.glb"
-dest_files=["res://.godot/imported/pepper-mill.glb-0774e14d93fc342809e432f56855842f.scn"]
+source_file="res://models/food-kit/Models/GLB format/pepper-mill.glb"
+dest_files=["res://.godot/imported/pepper-mill.glb-263483af0e9b175b10fdaf1a3c065d78.scn"]
 
 [params]
 

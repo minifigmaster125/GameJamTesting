@@ -131,7 +131,7 @@ public partial class AssetSpawner : Node3D
         return transform;
     }
 
-    public List<Vector3> SpawnByDimensions(String assetPath, Vector3 position, Vector3 dimensions, Vector3 offset, float rotationAboutAzimuthDegrees = 0, EditorInterface editorInterface = null)
+    public List<Vector3> SpawnByDimensions(String assetPath, Vector3 position, Vector3 dimensions, Vector3 offset, float rotationAboutAzimuthDegrees = 0)
     {
         assetPath = "res://Assets/" + assetPath;
         PackedScene packedScene = (PackedScene)ResourceLoader.Load(assetPath);
@@ -164,18 +164,18 @@ public partial class AssetSpawner : Node3D
                     sceneInstance.Position = spawnPosition;
                     Transform3D t = sceneInstance.Transform;
                     sceneInstance.Transform = RotateAboutAzimuth(rotationAboutAzimuthDegrees, sceneInstance.Transform);
-                    if (editorInterface == null)
-                    {
-                        GetTree().CurrentScene.AddChild(sceneInstance);
-                    }
-                    else
-                    {
-                        // Now you have access to the editor interface within this method
+                    // if (editorInterface == null)
+                    // {
+                    //     GetTree().CurrentScene.AddChild(sceneInstance);
+                    // }
+                    // else
+                    // {
+                    //     // Now you have access to the editor interface within this method
 
-                        var sceneRoot = editorInterface.GetEditedSceneRoot();
-                        sceneRoot.GetNode<Node3D>("Node3D").AddChild(sceneInstance);
-                        // sceneRoot.AddChild(sceneInstance);
-                    }
+                    //     var sceneRoot = editorInterface.GetEditedSceneRoot();
+                    //     sceneRoot.GetNode<Node3D>("Node3D").AddChild(sceneInstance);
+                    //     // sceneRoot.AddChild(sceneInstance);
+                    // }
 
                     spawnPositions.Add(spawnPosition);
                 }

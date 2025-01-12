@@ -11,7 +11,7 @@ public partial class GameOverUi : Control
     private Button _quitButton;
 
     [Export]
-    private PackedScene _mainScene;
+    private string _mainScene;
 
     public override void _Ready()
     {
@@ -42,7 +42,7 @@ public partial class GameOverUi : Control
     private void OnRestartButtonPressed()
     {
         GetTree().Paused = false;
-        GetTree().ChangeSceneToFile("res://Scenes/Main_suchaaver.tscn");
+        GetTree().ChangeSceneToFile($"res://Scenes/{_mainScene}.tscn");
     }
 
     private void OnQuitButtonPressed()

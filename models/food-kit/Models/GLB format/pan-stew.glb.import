@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cthaqh8d1rug6"
-path="res://.godot/imported/pan-stew.glb-096eb8b6d4dcc97d260f9ba1d6ba111a.scn"
+path="res://.godot/imported/pan-stew.glb-9f02a098876b6bd1606cccff1581232b.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/pan-stew.glb"
-dest_files=["res://.godot/imported/pan-stew.glb-096eb8b6d4dcc97d260f9ba1d6ba111a.scn"]
+source_file="res://models/food-kit/Models/GLB format/pan-stew.glb"
+dest_files=["res://.godot/imported/pan-stew.glb-9f02a098876b6bd1606cccff1581232b.scn"]
 
 [params]
 

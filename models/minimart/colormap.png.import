@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqrjo8dkwh4gi"
-path="res://.godot/imported/colormap.png-4b737c6ab16463826a3d121f9636fb86.ctex"
+path="res://.godot/imported/colormap.png-f08d16e53c119164aba4e94ad37b6c22.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Models/minimart/colormap.png"
-dest_files=["res://.godot/imported/colormap.png-4b737c6ab16463826a3d121f9636fb86.ctex"]
+source_file="res://models/minimart/colormap.png"
+dest_files=["res://.godot/imported/colormap.png-f08d16e53c119164aba4e94ad37b6c22.ctex"]
 
 [params]
 

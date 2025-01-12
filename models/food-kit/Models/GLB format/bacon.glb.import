@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ck5jnee6nyo32"
-path="res://.godot/imported/bacon.glb-a8543bf7badc5a2ac7c6d1989447ff2e.scn"
+path="res://.godot/imported/bacon.glb-38ec0eac81be59a961a972a0961efeac.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/bacon.glb"
-dest_files=["res://.godot/imported/bacon.glb-a8543bf7badc5a2ac7c6d1989447ff2e.scn"]
+source_file="res://models/food-kit/Models/GLB format/bacon.glb"
+dest_files=["res://.godot/imported/bacon.glb-38ec0eac81be59a961a972a0961efeac.scn"]
 
 [params]
 

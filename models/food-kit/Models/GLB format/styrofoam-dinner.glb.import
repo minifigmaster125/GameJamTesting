@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://brmlpse8rqt31"
-path="res://.godot/imported/styrofoam-dinner.glb-6513e7164ea5cd4bf9e16379a2df1fb2.scn"
+path="res://.godot/imported/styrofoam-dinner.glb-6e18c0b9f8ca13c55707675daf5637f8.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/styrofoam-dinner.glb"
-dest_files=["res://.godot/imported/styrofoam-dinner.glb-6513e7164ea5cd4bf9e16379a2df1fb2.scn"]
+source_file="res://models/food-kit/Models/GLB format/styrofoam-dinner.glb"
+dest_files=["res://.godot/imported/styrofoam-dinner.glb-6e18c0b9f8ca13c55707675daf5637f8.scn"]
 
 [params]
 

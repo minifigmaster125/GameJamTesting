@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://n3jfxleq4ilm"
-path="res://.godot/imported/utensil-spoon.glb-caf6acc1db3910330a65d3b3ecca0371.scn"
+path="res://.godot/imported/utensil-spoon.glb-2ff7c629587e3a417b3cc353890dbeeb.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/utensil-spoon.glb"
-dest_files=["res://.godot/imported/utensil-spoon.glb-caf6acc1db3910330a65d3b3ecca0371.scn"]
+source_file="res://models/food-kit/Models/GLB format/utensil-spoon.glb"
+dest_files=["res://.godot/imported/utensil-spoon.glb-2ff7c629587e3a417b3cc353890dbeeb.scn"]
 
 [params]
 

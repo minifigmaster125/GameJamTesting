@@ -59,7 +59,7 @@ layout_mode = 2
 size_flags_vertical = 4
 theme_override_font_sizes/normal_font_size = 24
 bbcode_enabled = true
-text = "[center]Don't Bust your Nuts![/center]"
+text = "[center]Rodent Robbery![/center]"
 fit_content = true
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="PanelContainer/MarginContainer/VBoxContainer"]

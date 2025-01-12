@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c7yl3x44pqmo"
-path="res://.godot/imported/burger-double.glb-ef0398a6410a2a6a9b5e405fae36f33e.scn"
+path="res://.godot/imported/burger-double.glb-31e403ad6a0eccc2932269c497ab1516.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/burger-double.glb"
-dest_files=["res://.godot/imported/burger-double.glb-ef0398a6410a2a6a9b5e405fae36f33e.scn"]
+source_file="res://models/food-kit/Models/GLB format/burger-double.glb"
+dest_files=["res://.godot/imported/burger-double.glb-31e403ad6a0eccc2932269c497ab1516.scn"]
 
 [params]
 

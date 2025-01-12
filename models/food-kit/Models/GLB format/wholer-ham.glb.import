@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c42b0h588ivi8"
-path="res://.godot/imported/wholer-ham.glb-cc4f53fd0f33b8e1e90d6379837500f3.scn"
+path="res://.godot/imported/wholer-ham.glb-c05eba4bb84c4d1eedee0fa48e699571.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/wholer-ham.glb"
-dest_files=["res://.godot/imported/wholer-ham.glb-cc4f53fd0f33b8e1e90d6379837500f3.scn"]
+source_file="res://models/food-kit/Models/GLB format/wholer-ham.glb"
+dest_files=["res://.godot/imported/wholer-ham.glb-c05eba4bb84c4d1eedee0fa48e699571.scn"]
 
 [params]
 

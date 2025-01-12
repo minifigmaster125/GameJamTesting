@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://5rt2tpjtgxn6"
-path="res://.godot/imported/sausage-half.glb-b5124bed6b5aea933575dfd00f9b7913.scn"
+path="res://.godot/imported/sausage-half.glb-fe4a7cd0b6135acccc10c9504b3ea18a.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/sausage-half.glb"
-dest_files=["res://.godot/imported/sausage-half.glb-b5124bed6b5aea933575dfd00f9b7913.scn"]
+source_file="res://models/food-kit/Models/GLB format/sausage-half.glb"
+dest_files=["res://.godot/imported/sausage-half.glb-fe4a7cd0b6135acccc10c9504b3ea18a.scn"]
 
 [params]
 

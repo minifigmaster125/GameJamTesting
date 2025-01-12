@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dmm2iusptssn6"
-path="res://.godot/imported/croissant.glb-641bf5ecbb455e052e59e27f56042c6f.scn"
+path="res://.godot/imported/croissant.glb-eee9e46f92ff37e8cc26643dfaa32274.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/croissant.glb"
-dest_files=["res://.godot/imported/croissant.glb-641bf5ecbb455e052e59e27f56042c6f.scn"]
+source_file="res://models/food-kit/Models/GLB format/croissant.glb"
+dest_files=["res://.godot/imported/croissant.glb-eee9e46f92ff37e8cc26643dfaa32274.scn"]
 
 [params]
 
