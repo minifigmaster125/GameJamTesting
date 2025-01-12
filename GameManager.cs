@@ -69,7 +69,7 @@ public partial class GameManager : Node3D
     public override void _Process(double delta)
     {
 
-        if (_timer.TimeLeft < 7 && _timer.TimeLeft > 5)
+        if (_timer.TimeLeft < 10 && _timer.TimeLeft > 9)
         {
             _alert.Visible = true;
         }

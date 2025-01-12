@@ -4587,7 +4587,7 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 9.1075
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 8.7075, 1.03909, 2.54105)
 
 [node name="HatCowboy" parent="." instance=ExtResource("20_vnv1j")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 9.878, 3.7998e-07, 11.0585)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.27711, 3.7998e-07, 4.0964)
 
 [node name="KetchumHat" parent="." instance=ExtResource("26_gb4vt")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -13.9604, 3.7998e-07, -14.297)
