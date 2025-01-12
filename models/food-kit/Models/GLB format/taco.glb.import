@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://06cgt4pwfygy"
-path="res://.godot/imported/taco.glb-eb8d7ebf69e063ecc143b56ede41924a.scn"
+path="res://.godot/imported/taco.glb-a236decbe7d9918b16496339c55b82e3.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/taco.glb"
-dest_files=["res://.godot/imported/taco.glb-eb8d7ebf69e063ecc143b56ede41924a.scn"]
+source_file="res://Models/food-kit/Models/GLB format/taco.glb"
+dest_files=["res://.godot/imported/taco.glb-a236decbe7d9918b16496339c55b82e3.scn"]
 
 [params]
 

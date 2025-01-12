@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ci4uvgviv68dg"
-path="res://.godot/imported/ginger-bread.glb-a57b7586b879ff6bd0d88519b4c2b3b5.scn"
+path="res://.godot/imported/ginger-bread.glb-ea0b745d410e12f377446b0a6082df0e.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/ginger-bread.glb"
-dest_files=["res://.godot/imported/ginger-bread.glb-a57b7586b879ff6bd0d88519b4c2b3b5.scn"]
+source_file="res://Models/food-kit/Models/GLB format/ginger-bread.glb"
+dest_files=["res://.godot/imported/ginger-bread.glb-ea0b745d410e12f377446b0a6082df0e.scn"]
 
 [params]
 

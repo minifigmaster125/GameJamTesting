@@ -17,5 +17,5 @@ transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -0.2, 0)
 shape = SubResource("CylinderShape3D_oib1y")
 
 [node name="ScoreableComponent" parent="." instance=ExtResource("2_bw2po")]
-ScoreValue = 20
+ScoreValue = 16
 ScoreSound = ExtResource("3_ecjpv")

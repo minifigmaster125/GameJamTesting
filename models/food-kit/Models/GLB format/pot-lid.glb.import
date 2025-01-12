@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ba7pfy0tutyxk"
-path="res://.godot/imported/pot-lid.glb-c6466ca6f42bca0dab0ddd9dc1e66ce3.scn"
+path="res://.godot/imported/pot-lid.glb-e908550116df0121c5ac552a1544baff.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/pot-lid.glb"
-dest_files=["res://.godot/imported/pot-lid.glb-c6466ca6f42bca0dab0ddd9dc1e66ce3.scn"]
+source_file="res://Models/food-kit/Models/GLB format/pot-lid.glb"
+dest_files=["res://.godot/imported/pot-lid.glb-e908550116df0121c5ac552a1544baff.scn"]
 
 [params]
 

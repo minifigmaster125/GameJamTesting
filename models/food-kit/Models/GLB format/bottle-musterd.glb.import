@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ritrsn223bv2"
-path="res://.godot/imported/bottle-musterd.glb-bf73dc5b354b7e124955c7eaef3e0132.scn"
+path="res://.godot/imported/bottle-musterd.glb-5dda6fc0994f8fa89ea7165e373b5af6.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/bottle-musterd.glb"
-dest_files=["res://.godot/imported/bottle-musterd.glb-bf73dc5b354b7e124955c7eaef3e0132.scn"]
+source_file="res://Models/food-kit/Models/GLB format/bottle-musterd.glb"
+dest_files=["res://.godot/imported/bottle-musterd.glb-5dda6fc0994f8fa89ea7165e373b5af6.scn"]
 
 [params]
 

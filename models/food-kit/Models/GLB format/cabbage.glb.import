@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cvyoeu2qeqgfy"
-path="res://.godot/imported/cabbage.glb-eaa51879ef5971224507df808a976f17.scn"
+path="res://.godot/imported/cabbage.glb-7859b505e2ed71c10b058abf7214442b.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/cabbage.glb"
-dest_files=["res://.godot/imported/cabbage.glb-eaa51879ef5971224507df808a976f17.scn"]
+source_file="res://Models/food-kit/Models/GLB format/cabbage.glb"
+dest_files=["res://.godot/imported/cabbage.glb-7859b505e2ed71c10b058abf7214442b.scn"]
 
 [params]
 

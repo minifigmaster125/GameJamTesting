@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://t50vyh0hsqow"
-path="res://.godot/imported/cup-saucer.glb-9e41188c90d576f187cbeec72437029b.scn"
+path="res://.godot/imported/cup-saucer.glb-01419d5041aa17ce25d9063af3b4d68c.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/cup-saucer.glb"
-dest_files=["res://.godot/imported/cup-saucer.glb-9e41188c90d576f187cbeec72437029b.scn"]
+source_file="res://Models/food-kit/Models/GLB format/cup-saucer.glb"
+dest_files=["res://.godot/imported/cup-saucer.glb-01419d5041aa17ce25d9063af3b4d68c.scn"]
 
 [params]
 

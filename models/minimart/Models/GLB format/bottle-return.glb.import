@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://va6sdnwk7j84"
-path="res://.godot/imported/bottle-return.glb-4d3ffb24db465250954ef2382167f91b.scn"
+path="res://.godot/imported/bottle-return.glb-7c6494e1278daf55cf2ed27b41066a5b.scn"
 
 [deps]
 
-source_file="res://models/minimart/Models/GLB format/bottle-return.glb"
-dest_files=["res://.godot/imported/bottle-return.glb-4d3ffb24db465250954ef2382167f91b.scn"]
+source_file="res://Models/minimart/Models/GLB format/bottle-return.glb"
+dest_files=["res://.godot/imported/bottle-return.glb-7c6494e1278daf55cf2ed27b41066a5b.scn"]
 
 [params]
 

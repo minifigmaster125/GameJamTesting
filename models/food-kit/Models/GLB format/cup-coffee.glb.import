@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bdjhte5pakmea"
-path="res://.godot/imported/cup-coffee.glb-4a0997a48cd5e34e6cb4628034f3c986.scn"
+path="res://.godot/imported/cup-coffee.glb-1f27012e97283ae3e2f96326fe6329fe.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/cup-coffee.glb"
-dest_files=["res://.godot/imported/cup-coffee.glb-4a0997a48cd5e34e6cb4628034f3c986.scn"]
+source_file="res://Models/food-kit/Models/GLB format/cup-coffee.glb"
+dest_files=["res://.godot/imported/cup-coffee.glb-1f27012e97283ae3e2f96326fe6329fe.scn"]
 
 [params]
 

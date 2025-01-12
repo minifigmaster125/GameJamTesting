@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dtlotux8v5ofy"
-path="res://.godot/imported/ginger-bread-cutter.glb-763d317b037140ea6da31fdf00cebe25.scn"
+path="res://.godot/imported/ginger-bread-cutter.glb-e676df87352dc4c3b0f731b37da172cb.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/ginger-bread-cutter.glb"
-dest_files=["res://.godot/imported/ginger-bread-cutter.glb-763d317b037140ea6da31fdf00cebe25.scn"]
+source_file="res://Models/food-kit/Models/GLB format/ginger-bread-cutter.glb"
+dest_files=["res://.godot/imported/ginger-bread-cutter.glb-e676df87352dc4c3b0f731b37da172cb.scn"]
 
 [params]
 

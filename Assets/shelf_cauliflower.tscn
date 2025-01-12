@@ -13,7 +13,7 @@ height = 0.7
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, -0.3, 0)
 
 [node name="ScoreableComponent" parent="." instance=ExtResource("2_gbgc1")]
-ScoreValue = 20
+ScoreValue = 21
 ScoreSound = ExtResource("3_qtbao")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]

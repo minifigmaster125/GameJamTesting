@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://ch11rcb4p143e"
-path="res://.godot/imported/meat-ribs.glb-f83a99781c37aa5c86b77a12dd59adf9.scn"
+path="res://.godot/imported/meat-ribs.glb-eb70987f7b524e2365adda7b1e643694.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/meat-ribs.glb"
-dest_files=["res://.godot/imported/meat-ribs.glb-f83a99781c37aa5c86b77a12dd59adf9.scn"]
+source_file="res://Models/food-kit/Models/GLB format/meat-ribs.glb"
+dest_files=["res://.godot/imported/meat-ribs.glb-eb70987f7b524e2365adda7b1e643694.scn"]
 
 [params]
 

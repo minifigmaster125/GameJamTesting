@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cy1ntxexdborb"
-path="res://.godot/imported/maki-salmon.glb-dff78f038c827bf5d4e5f2c03dffde20.scn"
+path="res://.godot/imported/maki-salmon.glb-c1118d4cb015036e8c2fb28b93ed571d.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/maki-salmon.glb"
-dest_files=["res://.godot/imported/maki-salmon.glb-dff78f038c827bf5d4e5f2c03dffde20.scn"]
+source_file="res://Models/food-kit/Models/GLB format/maki-salmon.glb"
+dest_files=["res://.godot/imported/maki-salmon.glb-c1118d4cb015036e8c2fb28b93ed571d.scn"]
 
 [params]
 

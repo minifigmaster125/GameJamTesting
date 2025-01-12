@@ -13,7 +13,7 @@ size = Vector3(1, 0.3, 0.6)
 transform = Transform3D(-8.74228e-08, 0, 2, -1.81262, 0.845236, -7.92319e-08, -0.845236, -1.81262, -3.69465e-08, 0, -0.1, 0.2)
 
 [node name="ScoreableComponent" parent="." instance=ExtResource("2_esw33")]
-ScoreValue = 20
+ScoreValue = 28
 ScoreSound = ExtResource("3_cp8t5")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
