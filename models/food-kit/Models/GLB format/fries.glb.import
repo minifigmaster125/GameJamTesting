@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bnu33764i3y6g"
-path="res://.godot/imported/fries.glb-1182336e4376850f51429ac775e2081b.scn"
+path="res://.godot/imported/fries.glb-a0d765d656888b45e33e43c7e7adf101.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/fries.glb"
-dest_files=["res://.godot/imported/fries.glb-1182336e4376850f51429ac775e2081b.scn"]
+source_file="res://Models/food-kit/Models/GLB format/fries.glb"
+dest_files=["res://.godot/imported/fries.glb-a0d765d656888b45e33e43c7e7adf101.scn"]
 
 [params]
 

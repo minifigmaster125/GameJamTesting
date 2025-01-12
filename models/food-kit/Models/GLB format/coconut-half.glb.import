@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://fowcgsfx4hea"
-path="res://.godot/imported/coconut-half.glb-d78f3538eaaafce6720df37910d9f47a.scn"
+path="res://.godot/imported/coconut-half.glb-5684cd00d964d9e92fe36d7410fa287e.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/coconut-half.glb"
-dest_files=["res://.godot/imported/coconut-half.glb-d78f3538eaaafce6720df37910d9f47a.scn"]
+source_file="res://Models/food-kit/Models/GLB format/coconut-half.glb"
+dest_files=["res://.godot/imported/coconut-half.glb-5684cd00d964d9e92fe36d7410fa287e.scn"]
 
 [params]
 

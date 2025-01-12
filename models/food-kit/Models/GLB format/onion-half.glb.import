@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://u4rmhc2soigp"
-path="res://.godot/imported/onion-half.glb-37016d6d8e5862ad1897a63831985f39.scn"
+path="res://.godot/imported/onion-half.glb-e7695b74696ba2bf80b08f74a46c01af.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/onion-half.glb"
-dest_files=["res://.godot/imported/onion-half.glb-37016d6d8e5862ad1897a63831985f39.scn"]
+source_file="res://Models/food-kit/Models/GLB format/onion-half.glb"
+dest_files=["res://.godot/imported/onion-half.glb-e7695b74696ba2bf80b08f74a46c01af.scn"]
 
 [params]
 

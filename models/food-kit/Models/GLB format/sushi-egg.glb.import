@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://d1iiaqv2j4tsa"
-path="res://.godot/imported/sushi-egg.glb-f125fb0c7354663d1e5a9f2be64e40b3.scn"
+path="res://.godot/imported/sushi-egg.glb-6e84d2d170f36921915232e1e4cb607f.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/sushi-egg.glb"
-dest_files=["res://.godot/imported/sushi-egg.glb-f125fb0c7354663d1e5a9f2be64e40b3.scn"]
+source_file="res://Models/food-kit/Models/GLB format/sushi-egg.glb"
+dest_files=["res://.godot/imported/sushi-egg.glb-6e84d2d170f36921915232e1e4cb607f.scn"]
 
 [params]
 

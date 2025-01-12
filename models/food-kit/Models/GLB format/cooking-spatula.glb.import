@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dx5hduaggre50"
-path="res://.godot/imported/cooking-spatula.glb-0aeda796bc1edaae86500b719164902e.scn"
+path="res://.godot/imported/cooking-spatula.glb-9de97ca8de15c43b4b62a633e6727445.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/cooking-spatula.glb"
-dest_files=["res://.godot/imported/cooking-spatula.glb-0aeda796bc1edaae86500b719164902e.scn"]
+source_file="res://Models/food-kit/Models/GLB format/cooking-spatula.glb"
+dest_files=["res://.godot/imported/cooking-spatula.glb-9de97ca8de15c43b4b62a633e6727445.scn"]
 
 [params]
 

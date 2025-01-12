@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://r8nf0ns8k5tt"
-path="res://.godot/imported/bottle-ketchup.glb-7e56cf830e781e34f29ec96b78d90816.scn"
+path="res://.godot/imported/bottle-ketchup.glb-4cf507ab86e17701d7bb4bf19def1707.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/bottle-ketchup.glb"
-dest_files=["res://.godot/imported/bottle-ketchup.glb-7e56cf830e781e34f29ec96b78d90816.scn"]
+source_file="res://Models/food-kit/Models/GLB format/bottle-ketchup.glb"
+dest_files=["res://.godot/imported/bottle-ketchup.glb-4cf507ab86e17701d7bb4bf19def1707.scn"]
 
 [params]
 

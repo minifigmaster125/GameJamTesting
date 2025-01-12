@@ -6,7 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://dleri717gnoh0" path="res://Assets/shelf_croissant.tscn" id="8_dk83t"]
 [ext_resource type="PackedScene" uid="uid://ds2fqvil8xfa0" path="res://Assets/shelf_loaf.tscn" id="9_tulxw"]
 [ext_resource type="PackedScene" uid="uid://dqb20annynatm" path="res://Assets/shelf_large.tscn" id="10_vhhuf"]
-[ext_resource type="PackedScene" path="res://Assets/Carton.tscn" id="11_hw0fp"]
+[ext_resource type="PackedScene" uid="uid://b0e4dfq6nguq8" path="res://Assets/Carton.tscn" id="11_hw0fp"]
 [ext_resource type="PackedScene" uid="uid://dhs2k8q65tp01" path="res://Assets/shelf_cheese.tscn" id="12_fcvkt"]
 [ext_resource type="PackedScene" uid="uid://wl4s8t44w1l3" path="res://Assets/shelf_cauliflower.tscn" id="13_a3u8m"]
 [ext_resource type="PackedScene" uid="uid://148bsdo5logm" path="res://Assets/shelf_watermelon.tscn" id="14_5sghk"]
@@ -15,16 +15,16 @@
 [ext_resource type="PackedScene" uid="uid://niskvq8ahjg1" path="res://Assets/shelf_sandwhich.tscn" id="17_njvcg"]
 [ext_resource type="PackedScene" uid="uid://d4b5vfgb5f23w" path="res://Assets/shelf_pumpkin.tscn" id="18_06c4p"]
 [ext_resource type="PackedScene" uid="uid://ccth6kwl46uq7" path="res://Assets/shelf_soda.tscn" id="19_54ac3"]
-[ext_resource type="PackedScene" uid="uid://dufvu1kps27hu" path="res://models/Hats/hat_cowboy.tscn" id="20_vnv1j"]
-[ext_resource type="PackedScene" path="res://Assets/HFreezer.tscn" id="21_0hc46"]
+[ext_resource type="PackedScene" uid="uid://dufvu1kps27hu" path="res://Models/Hats/hat_cowboy.tscn" id="20_vnv1j"]
+[ext_resource type="PackedScene" uid="uid://buliwdptjfmcj" path="res://Assets/HFreezer.tscn" id="21_0hc46"]
 [ext_resource type="PackedScene" uid="uid://c4wycyyrw8fii" path="res://Assets/shelf_carton.tscn" id="22_8ddal"]
 [ext_resource type="PackedScene" uid="uid://cmvkplvxktkes" path="res://Assets/shelf_soju.tscn" id="22_ijfh7"]
 [ext_resource type="PackedScene" uid="uid://bn874blc24s0f" path="res://Assets/shelf_pinot.tscn" id="23_htdvw"]
 [ext_resource type="PackedScene" uid="uid://i738eha1ybiv" path="res://Assets/shelf_ham.tscn" id="23_wcus1"]
 [ext_resource type="PackedScene" uid="uid://befmigha3c5kp" path="res://Assets/wall.tscn" id="24_26emn"]
 [ext_resource type="PackedScene" uid="uid://c3so4r6ljob4" path="res://Assets/wall_window.tscn" id="25_2ulmj"]
-[ext_resource type="PackedScene" uid="uid://dttjdr572of15" path="res://models/Hats/ketchum_hat.tscn" id="26_gb4vt"]
-[ext_resource type="PackedScene" uid="uid://b6ig6svdc505q" path="res://models/Hats/top_hat.tscn" id="27_yxug3"]
+[ext_resource type="PackedScene" path="res://models/Hats/ketchum_hat.tscn" id="26_gb4vt"]
+[ext_resource type="PackedScene" path="res://models/Hats/top_hat.tscn" id="27_yxug3"]
 
 [node name="Level1" type="Node3D"]
 
@@ -4674,9 +4674,6 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -9.100
 
 [node name="wall_window_tscn30794009633162" parent="." instance=ExtResource("25_2ulmj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.6, 5.6, 14.85)
-
-[node name="wall_window_tscn30794110324708" parent="." instance=ExtResource("25_2ulmj")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.399997, -0.400003, 14.85)
 
 [node name="wall_window_tscn30794210988030" parent="." instance=ExtResource("25_2ulmj")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.399997, 5.6, 14.85)

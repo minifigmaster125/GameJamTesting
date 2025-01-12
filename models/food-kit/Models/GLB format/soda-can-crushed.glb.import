@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://nfbbvp1ynmur"
-path="res://.godot/imported/soda-can-crushed.glb-1193ac66d12d65b937fd6bdb6875aa38.scn"
+path="res://.godot/imported/soda-can-crushed.glb-4ca8373dc4c8ddb6912242e14f147f8c.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/soda-can-crushed.glb"
-dest_files=["res://.godot/imported/soda-can-crushed.glb-1193ac66d12d65b937fd6bdb6875aa38.scn"]
+source_file="res://Models/food-kit/Models/GLB format/soda-can-crushed.glb"
+dest_files=["res://.godot/imported/soda-can-crushed.glb-4ca8373dc4c8ddb6912242e14f147f8c.scn"]
 
 [params]
 

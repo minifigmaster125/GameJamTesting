@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://hqnik6cvgxfe"
-path="res://.godot/imported/cheese-cut.glb-046be1f0987de273f1150e46b7bfc267.scn"
+path="res://.godot/imported/cheese-cut.glb-ef9d0f5ebf98a63a5f2f6f837abe6c46.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/cheese-cut.glb"
-dest_files=["res://.godot/imported/cheese-cut.glb-046be1f0987de273f1150e46b7bfc267.scn"]
+source_file="res://Models/food-kit/Models/GLB format/cheese-cut.glb"
+dest_files=["res://.godot/imported/cheese-cut.glb-ef9d0f5ebf98a63a5f2f6f837abe6c46.scn"]
 
 [params]
 

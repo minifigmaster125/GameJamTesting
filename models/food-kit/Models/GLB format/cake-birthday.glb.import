@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c1u2q1unent7l"
-path="res://.godot/imported/cake-birthday.glb-704f678441f6226a1daf6bcc2fceacfe.scn"
+path="res://.godot/imported/cake-birthday.glb-3d10352a5a499ea3783b9aa13c2a069c.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/cake-birthday.glb"
-dest_files=["res://.godot/imported/cake-birthday.glb-704f678441f6226a1daf6bcc2fceacfe.scn"]
+source_file="res://Models/food-kit/Models/GLB format/cake-birthday.glb"
+dest_files=["res://.godot/imported/cake-birthday.glb-3d10352a5a499ea3783b9aa13c2a069c.scn"]
 
 [params]
 

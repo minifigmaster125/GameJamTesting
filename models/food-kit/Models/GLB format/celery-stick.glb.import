@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://be35rqt42xose"
-path="res://.godot/imported/celery-stick.glb-4ff18a5dc5ededafdd1faa22cedf37ee.scn"
+path="res://.godot/imported/celery-stick.glb-1cdec8e3bfa016ba6b9ade55255ae7ce.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/celery-stick.glb"
-dest_files=["res://.godot/imported/celery-stick.glb-4ff18a5dc5ededafdd1faa22cedf37ee.scn"]
+source_file="res://Models/food-kit/Models/GLB format/celery-stick.glb"
+dest_files=["res://.godot/imported/celery-stick.glb-1cdec8e3bfa016ba6b9ade55255ae7ce.scn"]
 
 [params]
 

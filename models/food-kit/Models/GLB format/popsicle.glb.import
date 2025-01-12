@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cd7scq2hpckbn"
-path="res://.godot/imported/popsicle.glb-1cafec7efb00fa23b11130cfe2eb9dca.scn"
+path="res://.godot/imported/popsicle.glb-ba62ef2adb0f2fa457ef54634f24ef79.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/popsicle.glb"
-dest_files=["res://.godot/imported/popsicle.glb-1cafec7efb00fa23b11130cfe2eb9dca.scn"]
+source_file="res://Models/food-kit/Models/GLB format/popsicle.glb"
+dest_files=["res://.godot/imported/popsicle.glb-ba62ef2adb0f2fa457ef54634f24ef79.scn"]
 
 [params]
 

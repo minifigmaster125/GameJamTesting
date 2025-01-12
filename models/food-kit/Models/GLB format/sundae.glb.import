@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cvuxj7ogh0ir3"
-path="res://.godot/imported/sundae.glb-2e115fbc19ffe7a76685b227cccafd2d.scn"
+path="res://.godot/imported/sundae.glb-8829f4b3a42da9cdc61ea220eaee9c84.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/sundae.glb"
-dest_files=["res://.godot/imported/sundae.glb-2e115fbc19ffe7a76685b227cccafd2d.scn"]
+source_file="res://Models/food-kit/Models/GLB format/sundae.glb"
+dest_files=["res://.godot/imported/sundae.glb-8829f4b3a42da9cdc61ea220eaee9c84.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dui0kth5ms0ks"
-path="res://.godot/imported/mincemeat-pie.glb-24c7c08f334d8ec637574c1d3e95a08f.scn"
+path="res://.godot/imported/mincemeat-pie.glb-80211f298534a9d45cb99aecd17cfa2b.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/mincemeat-pie.glb"
-dest_files=["res://.godot/imported/mincemeat-pie.glb-24c7c08f334d8ec637574c1d3e95a08f.scn"]
+source_file="res://Models/food-kit/Models/GLB format/mincemeat-pie.glb"
+dest_files=["res://.godot/imported/mincemeat-pie.glb-80211f298534a9d45cb99aecd17cfa2b.scn"]
 
 [params]
 

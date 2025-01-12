@@ -5,7 +5,7 @@
 [ext_resource type="Script" path="res://Scripts/CameraController.cs" id="3_mhglx"]
 [ext_resource type="PackedScene" uid="uid://8n4pcv45j4bn" path="res://Assets/player_squirrel.tscn" id="4_khpal"]
 [ext_resource type="PackedScene" uid="uid://dnqqwuxtluif3" path="res://UI/main_ui.tscn" id="5_vf4ni"]
-[ext_resource type="PackedScene" uid="uid://doi3tks2a1oai" path="res://UI/game_over_ui.tscn" id="6_osota"]
+[ext_resource type="PackedScene" path="res://UI/game_over_ui.tscn" id="6_osota"]
 [ext_resource type="PackedScene" uid="uid://dw51pxvvd0npw" path="res://Scenes/Level1.tscn" id="8_0gseq"]
 [ext_resource type="PackedScene" uid="uid://b321681lkkpny" path="res://UI/game_start_ui.tscn" id="8_mbf60"]
 [ext_resource type="AudioStream" uid="uid://q7d6117ygo7x" path="res://sfx/Background8bitCanada.ogg" id="10_fuolk"]
@@ -67,7 +67,7 @@ _mainScene = "Level"
 [node name="GameStartUI" parent="GameStartOverlay" instance=ExtResource("8_mbf60")]
 
 [node name="Exit" parent="." instance=ExtResource("10_tovrl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 8)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 14)
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("10_fuolk")

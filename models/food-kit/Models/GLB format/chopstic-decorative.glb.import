@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bmw04neet8ac1"
-path="res://.godot/imported/chopstic-decorative.glb-dbb50724e9514be31a4b2002aebb02ae.scn"
+path="res://.godot/imported/chopstic-decorative.glb-28cf9c9222ebcbe012a8147958962efb.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/chopstic-decorative.glb"
-dest_files=["res://.godot/imported/chopstic-decorative.glb-dbb50724e9514be31a4b2002aebb02ae.scn"]
+source_file="res://Models/food-kit/Models/GLB format/chopstic-decorative.glb"
+dest_files=["res://.godot/imported/chopstic-decorative.glb-28cf9c9222ebcbe012a8147958962efb.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cke8u6pgwv78f"
-path="res://.godot/imported/loaf-round.glb-adf62a07c6db220aee86d73cb5eff57b.scn"
+path="res://.godot/imported/loaf-round.glb-5e09f404e312f775e377056d3f43f110.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/loaf-round.glb"
-dest_files=["res://.godot/imported/loaf-round.glb-adf62a07c6db220aee86d73cb5eff57b.scn"]
+source_file="res://Models/food-kit/Models/GLB format/loaf-round.glb"
+dest_files=["res://.godot/imported/loaf-round.glb-5e09f404e312f775e377056d3f43f110.scn"]
 
 [params]
 

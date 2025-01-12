@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c71ups177v0ks"
-path="res://.godot/imported/steamer.glb-c8e19f6e60e56496d3286f7b26f0b593.scn"
+path="res://.godot/imported/steamer.glb-294a44d24b9e550c20c22b490face736.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/steamer.glb"
-dest_files=["res://.godot/imported/steamer.glb-c8e19f6e60e56496d3286f7b26f0b593.scn"]
+source_file="res://Models/food-kit/Models/GLB format/steamer.glb"
+dest_files=["res://.godot/imported/steamer.glb-294a44d24b9e550c20c22b490face736.scn"]
 
 [params]
 

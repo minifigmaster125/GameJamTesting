@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dmcfr2kavf5vb"
-path="res://.godot/imported/frappe.glb-064cbcee5203c92430f031a60b9fff8b.scn"
+path="res://.godot/imported/frappe.glb-0f72e8540a140f12ab42739d28045b36.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/frappe.glb"
-dest_files=["res://.godot/imported/frappe.glb-064cbcee5203c92430f031a60b9fff8b.scn"]
+source_file="res://Models/food-kit/Models/GLB format/frappe.glb"
+dest_files=["res://.godot/imported/frappe.glb-0f72e8540a140f12ab42739d28045b36.scn"]
 
 [params]
 

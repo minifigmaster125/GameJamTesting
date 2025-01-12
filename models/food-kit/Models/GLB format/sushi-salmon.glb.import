@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dwuqysxwq7tl0"
-path="res://.godot/imported/sushi-salmon.glb-302eebd751927c70eb640e9163b510be.scn"
+path="res://.godot/imported/sushi-salmon.glb-7ce96e2144183e4451186f588f893a53.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/sushi-salmon.glb"
-dest_files=["res://.godot/imported/sushi-salmon.glb-302eebd751927c70eb640e9163b510be.scn"]
+source_file="res://Models/food-kit/Models/GLB format/sushi-salmon.glb"
+dest_files=["res://.godot/imported/sushi-salmon.glb-7ce96e2144183e4451186f588f893a53.scn"]
 
 [params]
 

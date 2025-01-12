@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://baodcrexgq5jw"
-path="res://.godot/imported/shaker-salt.glb-2d341b205001e7458f23278401b1fa80.scn"
+path="res://.godot/imported/shaker-salt.glb-03c34943ba5d08ebb05b9970933d67ab.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/shaker-salt.glb"
-dest_files=["res://.godot/imported/shaker-salt.glb-2d341b205001e7458f23278401b1fa80.scn"]
+source_file="res://Models/food-kit/Models/GLB format/shaker-salt.glb"
+dest_files=["res://.godot/imported/shaker-salt.glb-03c34943ba5d08ebb05b9970933d67ab.scn"]
 
 [params]
 

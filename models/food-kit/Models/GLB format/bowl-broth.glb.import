@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://baympa2qsx3fv"
-path="res://.godot/imported/bowl-broth.glb-09638cc06a87a4fe1ce010688a56d5a0.scn"
+path="res://.godot/imported/bowl-broth.glb-56b013f3d36287186a8d24d7ee4a871a.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/bowl-broth.glb"
-dest_files=["res://.godot/imported/bowl-broth.glb-09638cc06a87a4fe1ce010688a56d5a0.scn"]
+source_file="res://Models/food-kit/Models/GLB format/bowl-broth.glb"
+dest_files=["res://.godot/imported/bowl-broth.glb-56b013f3d36287186a8d24d7ee4a871a.scn"]
 
 [params]
 

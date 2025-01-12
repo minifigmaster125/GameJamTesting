@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cagq7keyge5qj"
-path="res://.godot/imported/Carton.glb-9a2f6d4d4fa3aa8a8a4d0beb050d7592.scn"
+path="res://.godot/imported/Carton.glb-2bd3b28e12b1dbb0d2940b3ff6943737.scn"
 
 [deps]
 
-source_file="res://models/Shelves/Carton.glb"
-dest_files=["res://.godot/imported/Carton.glb-9a2f6d4d4fa3aa8a8a4d0beb050d7592.scn"]
+source_file="res://Models/Shelves/Carton.glb"
+dest_files=["res://.godot/imported/Carton.glb-2bd3b28e12b1dbb0d2940b3ff6943737.scn"]
 
 [params]
 

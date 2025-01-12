@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bcxb2wv3jikoe"
-path="res://.godot/imported/wine-red.glb-ec64ffe4a5eee7bb9ddd8cc40f897cce.scn"
+path="res://.godot/imported/wine-red.glb-12caeaa561d897197c3694d0b3b256d8.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/wine-red.glb"
-dest_files=["res://.godot/imported/wine-red.glb-ec64ffe4a5eee7bb9ddd8cc40f897cce.scn"]
+source_file="res://Models/food-kit/Models/GLB format/wine-red.glb"
+dest_files=["res://.godot/imported/wine-red.glb-12caeaa561d897197c3694d0b3b256d8.scn"]
 
 [params]
 
