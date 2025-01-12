@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://niskvq8ahjg1"]
+
+[ext_resource type="PackedScene" uid="uid://dfw4n2oxcpfck" path="res://Models/food-kit/Models/GLB format/sandwich.glb" id="1_ewevs"]
+[ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://Assets/scoreable_component.tscn" id="2_em6fo"]
+[ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="3_1hvyl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_xbf40"]
+size = Vector3(0.4, 0.1, 0.4)
+
+[node name="ShelfSandwhich" type="RigidBody3D"]
+
+[node name="sandwich2" parent="." instance=ExtResource("1_ewevs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.1, 0)
+
+[node name="ScoreableComponent" parent="." instance=ExtResource("2_em6fo")]
+ScoreValue = 20
+ScoreSound = ExtResource("3_1hvyl")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_xbf40")

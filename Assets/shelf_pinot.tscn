@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://bn874blc24s0f"]
+
+[ext_resource type="PackedScene" uid="uid://bcxb2wv3jikoe" path="res://Models/food-kit/Models/GLB format/wine-red.glb" id="1_16iom"]
+[ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://Assets/scoreable_component.tscn" id="2_2si6a"]
+[ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="3_c70bi"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_jy38d"]
+height = 1.0
+radius = 0.2
+
+[node name="ShelfPinot" type="RigidBody3D"]
+
+[node name="wine-red2" parent="." instance=ExtResource("1_16iom")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, -0.5, 0)
+
+[node name="ScoreableComponent" parent="." instance=ExtResource("2_2si6a")]
+ScoreValue = 20
+ScoreSound = ExtResource("3_c70bi")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_jy38d")

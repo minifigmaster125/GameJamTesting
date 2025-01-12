@@ -1,0 +1,21 @@
+[gd_scene load_steps=5 format=3 uid="uid://ccth6kwl46uq7"]
+
+[ext_resource type="PackedScene" uid="uid://crqid3ypjd4og" path="res://Models/food-kit/Models/GLB format/soda-can.glb" id="1_2vpw6"]
+[ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://Assets/scoreable_component.tscn" id="2_3snks"]
+[ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="3_gaf8b"]
+
+[sub_resource type="CylinderShape3D" id="CylinderShape3D_rdhg4"]
+height = 0.5
+radius = 0.2
+
+[node name="ShelfSoda" type="RigidBody3D"]
+
+[node name="soda-can2" parent="." instance=ExtResource("1_2vpw6")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, -0.2, 0)
+
+[node name="ScoreableComponent" parent="." instance=ExtResource("2_3snks")]
+ScoreValue = 20
+ScoreSound = ExtResource("3_gaf8b")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("CylinderShape3D_rdhg4")

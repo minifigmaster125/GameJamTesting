@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cs1uc0rbgssv6"]
+
+[ext_resource type="PackedScene" uid="uid://cxroy2m5ihdjd" path="res://Models/food-kit/Models/GLB format/turkey.glb" id="1_tdlgx"]
+[ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://Assets/scoreable_component.tscn" id="2_xomj3"]
+[ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="3_qc450"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_70bub"]
+size = Vector3(1.1, 0.5, 1)
+
+[node name="ShelfTurkey" type="RigidBody3D"]
+
+[node name="turkey2" parent="." instance=ExtResource("1_tdlgx")]
+transform = Transform3D(1.4, 0, 0, 0, 1.4, 0, 0, 0, 1.4, 0, -0.2, 0)
+
+[node name="ScoreableComponent" parent="." instance=ExtResource("2_xomj3")]
+ScoreValue = 20
+ScoreSound = ExtResource("3_qc450")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_70bub")

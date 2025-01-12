@@ -38,8 +38,8 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
     {
         return new SpinBox
         {
-            MinValue = -100,
-            MaxValue = 100,
+            MinValue = -360,
+            MaxValue = 360,
             Step = 0.1f,
             CustomMinimumSize = new Vector2(minSize, 0)
         };
@@ -208,7 +208,7 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
             );
             GD.Print("Process Button Pressed!");
             string[] shelfContents = {assetTextInput.Text, assetTextInput1.Text, assetTextInput2.Text, assetTextInput3.Text, assetTextInput4.Text}; 
-            SpawnShelves(dimensions, (float)floatInput.Value, shelfContents);
+            SpawnShelves(position, dimensions, (float)floatInput.Value, shelfContents);
         };
         buttonContainer.AddChild(spawnShelvesButton);
 
@@ -300,7 +300,7 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
         }
     }
     private Vector3 shelfHalfDimensions = new Vector3(5.6f, 6.3f, 1.9f);
-    private void SpawnShelves(Vector3 dimensions, float rotationAboutAzimuthDegrees, string[] shelfContentAssetPaths)
+    private void SpawnShelves(Vector3 position, Vector3 dimensions, float rotationAboutAzimuthDegrees, string[] shelfContentAssetPaths)
     {
         Vector3 shelfHalfOffset = new Vector3(shelfHalfDimensions.X, 0f, 0f);
         shelfHalfOffset = DimensionsRotated(rotationAboutAzimuthDegrees, shelfHalfOffset);
@@ -309,11 +309,11 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
         Vector3 offsets = new Vector3(.1f, 0f, 8f);
         offsets = DimensionsRotated(rotationAboutAzimuthDegrees, offsets);
 
-        List<Vector3> shelfPositions1 = SpawnByDimensions("Assets/shelf_half.tscn", Vector3.Zero, dimensions, offsets, rotationAboutAzimuthDegrees);
+        List<Vector3> shelfPositions = SpawnByDimensions("shelf_half.tscn", position, dimensions, offsets, rotationAboutAzimuthDegrees);
 
-        foreach(Vector3 shelfPosition1 in shelfPositions1)
+        foreach(Vector3 shelfPosition in shelfPositions)
         {
-            SpawnShelfContents(shelfPosition1, rotationAboutAzimuthDegrees, shelfContentAssetPaths);
+            SpawnShelfContents(shelfPosition, rotationAboutAzimuthDegrees, shelfContentAssetPaths);
         }
     }
 
@@ -328,15 +328,19 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
 
         for(int row = 0; row < 5; row++)
         {
-            
+            if (shelfContentAssetPaths[row] == "")
+            {
+                continue;
+            }
             Vector3 _shelfDimensions = DimensionsRotated(rotationAboutAzimuthDegrees, baseShelfDimension);//?check rotationAboutAzimuthDegrees
-            SpawnByDimensions(shelfContentAssetPaths[row], position+new Vector3(0f, offset, 0f), baseShelfDimension, Vector3.Zero, rotationAboutAzimuthDegrees);
+            SpawnByDimensions(shelfContentAssetPaths[row], position+new Vector3(0f, offset, 0f), _shelfDimensions, Vector3.Zero, rotationAboutAzimuthDegrees);
             offset+=offsetPerRow;
         }
     }
 
     public List<Vector3> SpawnByDimensions(String assetPath, Vector3 position, Vector3 dimensions, Vector3 offset, float rotationAboutAzimuthDegrees=0)
     {
+        assetPath = "Assets/" +assetPath;
         PackedScene packedScene = (PackedScene)ResourceLoader.Load(assetPath);
 
         
@@ -388,11 +392,18 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
 
     private Vector3 DimensionsRotated(float rotationAboutAzimuthDegrees, Vector3 dimensions)//suitable approx for symmetrical??
     {
-        if(rotationAboutAzimuthDegrees % 90 == 0)
+        if(rotationAboutAzimuthDegrees % 180 == 90)
         {
             return new Vector3(dimensions.Z, dimensions.Y, dimensions.X);
         }
         return dimensions;
+        // float radius = Mathf.Sqrt(dimensions.Z*dimensions.Z+dimensions.X*dimensions.X);
+        // float theta = Mathf.Atan(dimensions.Z/dimensions.X);
+        // theta = theta + Mathf.DegToRad(rotationAboutAzimuthDegrees);
+        // float newZ = radius*Mathf.Sin(theta);
+        // float newX = radius*Mathf.Cos(theta);
+        // return new Vector3(newX, dimensions.Y, newZ);
+        
     }
 
 
