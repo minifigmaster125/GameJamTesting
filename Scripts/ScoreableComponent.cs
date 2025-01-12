@@ -11,13 +11,13 @@ public partial class ScoreableComponent : Node3D
     public bool IsMultiplier = false;
 
     [Export]
-    public MeshInstance3D Model;
+    public Node3D Model;
 
     [Export]
     public AudioStream ScoreSound { get; set; }
 
     [Signal]
-    public delegate void ScoredEventHandler(int scoreValue, bool isMultiplier, MeshInstance3D model);
+    public delegate void ScoredEventHandler(int scoreValue, bool isMultiplier, Node3D model);
 
     private Camera3D _camera;
     private PackedScene _scoreablePickupUI = GD.Load<PackedScene>("res://UI/ScoreablPickupUI.tscn");
@@ -71,6 +71,7 @@ public partial class ScoreableComponent : Node3D
         if (IsMultiplier)
         {
             uiElement.Text = $"[i]x{ScoreValue}[/i]";
+            uiElement.AddThemeFontSizeOverride("italics_font_size", 125);
         }
         else
         {

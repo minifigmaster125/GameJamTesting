@@ -20,3 +20,5 @@ shape = SubResource("CylinderShape3D_38sys")
 [node name="ScoreableComponent" parent="." instance=ExtResource("2_ddxc2")]
 ScoreValue = 20
 ScoreSound = ExtResource("3_0bnpb")
+
+[editable path="column2"]

@@ -4,7 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://c4eeqhvet6na0" path="res://Assets/shopping_cart.tscn" id="2_q0p1e"]
 [ext_resource type="PackedScene" uid="uid://dos4183hpq6e7" path="res://Assets/squirrel.tscn" id="2_ycc5r"]
 [ext_resource type="ArrayMesh" uid="uid://deu06eho4c74" path="res://meshes/dust.res" id="3_iewrg"]
-[ext_resource type="AudioStream" uid="uid://bq3xpqefgp6o7" path="res://sfx/Recording.ogg" id="4_1hh52"]
+[ext_resource type="AudioStream" uid="uid://cumwwi6cj1hue" path="res://sfx/walking.ogg" id="5_jxjst"]
 [ext_resource type="AudioStream" uid="uid://cydjn1ct3hps2" path="res://sounds/walking.ogg" id="5_p37tb"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_jutbc"]
@@ -28,8 +28,8 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, -1)
 mesh = ExtResource("3_iewrg")
 
 [node name="SoundFootsteps" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("4_1hh52")
-volume_db = 3.302
+stream = ExtResource("5_jxjst")
+volume_db = -14.032
 autoplay = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
@@ -37,3 +37,6 @@ stream = ExtResource("5_p37tb")
 
 [node name="HatLocator" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.578989, 0.612214)
+
+[node name="RayTarget" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.500131, 0.831852)

@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://dttjdr572of15"]
+
+[ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://Assets/scoreable_component.tscn" id="1_3vnfu"]
+[ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="2_byjk6"]
+[ext_resource type="PackedScene" uid="uid://c65mtfhw1ntr8" path="res://Assets/ketchum_hat_raw.tscn" id="3_4vri0"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gujwd"]
+size = Vector3(0.627924, 0.590942, 1.06674)
+
+[node name="KetchumHat" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0153954, 0.0858072, 0.114084)
+shape = SubResource("BoxShape3D_gujwd")
+
+[node name="ScoreableComponent" parent="." node_paths=PackedStringArray("Model") instance=ExtResource("1_3vnfu")]
+ScoreValue = 4
+IsMultiplier = true
+Model = NodePath("../KetchumHatRaw")
+ScoreSound = ExtResource("2_byjk6")
+
+[node name="KetchumHatRaw" parent="." instance=ExtResource("3_4vri0")]

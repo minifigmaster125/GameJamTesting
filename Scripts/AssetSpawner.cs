@@ -130,13 +130,14 @@ public partial class AssetSpawner : Node3D
 
     public List<Vector3> SpawnByDimensions(String assetPath, Vector3 position, Vector3 dimensions, Vector3 offset, float rotationAboutAzimuthDegrees = 0, EditorInterface editorInterface = null)
     {
-        assetPath = "Assets/" + assetPath;
+        assetPath = "res://Assets/" + assetPath;
         PackedScene packedScene = (PackedScene)ResourceLoader.Load(assetPath);
 
 
         List<Vector3> spawnPositions = new List<Vector3>();
         // Instance the scene
         //TypeCheck Needed before this to check castability?
+        GD.Print(assetPath);
         PhysicsBody3D sceneInstance = (PhysicsBody3D)packedScene.Instantiate();
         Vector3 colliderDimensions = FindColliderDimensions(sceneInstance);
 

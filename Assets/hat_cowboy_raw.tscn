@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://b1jnydjbftyqm"]
+
+[ext_resource type="PackedScene" uid="uid://dhs8rg1mjeumv" path="res://models/Hats/HatCowboy.glb" id="1_2o2yw"]
+
+[node name="HatCowboyRaw" type="Node3D"]
+transform = Transform3D(-8.74228e-09, 0, -0.2, 0, 0.2, 0, 0.2, 0, -8.74228e-09, 0, 0, 0)
+
+[node name="HatCowboy" parent="." instance=ExtResource("1_2o2yw")]

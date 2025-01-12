@@ -1,0 +1,22 @@
+[gd_scene load_steps=5 format=3 uid="uid://b6ig6svdc505q"]
+
+[ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://Assets/scoreable_component.tscn" id="1_18exl"]
+[ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="2_orpk6"]
+[ext_resource type="PackedScene" uid="uid://dqxxxrtqu8hpw" path="res://Assets/top_hat_raw.tscn" id="3_0ftcs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gujwd"]
+size = Vector3(0.627924, 0.590942, 1.06674)
+
+[node name="TopHat" type="RigidBody3D"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.019438, 0.0858072, 0.0266113)
+shape = SubResource("BoxShape3D_gujwd")
+
+[node name="ScoreableComponent" parent="." node_paths=PackedStringArray("Model") instance=ExtResource("1_18exl")]
+ScoreValue = 3
+IsMultiplier = true
+Model = NodePath("../TopHatRaw")
+ScoreSound = ExtResource("2_orpk6")
+
+[node name="TopHatRaw" parent="." instance=ExtResource("3_0ftcs")]

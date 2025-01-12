@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bnjqwfa5reuqd"]
 
-[ext_resource type="PackedScene" uid="uid://b6u37vhej3q3h" path="res://ShelfHalf.glb" id="1_6tnij"]
+[ext_resource type="PackedScene" uid="uid://b6u37vhej3q3h" path="res://models/Shelves/ShelfHalf.glb" id="1_6tnij"]
 [ext_resource type="Material" uid="uid://de30pvhcbc256" path="res://CameraOcclusionShader.tres" id="2_xhpjj"]
 
 [node name="ShelfHalf" instance=ExtResource("1_6tnij")]

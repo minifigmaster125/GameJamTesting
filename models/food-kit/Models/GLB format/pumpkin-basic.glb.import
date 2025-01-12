@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://drywuqmextlum"
-path="res://.godot/imported/pumpkin-basic.glb-04014fdd9d25d70f6470851ae3ccbe47.scn"
+path="res://.godot/imported/pumpkin-basic.glb-ace63b594353458ac31232e9cb889bc3.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/pumpkin-basic.glb"
-dest_files=["res://.godot/imported/pumpkin-basic.glb-04014fdd9d25d70f6470851ae3ccbe47.scn"]
+source_file="res://models/food-kit/Models/GLB format/pumpkin-basic.glb"
+dest_files=["res://.godot/imported/pumpkin-basic.glb-ace63b594353458ac31232e9cb889bc3.scn"]
 
 [params]
 

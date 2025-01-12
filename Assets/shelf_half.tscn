@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://c01g8jo6chqp5"]
+[gd_scene load_steps=7 format=3 uid="uid://c01g8jo6chqp5"]
 
+[ext_resource type="ArrayMesh" uid="uid://dr1sxx4rnjljs" path="res://models/Shelves/shelfMesh.res" id="1_18k0w"]
 [ext_resource type="PackedScene" uid="uid://bnjqwfa5reuqd" path="res://Assets/shelf_half_render.tscn" id="2_1gno5"]
-[ext_resource type="Script" path="res://Scripts/CameraOcclusionComponent.cs" id="2_5w0mm"]
+[ext_resource type="PackedScene" uid="uid://dotndx77ikci7" path="res://Assets/camera_occlusion_component.tscn" id="4_1cdwq"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5oyfw"]
 size = Vector3(5.6, 6.3, 0.3)
@@ -14,8 +15,13 @@ size = Vector3(5.6, 0.5, 1.6)
 
 [node name="ShelfHalf" type="RigidBody3D" groups=["Occludable"]]
 
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.109992, 3.19952, -0.205088)
+mesh = ExtResource("1_18k0w")
+
 [node name="ShelfHalf" parent="." instance=ExtResource("2_1gno5")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0.0999999, -0.3)
+visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 3.26859, -0.9)
@@ -41,5 +47,5 @@ shape = SubResource("BoxShape3D_lhp53")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0.34496, -0.0526592)
 shape = SubResource("BoxShape3D_1a7ot")
 
-[node name="CameraOcclusionComponent" type="Node3D" parent="."]
-script = ExtResource("2_5w0mm")
+[node name="CameraOcclusionComponent" parent="." node_paths=PackedStringArray("mesh") instance=ExtResource("4_1cdwq")]
+mesh = NodePath("../MeshInstance3D")

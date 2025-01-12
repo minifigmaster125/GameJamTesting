@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://5c4t1rnfslxu"
-path="res://.godot/imported/skewer-vegetables.glb-f26491a201a6b85fc6a28a4ed2163ad1.scn"
+path="res://.godot/imported/skewer-vegetables.glb-0090eff7c86a56b9522cfd28d0b849df.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/skewer-vegetables.glb"
-dest_files=["res://.godot/imported/skewer-vegetables.glb-f26491a201a6b85fc6a28a4ed2163ad1.scn"]
+source_file="res://models/food-kit/Models/GLB format/skewer-vegetables.glb"
+dest_files=["res://.godot/imported/skewer-vegetables.glb-0090eff7c86a56b9522cfd28d0b849df.scn"]
 
 [params]
 

@@ -15,7 +15,7 @@ public partial class PlayerController : CharacterBody3D
     public float MovementSpeed = 250f;
 
     [Export]
-    public float JumpStrength = 7f;
+    public float JumpStrength = 10f;
 
     [Export] private float PushForce = 0.5f;
 
@@ -44,7 +44,6 @@ public partial class PlayerController : CharacterBody3D
     {
         _particlesTrail = GetNode<CpuParticles3D>("ParticlesTrail");
         _soundFootsteps = GetNode<AudioStreamPlayer>("SoundFootsteps");
-        _soundFootsteps.Playing = true;
 
         _squirrelAnimationPlayer = GetNode<AnimationPlayer>("Squirrel/AnimationPlayer");
         // _model = GetNode<Node3D>("Character");
@@ -90,6 +89,8 @@ public partial class PlayerController : CharacterBody3D
 
         _previouslyFloored = IsOnFloor();
 
+
+
         // Check for collisions
         int collisionCount = GetSlideCollisionCount();
         for (int i = 0; i < collisionCount; i++)
@@ -106,21 +107,21 @@ public partial class PlayerController : CharacterBody3D
     {
         collisionData = MoveAndCollide(Velocity * new Vector3((float)delta, (float)delta, (float)delta));
 
-		if (collisionData != null)
-		{
-			//randomize the y value a little
-			RandomNumberGenerator r = new RandomNumberGenerator();
-			Vector3 tempVelocity = Velocity;
-			tempVelocity.Y += r.RandfRange(-20, 20);
-			Velocity = tempVelocity;
+        if (collisionData != null)
+        {
+            //randomize the y value a little
+            RandomNumberGenerator r = new RandomNumberGenerator();
+            Vector3 tempVelocity = Velocity;
+            tempVelocity.Y += r.RandfRange(-20, 20);
+            Velocity = tempVelocity;
 
-			//bounce
-			Velocity = Velocity.Bounce(collisionData.GetNormal());
+            //bounce
+            Velocity = Velocity.Bounce(collisionData.GetNormal());
 
-			string colliderMetaName = collisionData.GetCollider().GetMeta("Name").AsString();
-		
-			GD.Print($"Collided with: {collisionData.GetCollider().GetMeta("Name").AsString()}");
-			//handle Ball collision
+            string colliderMetaName = collisionData.GetCollider().GetMeta("Name").AsString();
+
+            GD.Print($"Collided with: {collisionData.GetCollider().GetMeta("Name").AsString()}");
+            //handle Ball collision
         }
     }
     private void HandleEffects(float delta)

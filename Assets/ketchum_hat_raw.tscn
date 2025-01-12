@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://c65mtfhw1ntr8"]
+
+[ext_resource type="PackedScene" uid="uid://4fnnmxb1uklx" path="res://models/Hats/HatKetchum.glb" id="1_orgfl"]
+
+[node name="KetchumHatRaw" type="Node3D"]
+transform = Transform3D(-1.31134e-08, 0, -0.3, 0, 0.3, 0, 0.3, 0, -1.31134e-08, 0, 0, 0)
+
+[node name="HatKetchum" parent="." instance=ExtResource("1_orgfl")]

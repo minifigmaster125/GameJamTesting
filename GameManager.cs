@@ -14,9 +14,17 @@ public partial class GameManager : Node3D
     [Export]
     public CharacterBody3D Character;
 
+    private Node3D _hatLocator;
+
     private int _score = 0;
     [Export]
     private CanvasLayer _gameOverOverlay;
+
+    [Export]
+    private CanvasLayer _gameStartOverlay;
+
+    [Export]
+    private Node3D _exit;
 
     public override void _Ready()
     {
@@ -29,9 +37,13 @@ public partial class GameManager : Node3D
         };
         _timerUI = gameUI._timerUI;
         _timerUI.GetNode<Timer>("Timer").Timeout += OnTimerTimeout;
+        _hatLocator = Character.GetNode<Node3D>("HatLocator");
+        _exit.GetNode<Area3D>("Area3D").AreaEntered += OnExitAreaEntered;
+
+        GetTree().Paused = true;
     }
 
-    private void HandleScored(int scoreValue, bool isMultiplier, MeshInstance3D model)
+    private void HandleScored(int scoreValue, bool isMultiplier, Node3D model)
     {
         if (isMultiplier)
         {
@@ -46,10 +58,11 @@ public partial class GameManager : Node3D
 
         if (model != null)
         {
-            MeshInstance3D tempModel = (MeshInstance3D)model.Duplicate();
+            var tempModel = (Node3D)model.Duplicate();
 
-            tempModel.GlobalTransform = Character.GetNode<Node3D>("HatLocator").GlobalTransform;
+            tempModel.Position = _hatLocator.Position;
             Character.AddChild(tempModel);
+            _hatLocator.Position = _hatLocator.Position + new Vector3(0, 0.3f, 0);
         }
     }
 
@@ -58,15 +71,19 @@ public partial class GameManager : Node3D
         GD.Print("Time's up!");
         _gameOverOverlay.Visible = true;
 
-        bool success = true;
-        if (!success)
-        {
-            _score = 0;
-        }
 
-        ((GameOverUi)_gameOverOverlay.GetNode("GameOverUI")).SetEndState(_score, success);
+        ((GameOverUi)_gameOverOverlay.GetNode("GameOverUI")).SetEndState(0, false);
         GetTree().Paused = true;
 
+    }
+
+    private void OnExitAreaEntered(Area3D area)
+    {
+        GD.Print("Exit reached!");
+        _gameOverOverlay.Visible = true;
+
+        ((GameOverUi)_gameOverOverlay.GetNode("GameOverUI")).SetEndState(_score, true);
+        GetTree().Paused = true;
     }
 }
 

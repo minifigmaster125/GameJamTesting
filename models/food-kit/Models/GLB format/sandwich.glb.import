@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dfw4n2oxcpfck"
-path="res://.godot/imported/sandwich.glb-93c8d2ed217a7b3d2b38214d69d155ad.scn"
+path="res://.godot/imported/sandwich.glb-244e884d8f70fa5a5844721286ec6bde.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/sandwich.glb"
-dest_files=["res://.godot/imported/sandwich.glb-93c8d2ed217a7b3d2b38214d69d155ad.scn"]
+source_file="res://models/food-kit/Models/GLB format/sandwich.glb"
+dest_files=["res://.godot/imported/sandwich.glb-244e884d8f70fa5a5844721286ec6bde.scn"]
 
 [params]
 

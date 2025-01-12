@@ -1,22 +1,30 @@
-[gd_scene load_steps=8 format=3 uid="uid://djecavlxhn72v"]
+[gd_scene load_steps=14 format=3 uid="uid://djecavlxhn72v"]
 
 [ext_resource type="Script" path="res://GameManager.cs" id="1_p68d1"]
 [ext_resource type="Script" path="res://Scripts/View.cs" id="2_7eljt"]
+[ext_resource type="Script" path="res://Scripts/CameraController.cs" id="3_hhxdt"]
 [ext_resource type="PackedScene" uid="uid://8n4pcv45j4bn" path="res://Assets/player_squirrel.tscn" id="3_p1acu"]
 [ext_resource type="PackedScene" uid="uid://dnqqwuxtluif3" path="res://UI/main_ui.tscn" id="4_l7poa"]
 [ext_resource type="PackedScene" uid="uid://doi3tks2a1oai" path="res://UI/game_over_ui.tscn" id="5_evp1n"]
 [ext_resource type="PackedScene" uid="uid://dufvu1kps27hu" path="res://models/Hats/hat_cowboy.tscn" id="6_s5w3k"]
+[ext_resource type="PackedScene" uid="uid://b321681lkkpny" path="res://UI/game_start_ui.tscn" id="8_yg4pl"]
+[ext_resource type="PackedScene" uid="uid://dttjdr572of15" path="res://models/Hats/ketchum_hat.tscn" id="9_pdk1d"]
+[ext_resource type="PackedScene" uid="uid://b6ig6svdc505q" path="res://models/Hats/top_hat.tscn" id="10_ekb80"]
+[ext_resource type="PackedScene" uid="uid://c01g8jo6chqp5" path="res://Assets/shelf_half.tscn" id="11_kqt2w"]
+[ext_resource type="PackedScene" uid="uid://ck5gb357voqvv" path="res://Assets/exit.tscn" id="12_wtilk"]
 
 [sub_resource type="Environment" id="Environment_n10v7"]
 background_mode = 1
 background_color = Color(0.868848, 0.794698, 0.828402, 1)
 background_energy_multiplier = 0.9
 
-[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "Character", "_gameOverOverlay")]
+[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "Character", "_gameOverOverlay", "_gameStartOverlay", "_exit")]
 script = ExtResource("1_p68d1")
 gameUI = NodePath("MainUI")
 Character = NodePath("CharacterBody3D")
 _gameOverOverlay = NodePath("GameOverLayer")
+_gameStartOverlay = NodePath("GameStartOverlay")
+_exit = NodePath("Exit")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.965926, 0.0669873, 0.25, -0.258819, 0.25, 0.933013, 0, -0.965926, 0.258819, 0, 16, 0)
@@ -34,6 +42,7 @@ projection = 1
 current = true
 size = 15.0
 far = 250.0
+script = ExtResource("3_hhxdt")
 
 [node name="CharacterBody3D" parent="." instance=ExtResource("3_p1acu")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25729, 5.5449, 13.9311)
@@ -53,6 +62,54 @@ visible = false
 
 [node name="HatCowboy" parent="." instance=ExtResource("6_s5w3k")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.830719, 1.46119, 0)
+
+[node name="GameStartOverlay" type="CanvasLayer" parent="."]
+
+[node name="GameStartUI" parent="GameStartOverlay" instance=ExtResource("8_yg4pl")]
+
+[node name="KetchumHat" parent="." instance=ExtResource("9_pdk1d")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.68934, -1.6418)
+
+[node name="TopHat" parent="." instance=ExtResource("10_ekb80")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.807125, -5.02685)
+
+[node name="ShelfHalf" parent="." instance=ExtResource("11_kqt2w")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 24.2396)
+freeze = true
+freeze_mode = 1
+
+[node name="ShelfHalf2" parent="." instance=ExtResource("11_kqt2w")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5, 0, 24.2396)
+freeze = true
+freeze_mode = 1
+
+[node name="ShelfHalf3" parent="." instance=ExtResource("11_kqt2w")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 10, 0, 24.2396)
+freeze = true
+freeze_mode = 1
+
+[node name="ShelfHalf4" parent="." instance=ExtResource("11_kqt2w")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6, 0, 24.2396)
+freeze = true
+freeze_mode = 1
+
+[node name="ShelfHalf5" parent="." instance=ExtResource("11_kqt2w")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -12, 0, 24.2396)
+freeze = true
+freeze_mode = 1
+
+[node name="ShelfHalf6" parent="." instance=ExtResource("11_kqt2w")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -18, 0, 24.2396)
+freeze = true
+freeze_mode = 1
+
+[node name="ShelfHalf7" parent="." instance=ExtResource("11_kqt2w")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 15, 0, 24.2396)
+freeze = true
+freeze_mode = 1
+
+[node name="Exit" parent="." instance=ExtResource("12_wtilk")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 17.9119, 0, 6.922)
 
 [editable path="CharacterBody3D"]
 [editable path="MainUI"]
