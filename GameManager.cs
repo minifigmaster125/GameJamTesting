@@ -9,7 +9,7 @@ public partial class GameManager : Node3D
     [Export]
     private MainUI gameUI;
 
-    private TimerUI _timerUI;
+    private Timer _timer;
 
     [Export]
     public CharacterBody3D Character;
@@ -24,7 +24,7 @@ public partial class GameManager : Node3D
     private CanvasLayer _gameStartOverlay;
 
     [Export]
-    private Node3D _exit;
+    public TextureRect _alert;
 
     public override void _Ready()
     {
@@ -35,10 +35,10 @@ public partial class GameManager : Node3D
         {
             node.Scored += HandleScored;
         };
-        _timerUI = gameUI._timerUI;
-        _timerUI.GetNode<Timer>("Timer").Timeout += OnTimerTimeout;
+        _timer = gameUI._timerUI.GetNode<Timer>("Timer");
+        _timer.Timeout += OnTimerTimeout;
         _hatLocator = Character.GetNode<Node3D>("HatLocator");
-        _exit.GetNode<Area3D>("Area3D").AreaEntered += OnExitAreaEntered;
+        GetNode<Area3D>("Level/Exit/Area3D").AreaEntered += OnExitAreaEntered;
 
         GetTree().Paused = true;
     }
@@ -63,6 +63,19 @@ public partial class GameManager : Node3D
             tempModel.Position = _hatLocator.Position;
             Character.AddChild(tempModel);
             _hatLocator.Position = _hatLocator.Position + new Vector3(0, 0.3f, 0);
+        }
+    }
+
+    public override void _Process(double delta)
+    {
+
+        if (_timer.TimeLeft < 7 && _timer.TimeLeft > 5)
+        {
+            _alert.Visible = true;
+        }
+        else
+        {
+            _alert.Visible = false;
         }
     }
 

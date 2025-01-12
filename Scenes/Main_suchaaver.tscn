@@ -18,13 +18,12 @@ background_mode = 1
 background_color = Color(0.868848, 0.794698, 0.828402, 1)
 background_energy_multiplier = 0.9
 
-[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "Character", "_gameOverOverlay", "_gameStartOverlay", "_exit")]
+[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "Character", "_gameOverOverlay", "_gameStartOverlay")]
 script = ExtResource("1_p68d1")
 gameUI = NodePath("MainUI")
 Character = NodePath("CharacterBody3D")
 _gameOverOverlay = NodePath("GameOverLayer")
 _gameStartOverlay = NodePath("GameStartOverlay")
-_exit = NodePath("Exit")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.965926, 0.0669873, 0.25, -0.258819, 0.25, 0.933013, 0, -0.965926, 0.258819, 0, 16, 0)

@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://n5svpb8glcqy"]
+[gd_scene load_steps=13 format=3 uid="uid://n5svpb8glcqy"]
 
 [ext_resource type="Script" path="res://GameManager.cs" id="1_57lqa"]
 [ext_resource type="Script" path="res://Scripts/View.cs" id="2_xkva4"]
@@ -9,20 +9,25 @@
 [ext_resource type="PackedScene" uid="uid://dw51pxvvd0npw" path="res://Scenes/Level1.tscn" id="8_0gseq"]
 [ext_resource type="PackedScene" uid="uid://b321681lkkpny" path="res://UI/game_start_ui.tscn" id="8_mbf60"]
 [ext_resource type="AudioStream" uid="uid://q7d6117ygo7x" path="res://sfx/Background8bitCanada.ogg" id="10_fuolk"]
-[ext_resource type="PackedScene" uid="uid://ef5q1m5tr3ji" path="res://Assets/exit.tscn" id="10_tovrl"]
 
 [sub_resource type="Environment" id="Environment_mjmgo"]
 background_mode = 1
 background_color = Color(0.868848, 0.794698, 0.828402, 1)
 background_energy_multiplier = 0.9
 
-[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "Character", "_gameOverOverlay", "_gameStartOverlay", "_exit")]
+[sub_resource type="Gradient" id="Gradient_cnkba"]
+colors = PackedColorArray(0.54, 0.0108, 0.17838, 0.403922, 0.541176, 0.0117647, 0.176471, 0.403922)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_c2npq"]
+gradient = SubResource("Gradient_cnkba")
+
+[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "Character", "_gameOverOverlay", "_gameStartOverlay", "_alert")]
 script = ExtResource("1_57lqa")
 gameUI = NodePath("MainUI")
 Character = NodePath("CharacterBody3D")
 _gameOverOverlay = NodePath("GameOverLayer")
 _gameStartOverlay = NodePath("GameStartOverlay")
-_exit = NodePath("Exit")
+_alert = NodePath("Alert")
 
 [node name="Level" parent="." instance=ExtResource("8_0gseq")]
 
@@ -66,12 +71,18 @@ _mainScene = "Level"
 
 [node name="GameStartUI" parent="GameStartOverlay" instance=ExtResource("8_mbf60")]
 
-[node name="Exit" parent="." instance=ExtResource("10_tovrl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 8)
-
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("10_fuolk")
 autoplay = true
+
+[node name="Alert" type="TextureRect" parent="."]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("GradientTexture1D_c2npq")
 
 [editable path="CharacterBody3D"]
 [editable path="MainUI"]

@@ -3,14 +3,14 @@
 [ext_resource type="PackedScene" uid="uid://db3lve3dtfxum" path="res://models/minimart/Models/GLB format/fence.glb" id="1_dit61"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6vt43"]
-size = Vector3(4.5, 4.5, 1)
+size = Vector3(3.47464, 4.5, 0.550293)
 
 [node name="Exit" type="Node3D"]
 
 [node name="Area3D" type="Area3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 2.2, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00184631, 2.2, -0.163818)
 shape = SubResource("BoxShape3D_6vt43")
 
 [node name="fence3" parent="." instance=ExtResource("1_dit61")]
