@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://div0avr8weo32"
-path="res://.godot/imported/donut-sprinkles.glb-ec97148c5e0d1e28258a83713d91a693.scn"
+path="res://.godot/imported/donut-sprinkles.glb-e597fabb0c93b7d51f38eb73d6d106b9.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/donut-sprinkles.glb"
-dest_files=["res://.godot/imported/donut-sprinkles.glb-ec97148c5e0d1e28258a83713d91a693.scn"]
+source_file="res://Models/food-kit/Models/GLB format/donut-sprinkles.glb"
+dest_files=["res://.godot/imported/donut-sprinkles.glb-e597fabb0c93b7d51f38eb73d6d106b9.scn"]
 
 [params]
 

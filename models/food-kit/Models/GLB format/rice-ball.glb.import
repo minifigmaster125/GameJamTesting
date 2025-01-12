@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dshaud5v8jnf4"
-path="res://.godot/imported/rice-ball.glb-be425eb204c05b75ee2568bfd521fadd.scn"
+path="res://.godot/imported/rice-ball.glb-069cd1c1fe26d0e3f23b4519f352b8bf.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/rice-ball.glb"
-dest_files=["res://.godot/imported/rice-ball.glb-be425eb204c05b75ee2568bfd521fadd.scn"]
+source_file="res://Models/food-kit/Models/GLB format/rice-ball.glb"
+dest_files=["res://.godot/imported/rice-ball.glb-069cd1c1fe26d0e3f23b4519f352b8bf.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://blikien2j3m5t"
-path="res://.godot/imported/pan.glb-78145b50480c1f14738994b3a72db3ba.scn"
+path="res://.godot/imported/pan.glb-bf33320c263624ebd4a06359609ae4a2.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/pan.glb"
-dest_files=["res://.godot/imported/pan.glb-78145b50480c1f14738994b3a72db3ba.scn"]
+source_file="res://Models/food-kit/Models/GLB format/pan.glb"
+dest_files=["res://.godot/imported/pan.glb-bf33320c263624ebd4a06359609ae4a2.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://deojrlsiamohv"
-path="res://.godot/imported/ice-cream-cup.glb-0a8456376ddbd6301d850dd8825bbd69.scn"
+path="res://.godot/imported/ice-cream-cup.glb-784e7dc2325d1b5c190f871f61b258d6.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/ice-cream-cup.glb"
-dest_files=["res://.godot/imported/ice-cream-cup.glb-0a8456376ddbd6301d850dd8825bbd69.scn"]
+source_file="res://Models/food-kit/Models/GLB format/ice-cream-cup.glb"
+dest_files=["res://.godot/imported/ice-cream-cup.glb-784e7dc2325d1b5c190f871f61b258d6.scn"]
 
 [params]
 

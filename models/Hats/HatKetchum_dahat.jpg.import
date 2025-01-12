@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d1q4ocncxy1u6"
-path.s3tc="res://.godot/imported/HatKetchum_dahat.jpg-cb7e87d3a75d8461304644b7c0705ecc.s3tc.ctex"
+path.s3tc="res://.godot/imported/HatKetchum_dahat.jpg-1176ede44b9289975db801e432d97eba.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://models/Hats/HatKetchum_dahat.jpg"
-dest_files=["res://.godot/imported/HatKetchum_dahat.jpg-cb7e87d3a75d8461304644b7c0705ecc.s3tc.ctex"]
+source_file="res://Models/Hats/HatKetchum_dahat.jpg"
+dest_files=["res://.godot/imported/HatKetchum_dahat.jpg-1176ede44b9289975db801e432d97eba.s3tc.ctex"]
 
 [params]
 

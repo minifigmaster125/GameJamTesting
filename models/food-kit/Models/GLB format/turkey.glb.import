@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cxroy2m5ihdjd"
-path="res://.godot/imported/turkey.glb-28ec47b682907bfc9d6a0453d47d4fdd.scn"
+path="res://.godot/imported/turkey.glb-d8a561a77c3b83543099c3fc67c7bbdf.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/turkey.glb"
-dest_files=["res://.godot/imported/turkey.glb-28ec47b682907bfc9d6a0453d47d4fdd.scn"]
+source_file="res://Models/food-kit/Models/GLB format/turkey.glb"
+dest_files=["res://.godot/imported/turkey.glb-d8a561a77c3b83543099c3fc67c7bbdf.scn"]
 
 [params]
 
