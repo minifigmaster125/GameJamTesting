@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://te82q8l4asdi"
-path="res://.godot/imported/egg-cup.glb-6082fd4ae6282b0f5cd411c55288090a.scn"
+path="res://.godot/imported/egg-cup.glb-9ad853ef136e528492ed3ed72aa95d44.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/egg-cup.glb"
-dest_files=["res://.godot/imported/egg-cup.glb-6082fd4ae6282b0f5cd411c55288090a.scn"]
+source_file="res://Models/food-kit/Models/GLB format/egg-cup.glb"
+dest_files=["res://.godot/imported/egg-cup.glb-9ad853ef136e528492ed3ed72aa95d44.scn"]
 
 [params]
 

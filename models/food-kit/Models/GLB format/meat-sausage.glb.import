@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://doyrp5vt81pp"
-path="res://.godot/imported/meat-sausage.glb-9edb545c9468d76bad04bd5b53f86582.scn"
+path="res://.godot/imported/meat-sausage.glb-95b5b822442114db512ec21b94f9ce8e.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/meat-sausage.glb"
-dest_files=["res://.godot/imported/meat-sausage.glb-9edb545c9468d76bad04bd5b53f86582.scn"]
+source_file="res://Models/food-kit/Models/GLB format/meat-sausage.glb"
+dest_files=["res://.godot/imported/meat-sausage.glb-95b5b822442114db512ec21b94f9ce8e.scn"]
 
 [params]
 

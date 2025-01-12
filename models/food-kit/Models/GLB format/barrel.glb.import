@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://s84urfre7b4"
-path="res://.godot/imported/barrel.glb-622f223187c41da64cd338de8d203840.scn"
+path="res://.godot/imported/barrel.glb-a0e19ca84b834d3b7cf3aad5102505b3.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/barrel.glb"
-dest_files=["res://.godot/imported/barrel.glb-622f223187c41da64cd338de8d203840.scn"]
+source_file="res://Models/food-kit/Models/GLB format/barrel.glb"
+dest_files=["res://.godot/imported/barrel.glb-a0e19ca84b834d3b7cf3aad5102505b3.scn"]
 
 [params]
 

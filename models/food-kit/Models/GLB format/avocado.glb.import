@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dne8hiasilpq7"
-path="res://.godot/imported/avocado.glb-591b845dd90f8a966c70fd47a3e4e801.scn"
+path="res://.godot/imported/avocado.glb-fb922fe5aa76f827f7d2000cfbc02c26.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/avocado.glb"
-dest_files=["res://.godot/imported/avocado.glb-591b845dd90f8a966c70fd47a3e4e801.scn"]
+source_file="res://Models/food-kit/Models/GLB format/avocado.glb"
+dest_files=["res://.godot/imported/avocado.glb-fb922fe5aa76f827f7d2000cfbc02c26.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://6raww6grmy2b"
-path="res://.godot/imported/mortar-pestle.glb-417cba659e01aed1f65d090a70256b75.scn"
+path="res://.godot/imported/mortar-pestle.glb-d29fff0adc3113b120d627060d4e19f8.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/mortar-pestle.glb"
-dest_files=["res://.godot/imported/mortar-pestle.glb-417cba659e01aed1f65d090a70256b75.scn"]
+source_file="res://Models/food-kit/Models/GLB format/mortar-pestle.glb"
+dest_files=["res://.godot/imported/mortar-pestle.glb-d29fff0adc3113b120d627060d4e19f8.scn"]
 
 [params]
 

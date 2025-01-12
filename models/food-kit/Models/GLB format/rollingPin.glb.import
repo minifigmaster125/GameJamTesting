@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cs5qjalrktpd6"
-path="res://.godot/imported/rollingPin.glb-95d5d90b39c64cc324fc6897dc6a1825.scn"
+path="res://.godot/imported/rollingPin.glb-b053693da90ec173e22212cd92433ddf.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/rollingPin.glb"
-dest_files=["res://.godot/imported/rollingPin.glb-95d5d90b39c64cc324fc6897dc6a1825.scn"]
+source_file="res://Models/food-kit/Models/GLB format/rollingPin.glb"
+dest_files=["res://.godot/imported/rollingPin.glb-b053693da90ec173e22212cd92433ddf.scn"]
 
 [params]
 

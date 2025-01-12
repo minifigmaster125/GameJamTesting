@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bmij3gjlhvgrv"
-path="res://.godot/imported/cooking-spoon.glb-9f01e53ddd76854284fb8b41829e8397.scn"
+path="res://.godot/imported/cooking-spoon.glb-416f5df3fffeb3eb9e8aad7f34e42f58.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/cooking-spoon.glb"
-dest_files=["res://.godot/imported/cooking-spoon.glb-9f01e53ddd76854284fb8b41829e8397.scn"]
+source_file="res://Models/food-kit/Models/GLB format/cooking-spoon.glb"
+dest_files=["res://.godot/imported/cooking-spoon.glb-416f5df3fffeb3eb9e8aad7f34e42f58.scn"]
 
 [params]
 

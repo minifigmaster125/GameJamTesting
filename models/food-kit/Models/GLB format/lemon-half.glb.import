@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://guvqmwvbogm3"
-path="res://.godot/imported/lemon-half.glb-2cc44c58c575003751d0a500d2f7afdb.scn"
+path="res://.godot/imported/lemon-half.glb-e83e67d406710427ab7b098e2a3e207e.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/lemon-half.glb"
-dest_files=["res://.godot/imported/lemon-half.glb-2cc44c58c575003751d0a500d2f7afdb.scn"]
+source_file="res://Models/food-kit/Models/GLB format/lemon-half.glb"
+dest_files=["res://.godot/imported/lemon-half.glb-e83e67d406710427ab7b098e2a3e207e.scn"]
 
 [params]
 

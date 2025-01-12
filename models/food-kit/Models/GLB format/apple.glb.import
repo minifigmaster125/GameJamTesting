@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://yrmao3ryq13e"
-path="res://.godot/imported/apple.glb-d4e4950e1ba90f25031cda6da3cf89ed.scn"
+path="res://.godot/imported/apple.glb-85032d39ebbab80024f95627948e4de8.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/apple.glb"
-dest_files=["res://.godot/imported/apple.glb-d4e4950e1ba90f25031cda6da3cf89ed.scn"]
+source_file="res://Models/food-kit/Models/GLB format/apple.glb"
+dest_files=["res://.godot/imported/apple.glb-85032d39ebbab80024f95627948e4de8.scn"]
 
 [params]
 

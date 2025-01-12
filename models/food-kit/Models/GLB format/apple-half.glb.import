@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://p60ab4ixm7vu"
-path="res://.godot/imported/apple-half.glb-bb070415cbf182afeda37bab29ad0a91.scn"
+path="res://.godot/imported/apple-half.glb-16f7fa98303dce69d396345d51c4a9e8.scn"
 
 [deps]
 
-source_file="res://models/food-kit/Models/GLB format/apple-half.glb"
-dest_files=["res://.godot/imported/apple-half.glb-bb070415cbf182afeda37bab29ad0a91.scn"]
+source_file="res://Models/food-kit/Models/GLB format/apple-half.glb"
+dest_files=["res://.godot/imported/apple-half.glb-16f7fa98303dce69d396345d51c4a9e8.scn"]
 
 [params]
 
