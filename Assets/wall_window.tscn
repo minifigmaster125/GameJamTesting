@@ -4,15 +4,15 @@
 [ext_resource type="PackedScene" path="res://Assets/camera_occlusion_component.tscn" id="2_1r5x2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_k4s2v"]
-size = Vector3(3, 3, 0.5)
+size = Vector3(6, 6, 0.6)
 
 [node name="WallWindow" type="StaticBody3D"]
 
 [node name="wall-window2" parent="." instance=ExtResource("1_ts7b7")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 1, 0, 0, 0)
+transform = Transform3D(6, 0, 0, 0, 6, 0, 0, 0, 1, 0, 0, 0)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 3, 0)
 shape = SubResource("BoxShape3D_k4s2v")
 
 [node name="CameraOcclusionComponent" parent="." node_paths=PackedStringArray("mesh") instance=ExtResource("2_1r5x2")]

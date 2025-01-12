@@ -6,21 +6,22 @@
 [ext_resource type="PackedScene" uid="uid://8n4pcv45j4bn" path="res://Assets/player_squirrel.tscn" id="4_khpal"]
 [ext_resource type="PackedScene" uid="uid://dnqqwuxtluif3" path="res://UI/main_ui.tscn" id="5_vf4ni"]
 [ext_resource type="PackedScene" path="res://UI/game_over_ui.tscn" id="6_osota"]
-[ext_resource type="PackedScene" uid="uid://dufvu1kps27hu" path="res://Models/Hats/hat_cowboy.tscn" id="7_ftyki"]
 [ext_resource type="PackedScene" uid="uid://dw51pxvvd0npw" path="res://Scenes/Level1.tscn" id="8_0gseq"]
 [ext_resource type="PackedScene" path="res://UI/game_start_ui.tscn" id="8_mbf60"]
+[ext_resource type="PackedScene" path="res://Assets/exit.tscn" id="10_tovrl"]
 
 [sub_resource type="Environment" id="Environment_mjmgo"]
 background_mode = 1
 background_color = Color(0.868848, 0.794698, 0.828402, 1)
 background_energy_multiplier = 0.9
 
-[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "Character", "_gameOverOverlay", "_gameStartOverlay")]
+[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "Character", "_gameOverOverlay", "_gameStartOverlay", "_exit")]
 script = ExtResource("1_57lqa")
 gameUI = NodePath("MainUI")
 Character = NodePath("CharacterBody3D")
 _gameOverOverlay = NodePath("GameOverLayer")
 _gameStartOverlay = NodePath("GameStartOverlay")
+_exit = NodePath("Exit")
 
 [node name="Level" parent="." instance=ExtResource("8_0gseq")]
 
@@ -29,9 +30,10 @@ transform = Transform3D(0.965926, 0.0669873, 0.25, -0.258819, 0.25, 0.933013, 0,
 shadow_enabled = true
 shadow_opacity = 0.49
 
-[node name="View" type="Node3D" parent="."]
+[node name="View" type="Node3D" parent="." node_paths=PackedStringArray("Target")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25729, 5.5449, 13.9311)
 script = ExtResource("2_xkva4")
+Target = NodePath("../CharacterBody3D")
 
 [node name="Camera" type="Camera3D" parent="View"]
 transform = Transform3D(0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, -0.5, 0.5, -5, 10.6822, 5)
@@ -41,8 +43,9 @@ size = 15.0
 far = 250.0
 script = ExtResource("3_mhglx")
 
-[node name="CharacterBody3D" parent="." instance=ExtResource("4_khpal")]
+[node name="CharacterBody3D" parent="." node_paths=PackedStringArray("View") instance=ExtResource("4_khpal")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25729, 5.5449, 13.9311)
+View = NodePath("../View")
 MovementSpeed = 500.0
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -57,12 +60,12 @@ visible = false
 
 [node name="GameOverUI" parent="GameOverLayer" instance=ExtResource("6_osota")]
 
-[node name="HatCowboy" parent="." instance=ExtResource("7_ftyki")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.830719, 1.46119, 0)
-
 [node name="GameStartOverlay" type="CanvasLayer" parent="."]
 
 [node name="GameStartUI" parent="GameStartOverlay" instance=ExtResource("8_mbf60")]
+
+[node name="Exit" parent="." instance=ExtResource("10_tovrl")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.02694, 3.7998e-07, 13.4075)
 
 [editable path="CharacterBody3D"]
 [editable path="MainUI"]
