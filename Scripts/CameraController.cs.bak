@@ -1,0 +1,108 @@
+using Godot;
+using System;
+using System.Collections.Generic; 
+public partial class CameraController : Camera3D
+{
+    [Export] public float FollowSpeed = 5.0f;
+    [Export] public Vector3 Offset = new Vector3(0, 10, -10);
+
+    private Node3D _target;
+
+    Vector3 rayStart;
+    Vector3 rayEnd;
+    PhysicsDirectSpaceState3D spaceState;
+    PhysicsRayQueryParameters3D rayQuery;
+
+    public override void _Ready()
+    {
+        // Ensure the parent node is the target character
+        _target = GetParent().GetParent().GetNode<Node3D>("CharacterBody3D");
+
+    }
+
+    public override void _Process(double delta)
+    {
+
+        rayStart = GlobalPosition;
+        rayEnd = _target.GlobalPosition;
+        // GD.Print("rayStart: " + rayStart);
+        // GD.Print("rayEnd: " + rayEnd);
+        GetAllCollisionsAlongRay(rayStart, rayEnd);
+        
+
+        // if (_target != null)
+        // {
+        //     Vector3 desiredPosition = _target.GlobalTransform.Origin + Offset;
+        //     GlobalTransform = new Transform(
+        //         GlobalTransform.Basis,
+        //         GlobalTransform.Origin.Lerp(desiredPosition, (float)(FollowSpeed * delta))
+        //     );
+
+        //     LookAt(_target.GlobalTransform.Origin, Vector3.Up);
+        // }
+    }
+
+    public class RaycastHitInfo
+    {
+        public Vector3 Position { get; set; }
+        public Vector3 Normal { get; set; }
+        public CollisionObject3D Collider { get; set; }
+        public float Distance { get; set; }
+    }
+
+    public List<RaycastHitInfo> GetAllCollisionsAlongRay(
+        Vector3 from, 
+        Vector3 to, 
+        uint collisionMask = 1,
+        int maxResults = 32)
+    {
+        var hits = new List<RaycastHitInfo>();
+        // var spaceState = PhysicsServer3D.SpaceGetDirectState(GetWorld3D().Space);
+        var spaceState = GetWorld3D().DirectSpaceState;
+        var queryParams = new PhysicsRayQueryParameters3D 
+        {
+            From = from,
+            To = to,
+            CollisionMask = collisionMask,
+            CollideWithAreas = true,
+            CollideWithBodies = true
+        };
+
+        GD.Print("hits.Count: " + hits.Count);
+        // Continue raycasting until we hit the maximum number of results or reach the end
+        while (hits.Count < maxResults)
+        {
+            var result = spaceState.IntersectRay(queryParams);
+            
+            // No more collisions found
+            if (result.Count == 0)
+                break;
+
+            var hitPosition = (Vector3)result["position"];
+            var hitNormal = (Vector3)result["normal"];
+            var hitCollider = result["collider"].As<CollisionObject3D>();
+            var hitDistance = from.DistanceTo(hitPosition);
+
+            // GD.Print("hitPosition: " + hitPosition);
+
+            CameraOcclusionComponent coc = hitCollider.GetParent().GetNode<CameraOcclusionComponent>("CameraOcclusionComponent");
+            
+            coc.tick = 0;
+
+            hits.Add(new RaycastHitInfo
+            {
+                Position = hitPosition,
+                Normal = hitNormal,
+                Collider = hitCollider,
+                Distance = hitDistance
+            });
+
+            // Adjust the ray start position slightly past the hit point for the next iteration
+            queryParams.From = hitPosition + hitNormal * 0.01f;
+        }
+
+        // Sort hits by distance from origin
+        hits.Sort((a, b) => a.Distance.CompareTo(b.Distance));
+        return hits;
+    }
+}

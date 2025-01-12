@@ -11,6 +11,7 @@ background_color = Color(0.868848, 0.794698, 0.828402, 1)
 background_energy_multiplier = 0.9
 
 [node name="Main" type="Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4, 0, -13)
 script = ExtResource("1_vei2e")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
