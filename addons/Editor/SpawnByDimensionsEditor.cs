@@ -287,8 +287,7 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
         var editedRoot = GetEditorInterface().GetEditedSceneRoot();
         if (editedRoot == null)
             return;
-        // PackedScene packedScene = ResourceLoader.Load<PackedScene>("floor_tile.tscn");
-        // Node3D sceneInstance = (Node3D)packedScene.Instantiate();
+
         editedRoot.AddChild(sceneInstance);
         sceneInstance.Owner = editedRoot;
     }
@@ -308,18 +307,14 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
 
         // Vector3 dimensions = new Vector3(30, .1f,30);
         Vector3 offsets = new Vector3(.1f, 0f, 8f);
+        offsets = DimensionsRotated(rotationAboutAzimuthDegrees, offsets);
 
-        List<Vector3> shelfPositions1 = SpawnByDimensions("shelf_half.tscn", Vector3.Zero, dimensions, offsets, rotationAboutAzimuthDegrees);
-        // List<Vector3> shelfPositions2 = SpawnByDimensions("shelf_half.tscn",  Vector3.Zero+shelfHalfOffset, dimensions, offsets, -shelfRotationDeg);
+        List<Vector3> shelfPositions1 = SpawnByDimensions("Assets/shelf_half.tscn", Vector3.Zero, dimensions, offsets, rotationAboutAzimuthDegrees);
 
         foreach(Vector3 shelfPosition1 in shelfPositions1)
         {
             SpawnShelfContents(shelfPosition1, rotationAboutAzimuthDegrees, shelfContentAssetPaths);
         }
-        // foreach(Vector3 shelfPosition2 in shelfPositions2)
-        // {
-        //     SpawnShelfContents(shelfPosition2, shelfRotationDeg, shelfContentAssetPaths);
-        // }
     }
 
 //note shelf bottom edge needs to be 0f in scene
@@ -333,8 +328,6 @@ public partial class SpawnByDimensionsEditor : EditorPlugin
 
         for(int row = 0; row < 5; row++)
         {
-            PackedScene shelfContent = (PackedScene)ResourceLoader.Load<PackedScene>(shelfContentAssetPaths[row]);
-            PhysicsBody3D _shelfContent = (PhysicsBody3D)shelfContent.Instantiate();
             
             Vector3 _shelfDimensions = DimensionsRotated(rotationAboutAzimuthDegrees, baseShelfDimension);//?check rotationAboutAzimuthDegrees
             SpawnByDimensions(shelfContentAssetPaths[row], position+new Vector3(0f, offset, 0f), baseShelfDimension, Vector3.Zero, rotationAboutAzimuthDegrees);

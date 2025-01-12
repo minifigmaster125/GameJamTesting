@@ -1,0 +1,47 @@
+[gd_scene load_steps=6 format=3 uid="uid://djecavlxhn72v"]
+
+[ext_resource type="Script" path="res://GameManager.cs" id="1_p68d1"]
+[ext_resource type="Script" path="res://Scripts/View.cs" id="2_7eljt"]
+[ext_resource type="PackedScene" uid="uid://8n4pcv45j4bn" path="res://Assets/player_squirrel.tscn" id="3_p1acu"]
+[ext_resource type="PackedScene" uid="uid://dnqqwuxtluif3" path="res://UI/main_ui.tscn" id="4_l7poa"]
+
+[sub_resource type="Environment" id="Environment_n10v7"]
+background_mode = 1
+background_color = Color(0.868848, 0.794698, 0.828402, 1)
+background_energy_multiplier = 0.9
+
+[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI")]
+script = ExtResource("1_p68d1")
+gameUI = NodePath("MainUI")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(0.965926, 0.0669873, 0.25, -0.258819, 0.25, 0.933013, 0, -0.965926, 0.258819, 0, 16, 0)
+shadow_enabled = true
+shadow_opacity = 0.49
+
+[node name="View" type="Node3D" parent="." node_paths=PackedStringArray("Target")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25729, 5.5449, 13.9311)
+script = ExtResource("2_7eljt")
+Target = NodePath("../CharacterBody3D")
+
+[node name="Camera" type="Camera3D" parent="View"]
+transform = Transform3D(0.707107, 0.5, -0.5, 0, 0.707107, 0.707107, 0.707107, -0.5, 0.5, -5, 10.6822, 5)
+projection = 1
+current = true
+size = 15.0
+far = 250.0
+
+[node name="CharacterBody3D" parent="." instance=ExtResource("3_p1acu")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.25729, 5.5449, 13.9311)
+MovementSpeed = 500.0
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_n10v7")
+
+[node name="ScoreableIndicatorLayer" type="CanvasLayer" parent="."]
+
+[node name="MainUI" parent="." instance=ExtResource("4_l7poa")]
+
+[node name="GameOverLayer" type="CanvasLayer" parent="."]
+
+[editable path="MainUI"]

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://n10udgja0oki"
-path="res://.godot/imported/cash-register.glb-dc1b199315c99cbafc612e56b7d82f09.scn"
+path="res://.godot/imported/cash-register.glb-e266520dac553d02211898f63fd661dd.scn"
 
 [deps]
 
-source_file="res://models/minimart/Models/GLB format/cash-register.glb"
-dest_files=["res://.godot/imported/cash-register.glb-dc1b199315c99cbafc612e56b7d82f09.scn"]
+source_file="res://Models/minimart/Models/GLB format/cash-register.glb"
+dest_files=["res://.godot/imported/cash-register.glb-e266520dac553d02211898f63fd661dd.scn"]
 
 [params]
 

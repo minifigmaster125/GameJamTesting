@@ -64,8 +64,8 @@ public partial class AssetSpawner: Node3D
 
         for(int row = 0; row < 5; row++)
         {
-            PackedScene shelfContent = (PackedScene)ResourceLoader.Load<PackedScene>(shelfContentAssetPaths[row]);
-            PhysicsBody3D _shelfContent = (PhysicsBody3D)shelfContent.Instantiate();
+            // PackedScene shelfContent = (PackedScene)ResourceLoader.Load<PackedScene>(shelfContentAssetPaths[row]);
+            // PhysicsBody3D _shelfContent = (PhysicsBody3D)shelfContent.Instantiate();
             
             Vector3 _shelfDimensions = DimensionsRotated(rotationAboutAzimuthDegrees, baseShelfDimension);//?check rotationAboutAzimuthDegrees
             SpawnByDimensions(shelfContentAssetPaths[row], position+new Vector3(0f, offset, 0f), _shelfDimensions, Vector3.Zero, rotationAboutAzimuthDegrees);
@@ -129,6 +129,7 @@ public partial class AssetSpawner: Node3D
     
     public List<Vector3> SpawnByDimensions(String assetPath, Vector3 position, Vector3 dimensions, Vector3 offset, float rotationAboutAzimuthDegrees=0, EditorInterface editorInterface=null)
     {
+        assetPath = "Assets/" + assetPath;
         PackedScene packedScene = (PackedScene)ResourceLoader.Load(assetPath);
 
         
