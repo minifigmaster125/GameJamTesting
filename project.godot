@@ -13,7 +13,9 @@ config_version=5
 config/name="CSharpo"
 run/main_scene="res://Scenes/Level.tscn"
 config/features=PackedStringArray("4.3", "C#", "Forward Plus")
+boot_splash/image="res://UI/RodenRobberySplash.png"
 config/icon="res://icon.svg"
+config/windows_native_icon="res://UI/IconSquirrel.ico"
 
 [autoload]
 
