@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" path="res://Scripts/ScoreableComponent.cs" id="1_nyd23"]
 
-[node name="ScoreableComponent" type="Node3D"]
+[node name="ScoreableComponent" type="Node3D" groups=["Scoreable"]]
 script = ExtResource("1_nyd23")
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

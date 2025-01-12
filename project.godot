@@ -27,6 +27,10 @@ project/assembly_name="CSharpo"
 
 enabled=PackedStringArray("res://addons/Editor/plugin.cfg")
 
+[global_group]
+
+Scoreable=""
+
 [input]
 
 move_forward={

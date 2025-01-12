@@ -22,7 +22,6 @@ public partial class ScoreKeeper : StaticBody3D//attach to hat/cart ideally
 
 	public void OnBodyEntered(Node body)
 	{
-		GD.Print(body.Name);
 		if (body.HasNode("ScoreableComponent"))
 		{
 			ScoreableComponent scoreable = body.GetNode<ScoreableComponent>("ScoreableComponent");

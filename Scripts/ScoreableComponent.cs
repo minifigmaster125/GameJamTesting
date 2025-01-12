@@ -64,7 +64,7 @@ public partial class ScoreableComponent : Node3D
         var uiElement = (RichTextLabel)_scoreablePickupUI.Instantiate();
         uiElement.Text = $"[i]+{ScoreValue}[/i]";
         uiElement.Position = screenPosition; // Position the UI element
-        GetTree().Root.GetNode<Node3D>("Main").GetNode<CanvasLayer>("CanvasLayer").AddChild(uiElement);
+        GetTree().Root.GetNode<Node3D>("Main").GetNode<CanvasLayer>("ScoreableIndicatorLayer").AddChild(uiElement);
 
         // Optional: Animate the "+1" (e.g., move up and fade out)
         var tween = uiElement.CreateTween();
