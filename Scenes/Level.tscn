@@ -8,7 +8,7 @@
 [ext_resource type="PackedScene" path="res://UI/game_over_ui.tscn" id="6_osota"]
 [ext_resource type="PackedScene" uid="uid://dw51pxvvd0npw" path="res://Scenes/Level1.tscn" id="8_0gseq"]
 [ext_resource type="PackedScene" path="res://UI/game_start_ui.tscn" id="8_mbf60"]
-[ext_resource type="PackedScene" path="res://Assets/exit.tscn" id="10_tovrl"]
+[ext_resource type="PackedScene" uid="uid://ef5q1m5tr3ji" path="res://Assets/exit.tscn" id="10_tovrl"]
 
 [sub_resource type="Environment" id="Environment_mjmgo"]
 background_mode = 1
@@ -65,7 +65,7 @@ visible = false
 [node name="GameStartUI" parent="GameStartOverlay" instance=ExtResource("8_mbf60")]
 
 [node name="Exit" parent="." instance=ExtResource("10_tovrl")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.02694, 3.7998e-07, 13.4075)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 8)
 
 [editable path="CharacterBody3D"]
 [editable path="MainUI"]
