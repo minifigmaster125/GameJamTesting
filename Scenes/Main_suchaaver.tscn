@@ -48,5 +48,6 @@ environment = SubResource("Environment_n10v7")
 visible = false
 
 [node name="GameOverUI" parent="GameOverLayer" instance=ExtResource("5_evp1n")]
+_mainScene = null
 
 [editable path="MainUI"]

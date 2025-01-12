@@ -8,6 +8,9 @@ public partial class ScoreableComponent : Node3D
     public int ScoreValue;
 
     [Export]
+    public bool IsMultiplier = false;
+
+    [Export]
     public AudioStream ScoreSound { get; set; }
 
     [Signal]

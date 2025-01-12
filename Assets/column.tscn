@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cki5l8r44tl4v"]
 
-[ext_resource type="PackedScene" uid="uid://d3v7fuoqfl7j2" path="res://Models/ShelfContents/column.glb" id="1_35xt2"]
+[ext_resource type="PackedScene" uid="uid://d3v7fuoqfl7j2" path="res://models/ShelfContents/column.glb" id="1_35xt2"]
 [ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://Assets/scoreable_component.tscn" id="2_ddxc2"]
 [ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="3_0bnpb"]
 

@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://tdlnllgv78t7"]
+
+[node name="ScoreDisplay" type="VBoxContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="FinalScoreLabel" type="RichTextLabel" parent="."]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 12
+bbcode_enabled = true
+text = "[center]Final Score[/center]"
+fit_content = true
+
+[node name="ActualScoreLabel" type="RichTextLabel" parent="."]
+layout_mode = 2
+theme_override_font_sizes/normal_font_size = 48
+bbcode_enabled = true
+text = "[center]205[/center]"
+fit_content = true

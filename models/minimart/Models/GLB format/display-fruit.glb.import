@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c0e5wcmwfxuo7"
-path="res://.godot/imported/display-fruit.glb-22adaa982aa15dd045e8b314ce8513f5.scn"
+path="res://.godot/imported/display-fruit.glb-255b7c4f8cdfc0df1cb1b65f68ca53c4.scn"
 
 [deps]
 
-source_file="res://Models/minimart/Models/GLB format/display-fruit.glb"
-dest_files=["res://.godot/imported/display-fruit.glb-22adaa982aa15dd045e8b314ce8513f5.scn"]
+source_file="res://models/minimart/Models/GLB format/display-fruit.glb"
+dest_files=["res://.godot/imported/display-fruit.glb-255b7c4f8cdfc0df1cb1b65f68ca53c4.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://betu7cjwjjsf5"
-path="res://.godot/imported/pear-half.glb-51315710a2b08b87b316956243dfa12e.scn"
+path="res://.godot/imported/pear-half.glb-4cec2879ecc7361a2418ef57d80ce988.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/pear-half.glb"
-dest_files=["res://.godot/imported/pear-half.glb-51315710a2b08b87b316956243dfa12e.scn"]
+source_file="res://models/food-kit/Models/GLB format/pear-half.glb"
+dest_files=["res://.godot/imported/pear-half.glb-4cec2879ecc7361a2418ef57d80ce988.scn"]
 
 [params]
 

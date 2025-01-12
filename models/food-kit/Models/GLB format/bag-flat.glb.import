@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bejtyje82ba64"
-path="res://.godot/imported/bag-flat.glb-e43001f730edbca1821b0770add9be0b.scn"
+path="res://.godot/imported/bag-flat.glb-050f4cd57cc5c8943fc3ce3481de9886.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/bag-flat.glb"
-dest_files=["res://.godot/imported/bag-flat.glb-e43001f730edbca1821b0770add9be0b.scn"]
+source_file="res://models/food-kit/Models/GLB format/bag-flat.glb"
+dest_files=["res://.godot/imported/bag-flat.glb-050f4cd57cc5c8943fc3ce3481de9886.scn"]
 
 [params]
 

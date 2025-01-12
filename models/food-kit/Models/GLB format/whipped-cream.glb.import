@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://6csqjpwu5h4g"
-path="res://.godot/imported/whipped-cream.glb-2bbd404fca2b7724bcd1ee1d6aa54492.scn"
+path="res://.godot/imported/whipped-cream.glb-6b721d5cbfd8e30531276625e326adb8.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/whipped-cream.glb"
-dest_files=["res://.godot/imported/whipped-cream.glb-2bbd404fca2b7724bcd1ee1d6aa54492.scn"]
+source_file="res://models/food-kit/Models/GLB format/whipped-cream.glb"
+dest_files=["res://.godot/imported/whipped-cream.glb-6b721d5cbfd8e30531276625e326adb8.scn"]
 
 [params]
 

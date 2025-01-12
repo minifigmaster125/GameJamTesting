@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://diw08khmvjs28"
-path="res://.godot/imported/pineapple.glb-fd909433a5129f6334668c5ae8b4c1bc.scn"
+path="res://.godot/imported/pineapple.glb-4cfe047038a66558226ceff6ca237c30.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/pineapple.glb"
-dest_files=["res://.godot/imported/pineapple.glb-fd909433a5129f6334668c5ae8b4c1bc.scn"]
+source_file="res://models/food-kit/Models/GLB format/pineapple.glb"
+dest_files=["res://.godot/imported/pineapple.glb-4cfe047038a66558226ceff6ca237c30.scn"]
 
 [params]
 

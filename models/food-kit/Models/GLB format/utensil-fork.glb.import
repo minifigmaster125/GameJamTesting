@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://du0wc254a31r7"
-path="res://.godot/imported/utensil-fork.glb-0ed9b7e21e4d5ae4605721aa692331f3.scn"
+path="res://.godot/imported/utensil-fork.glb-81633c5f5ed860922cbbb475487906fe.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/utensil-fork.glb"
-dest_files=["res://.godot/imported/utensil-fork.glb-0ed9b7e21e4d5ae4605721aa692331f3.scn"]
+source_file="res://models/food-kit/Models/GLB format/utensil-fork.glb"
+dest_files=["res://.godot/imported/utensil-fork.glb-81633c5f5ed860922cbbb475487906fe.scn"]
 
 [params]
 

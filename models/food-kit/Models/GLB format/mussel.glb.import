@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://07kxt74s5ikw"
-path="res://.godot/imported/mussel.glb-8a690fbfeebbdde3a4f0c5a4fd53ae8d.scn"
+path="res://.godot/imported/mussel.glb-0ded90cc1bdd9f3de49836f196f53d39.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/mussel.glb"
-dest_files=["res://.godot/imported/mussel.glb-8a690fbfeebbdde3a4f0c5a4fd53ae8d.scn"]
+source_file="res://models/food-kit/Models/GLB format/mussel.glb"
+dest_files=["res://.godot/imported/mussel.glb-0ded90cc1bdd9f3de49836f196f53d39.scn"]
 
 [params]
 

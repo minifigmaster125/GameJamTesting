@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bbp45qmdjkbgy"
-path="res://.godot/imported/cooking-fork.glb-06193e8dae196af69c2d0301e7f034e9.scn"
+path="res://.godot/imported/cooking-fork.glb-784018e3ade533af5e181fad94db1fb9.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/cooking-fork.glb"
-dest_files=["res://.godot/imported/cooking-fork.glb-06193e8dae196af69c2d0301e7f034e9.scn"]
+source_file="res://models/food-kit/Models/GLB format/cooking-fork.glb"
+dest_files=["res://.godot/imported/cooking-fork.glb-784018e3ade533af5e181fad94db1fb9.scn"]
 
 [params]
 

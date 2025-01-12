@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://co05o8asvc28q"
-path="res://.godot/imported/candy-bar.glb-70c399e58ab6330c110a3a25066de355.scn"
+path="res://.godot/imported/candy-bar.glb-1150dd82399ae8b853b005329cd707b2.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/candy-bar.glb"
-dest_files=["res://.godot/imported/candy-bar.glb-70c399e58ab6330c110a3a25066de355.scn"]
+source_file="res://models/food-kit/Models/GLB format/candy-bar.glb"
+dest_files=["res://.godot/imported/candy-bar.glb-1150dd82399ae8b853b005329cd707b2.scn"]
 
 [params]
 

@@ -38,6 +38,14 @@ public partial class GameManager : Node3D
     {
         GD.Print("Time's up!");
         _gameOverOverlay.Visible = true;
+
+        bool success = true;
+        if (!success)
+        {
+            _score = 0;
+        }
+
+        ((GameOverUi)_gameOverOverlay.GetNode("GameOverUI")).SetEndState(_score, success);
         GetTree().Paused = true;
 
     }

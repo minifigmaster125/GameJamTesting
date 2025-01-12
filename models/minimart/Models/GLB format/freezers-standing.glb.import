@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c3oxjvi242k6a"
-path="res://.godot/imported/freezers-standing.glb-8f6a6714cc26e644eb9f191d9c2160ad.scn"
+path="res://.godot/imported/freezers-standing.glb-06b4afa93c70865ef735e4a8d5230420.scn"
 
 [deps]
 
-source_file="res://Models/minimart/Models/GLB format/freezers-standing.glb"
-dest_files=["res://.godot/imported/freezers-standing.glb-8f6a6714cc26e644eb9f191d9c2160ad.scn"]
+source_file="res://models/minimart/Models/GLB format/freezers-standing.glb"
+dest_files=["res://.godot/imported/freezers-standing.glb-06b4afa93c70865ef735e4a8d5230420.scn"]
 
 [params]
 

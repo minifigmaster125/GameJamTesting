@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dggx32emcbbrr"
-path="res://.godot/imported/shelf-bags.glb-e461d2b035eed7a510124b4ffd938a9c.scn"
+path="res://.godot/imported/shelf-bags.glb-d127f60ab6e6886dd4457a4253d0facf.scn"
 
 [deps]
 
-source_file="res://Models/minimart/Models/GLB format/shelf-bags.glb"
-dest_files=["res://.godot/imported/shelf-bags.glb-e461d2b035eed7a510124b4ffd938a9c.scn"]
+source_file="res://models/minimart/Models/GLB format/shelf-bags.glb"
+dest_files=["res://.godot/imported/shelf-bags.glb-d127f60ab6e6886dd4457a4253d0facf.scn"]
 
 [params]
 

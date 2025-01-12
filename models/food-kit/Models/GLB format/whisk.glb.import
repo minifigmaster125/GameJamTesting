@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cpxo4c1y3mxcx"
-path="res://.godot/imported/whisk.glb-c51a7e98a24d8c8941b273bad75e43a2.scn"
+path="res://.godot/imported/whisk.glb-6aa01ec3427e2ae2ee98d7e4f656ded2.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/whisk.glb"
-dest_files=["res://.godot/imported/whisk.glb-c51a7e98a24d8c8941b273bad75e43a2.scn"]
+source_file="res://models/food-kit/Models/GLB format/whisk.glb"
+dest_files=["res://.godot/imported/whisk.glb-6aa01ec3427e2ae2ee98d7e4f656ded2.scn"]
 
 [params]
 

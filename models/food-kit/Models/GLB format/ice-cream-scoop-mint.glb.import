@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bry5xrvdytkw5"
-path="res://.godot/imported/ice-cream-scoop-mint.glb-2b74a87ddbe99475413548374c39fe3c.scn"
+path="res://.godot/imported/ice-cream-scoop-mint.glb-9bc068c6e912f52caa48fdd7daa9d6fd.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/ice-cream-scoop-mint.glb"
-dest_files=["res://.godot/imported/ice-cream-scoop-mint.glb-2b74a87ddbe99475413548374c39fe3c.scn"]
+source_file="res://models/food-kit/Models/GLB format/ice-cream-scoop-mint.glb"
+dest_files=["res://.godot/imported/ice-cream-scoop-mint.glb-9bc068c6e912f52caa48fdd7daa9d6fd.scn"]
 
 [params]
 

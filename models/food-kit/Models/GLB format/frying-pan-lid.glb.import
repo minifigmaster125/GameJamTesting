@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cbc74vl28eikn"
-path="res://.godot/imported/frying-pan-lid.glb-53b68db7b7a0f7c52632571d411c77e5.scn"
+path="res://.godot/imported/frying-pan-lid.glb-18c6ce9999665d5b0f9d25fa0bbe4118.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/frying-pan-lid.glb"
-dest_files=["res://.godot/imported/frying-pan-lid.glb-53b68db7b7a0f7c52632571d411c77e5.scn"]
+source_file="res://models/food-kit/Models/GLB format/frying-pan-lid.glb"
+dest_files=["res://.godot/imported/frying-pan-lid.glb-18c6ce9999665d5b0f9d25fa0bbe4118.scn"]
 
 [params]
 

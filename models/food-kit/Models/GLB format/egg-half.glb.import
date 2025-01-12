@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://txhtvsleo6k3"
-path="res://.godot/imported/egg-half.glb-fd63f87ab5499b34ac83324053490a11.scn"
+path="res://.godot/imported/egg-half.glb-389c147b9479bca18796685c2007427f.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/egg-half.glb"
-dest_files=["res://.godot/imported/egg-half.glb-fd63f87ab5499b34ac83324053490a11.scn"]
+source_file="res://models/food-kit/Models/GLB format/egg-half.glb"
+dest_files=["res://.godot/imported/egg-half.glb-389c147b9479bca18796685c2007427f.scn"]
 
 [params]
 
