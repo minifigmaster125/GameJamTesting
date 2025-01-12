@@ -23,8 +23,8 @@
 [ext_resource type="PackedScene" uid="uid://i738eha1ybiv" path="res://Assets/shelf_ham.tscn" id="23_wcus1"]
 [ext_resource type="PackedScene" uid="uid://befmigha3c5kp" path="res://Assets/wall.tscn" id="24_26emn"]
 [ext_resource type="PackedScene" uid="uid://c3so4r6ljob4" path="res://Assets/wall_window.tscn" id="25_2ulmj"]
-[ext_resource type="PackedScene" uid="uid://dttjdr572of15" path="res://Models/Hats/ketchum_hat.tscn" id="26_gb4vt"]
-[ext_resource type="PackedScene" uid="uid://b6ig6svdc505q" path="res://Models/Hats/top_hat.tscn" id="27_yxug3"]
+[ext_resource type="PackedScene" uid="uid://dttjdr572of15" path="res://models/Hats/ketchum_hat.tscn" id="26_gb4vt"]
+[ext_resource type="PackedScene" uid="uid://b6ig6svdc505q" path="res://models/Hats/top_hat.tscn" id="27_yxug3"]
 
 [node name="Level1" type="Node3D"]
 

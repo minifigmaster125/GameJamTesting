@@ -11,7 +11,7 @@
 [ext_resource type="PackedScene" uid="uid://dttjdr572of15" path="res://models/Hats/ketchum_hat.tscn" id="9_pdk1d"]
 [ext_resource type="PackedScene" uid="uid://b6ig6svdc505q" path="res://models/Hats/top_hat.tscn" id="10_ekb80"]
 [ext_resource type="PackedScene" uid="uid://c01g8jo6chqp5" path="res://Assets/shelf_half.tscn" id="11_kqt2w"]
-[ext_resource type="PackedScene" uid="uid://ck5gb357voqvv" path="res://Assets/exit.tscn" id="12_wtilk"]
+[ext_resource type="PackedScene" uid="uid://ef5q1m5tr3ji" path="res://Assets/exit.tscn" id="12_wtilk"]
 
 [sub_resource type="Environment" id="Environment_n10v7"]
 background_mode = 1

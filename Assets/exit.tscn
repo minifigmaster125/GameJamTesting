@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://ef5q1m5tr3ji"]
 
-[ext_resource type="PackedScene" uid="uid://db3lve3dtfxum" path="res://Models/minimart/Models/GLB format/fence.glb" id="1_dit61"]
+[ext_resource type="PackedScene" uid="uid://db3lve3dtfxum" path="res://models/minimart/Models/GLB format/fence.glb" id="1_dit61"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_6vt43"]
 size = Vector3(4.5, 4.5, 1)

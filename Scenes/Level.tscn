@@ -5,9 +5,9 @@
 [ext_resource type="Script" path="res://Scripts/CameraController.cs" id="3_mhglx"]
 [ext_resource type="PackedScene" uid="uid://8n4pcv45j4bn" path="res://Assets/player_squirrel.tscn" id="4_khpal"]
 [ext_resource type="PackedScene" uid="uid://dnqqwuxtluif3" path="res://UI/main_ui.tscn" id="5_vf4ni"]
-[ext_resource type="PackedScene" path="res://UI/game_over_ui.tscn" id="6_osota"]
+[ext_resource type="PackedScene" uid="uid://doi3tks2a1oai" path="res://UI/game_over_ui.tscn" id="6_osota"]
 [ext_resource type="PackedScene" uid="uid://dw51pxvvd0npw" path="res://Scenes/Level1.tscn" id="8_0gseq"]
-[ext_resource type="PackedScene" path="res://UI/game_start_ui.tscn" id="8_mbf60"]
+[ext_resource type="PackedScene" uid="uid://b321681lkkpny" path="res://UI/game_start_ui.tscn" id="8_mbf60"]
 [ext_resource type="PackedScene" uid="uid://ef5q1m5tr3ji" path="res://Assets/exit.tscn" id="10_tovrl"]
 
 [sub_resource type="Environment" id="Environment_mjmgo"]
@@ -59,6 +59,7 @@ environment = SubResource("Environment_mjmgo")
 visible = false
 
 [node name="GameOverUI" parent="GameOverLayer" instance=ExtResource("6_osota")]
+_mainScene = "Level"
 
 [node name="GameStartOverlay" type="CanvasLayer" parent="."]
 
