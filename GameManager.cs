@@ -28,8 +28,8 @@ public partial class GameManager : Node3D
 
     public override void _Ready()
     {
-        AssetSpawner assetSpawner = new AssetSpawner();
-        AddChild(assetSpawner);
+        // AssetSpawner assetSpawner = new AssetSpawner();
+        // AddChild(assetSpawner);
         Array<Node> scoreables = GetTree().GetNodesInGroup("Scoreable");
         foreach (ScoreableComponent node in scoreables)
         {
