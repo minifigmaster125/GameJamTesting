@@ -8,6 +8,8 @@ public partial class MainUI : Control
     private RichTextLabel _scoreLabel;
 
     private Vector2 _originalScoreLabelPosition;
+    [Export]
+    public TimerUI _timerUI;
 
     public override void _Ready()
     {

@@ -48,12 +48,6 @@ public partial class TimerUI : Control
         return $"{minutes:00}:{seconds:00}";
     }
 
-    private void OnTimerTimeout()
-    {
-        OnTimerEnd();
-        UpdateTimerLabel();
-    }
-
     private void OnTimerEnd()
     {
         GD.Print("Timer ended!");

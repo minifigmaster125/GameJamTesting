@@ -12,6 +12,8 @@ public partial class GameManager : Node3D
     private TimerUI _timerUI;
 
     private int _score = 0;
+    [Export]
+    private CanvasLayer _gameOverOverlay;
 
     public override void _Ready()
     {
@@ -22,7 +24,7 @@ public partial class GameManager : Node3D
         {
             node.Scored += UpdateScore;
         };
-        _timerUI = gameUI.GetNode<TimerUI>("TimerUI");
+        _timerUI = gameUI._timerUI;
         _timerUI.GetNode<Timer>("Timer").Timeout += OnTimerTimeout;
     }
 
@@ -35,6 +37,9 @@ public partial class GameManager : Node3D
     private void OnTimerTimeout()
     {
         GD.Print("Time's up!");
+        _gameOverOverlay.Visible = true;
+        GetTree().Paused = true;
+
     }
 }
 
