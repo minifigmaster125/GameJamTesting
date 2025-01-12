@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://do3py3b07q7ud"
-path="res://.godot/imported/mortar.glb-e17a7f7b33d2fec46408f836bfc8d1be.scn"
+path="res://.godot/imported/mortar.glb-4f0b32b832f7ba63b57482116e1a8452.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/mortar.glb"
-dest_files=["res://.godot/imported/mortar.glb-e17a7f7b33d2fec46408f836bfc8d1be.scn"]
+source_file="res://models/food-kit/Models/GLB format/mortar.glb"
+dest_files=["res://.godot/imported/mortar.glb-4f0b32b832f7ba63b57482116e1a8452.scn"]
 
 [params]
 

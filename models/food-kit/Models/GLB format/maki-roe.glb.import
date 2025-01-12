@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cb4c278vdpr3o"
-path="res://.godot/imported/maki-roe.glb-42d044aa24ec92af54ee0da8744d1372.scn"
+path="res://.godot/imported/maki-roe.glb-01b9530983b809e917b581ecd371167c.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/maki-roe.glb"
-dest_files=["res://.godot/imported/maki-roe.glb-42d044aa24ec92af54ee0da8744d1372.scn"]
+source_file="res://models/food-kit/Models/GLB format/maki-roe.glb"
+dest_files=["res://.godot/imported/maki-roe.glb-01b9530983b809e917b581ecd371167c.scn"]
 
 [params]
 

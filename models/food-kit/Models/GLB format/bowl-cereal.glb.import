@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cugcse653qcpx"
-path="res://.godot/imported/bowl-cereal.glb-bbef991d0ef9b912ceb35680b85f28ef.scn"
+path="res://.godot/imported/bowl-cereal.glb-5123ca2fddb9d8153b7e875c363af5d5.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/bowl-cereal.glb"
-dest_files=["res://.godot/imported/bowl-cereal.glb-bbef991d0ef9b912ceb35680b85f28ef.scn"]
+source_file="res://models/food-kit/Models/GLB format/bowl-cereal.glb"
+dest_files=["res://.godot/imported/bowl-cereal.glb-5123ca2fddb9d8153b7e875c363af5d5.scn"]
 
 [params]
 

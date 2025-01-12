@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c8s85jbk66j27"
-path="res://.godot/imported/plate-rectangle.glb-d81c76aaaae026eeed927466bc6d595e.scn"
+path="res://.godot/imported/plate-rectangle.glb-f3d8ec334367ad6ae5035ad31c700e5c.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/plate-rectangle.glb"
-dest_files=["res://.godot/imported/plate-rectangle.glb-d81c76aaaae026eeed927466bc6d595e.scn"]
+source_file="res://models/food-kit/Models/GLB format/plate-rectangle.glb"
+dest_files=["res://.godot/imported/plate-rectangle.glb-f3d8ec334367ad6ae5035ad31c700e5c.scn"]
 
 [params]
 

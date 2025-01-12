@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://b7s3dwv0p1pcp"
-path="res://.godot/imported/meat-raw.glb-610e4799cd9060661b72336089980ac1.scn"
+path="res://.godot/imported/meat-raw.glb-d51008aa33ed79d083120eca68aefef0.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/meat-raw.glb"
-dest_files=["res://.godot/imported/meat-raw.glb-610e4799cd9060661b72336089980ac1.scn"]
+source_file="res://models/food-kit/Models/GLB format/meat-raw.glb"
+dest_files=["res://.godot/imported/meat-raw.glb-d51008aa33ed79d083120eca68aefef0.scn"]
 
 [params]
 

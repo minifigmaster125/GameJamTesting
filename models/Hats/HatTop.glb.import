@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dcxjiyqheq2f2"
-path="res://.godot/imported/HatTop.glb-af9becf755502d459acc0f4af4a098a5.scn"
+path="res://.godot/imported/HatTop.glb-9804c90c42ed94f3efc9bedaa151034d.scn"
 
 [deps]
 
-source_file="res://Models/Hats/HatTop.glb"
-dest_files=["res://.godot/imported/HatTop.glb-af9becf755502d459acc0f4af4a098a5.scn"]
+source_file="res://models/Hats/HatTop.glb"
+dest_files=["res://.godot/imported/HatTop.glb-9804c90c42ed94f3efc9bedaa151034d.scn"]
 
 [params]
 

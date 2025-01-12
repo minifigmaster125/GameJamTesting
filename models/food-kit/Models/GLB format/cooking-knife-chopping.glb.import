@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://wg0b4kvuuj8m"
-path="res://.godot/imported/cooking-knife-chopping.glb-640b69b2bf3f8e763e4f441f534790ac.scn"
+path="res://.godot/imported/cooking-knife-chopping.glb-2dca6ce4cfdfa90bf3a2380affa0baef.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/cooking-knife-chopping.glb"
-dest_files=["res://.godot/imported/cooking-knife-chopping.glb-640b69b2bf3f8e763e4f441f534790ac.scn"]
+source_file="res://models/food-kit/Models/GLB format/cooking-knife-chopping.glb"
+dest_files=["res://.godot/imported/cooking-knife-chopping.glb-2dca6ce4cfdfa90bf3a2380affa0baef.scn"]
 
 [params]
 

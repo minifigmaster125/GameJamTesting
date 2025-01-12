@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://digg36w35wbnx"
-path="res://.godot/imported/cutting-board.glb-3c0bcc9b4512e71fae0b988215d383d5.scn"
+path="res://.godot/imported/cutting-board.glb-70eec088510ae2d2b0d823ce4ba98d28.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/cutting-board.glb"
-dest_files=["res://.godot/imported/cutting-board.glb-3c0bcc9b4512e71fae0b988215d383d5.scn"]
+source_file="res://models/food-kit/Models/GLB format/cutting-board.glb"
+dest_files=["res://.godot/imported/cutting-board.glb-70eec088510ae2d2b0d823ce4ba98d28.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cgfgk4ggac0ci"
-path="res://.godot/imported/paprika-slice.glb-8effff7d2dca5cbe1d204114a6d286c7.scn"
+path="res://.godot/imported/paprika-slice.glb-8a513be016302819081c0c1c26d86000.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/paprika-slice.glb"
-dest_files=["res://.godot/imported/paprika-slice.glb-8effff7d2dca5cbe1d204114a6d286c7.scn"]
+source_file="res://models/food-kit/Models/GLB format/paprika-slice.glb"
+dest_files=["res://.godot/imported/paprika-slice.glb-8a513be016302819081c0c1c26d86000.scn"]
 
 [params]
 

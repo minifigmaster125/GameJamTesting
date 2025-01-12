@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bwivr2rxroxer"
-path="res://.godot/imported/bowl.glb-594759f870fe1ca9d594a22b829b634d.scn"
+path="res://.godot/imported/bowl.glb-869c27dc172f1b8c7441476614805aee.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/bowl.glb"
-dest_files=["res://.godot/imported/bowl.glb-594759f870fe1ca9d594a22b829b634d.scn"]
+source_file="res://models/food-kit/Models/GLB format/bowl.glb"
+dest_files=["res://.godot/imported/bowl.glb-869c27dc172f1b8c7441476614805aee.scn"]
 
 [params]
 

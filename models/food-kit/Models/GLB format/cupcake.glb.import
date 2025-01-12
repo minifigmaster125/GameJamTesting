@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://do8ytw5bh5l7u"
-path="res://.godot/imported/cupcake.glb-79c81e2171d55e7d577bcf03536c1e23.scn"
+path="res://.godot/imported/cupcake.glb-e2293f9ae3bb804ecbf1ff1539ff8bf8.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/cupcake.glb"
-dest_files=["res://.godot/imported/cupcake.glb-79c81e2171d55e7d577bcf03536c1e23.scn"]
+source_file="res://models/food-kit/Models/GLB format/cupcake.glb"
+dest_files=["res://.godot/imported/cupcake.glb-e2293f9ae3bb804ecbf1ff1539ff8bf8.scn"]
 
 [params]
 

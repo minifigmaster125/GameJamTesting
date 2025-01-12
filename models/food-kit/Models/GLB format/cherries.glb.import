@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dt8a23m5ppyw4"
-path="res://.godot/imported/cherries.glb-f872d7f1bb7c5893fb1517e039cdb514.scn"
+path="res://.godot/imported/cherries.glb-23948b350db693eddb065473cb6cb3bf.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/cherries.glb"
-dest_files=["res://.godot/imported/cherries.glb-f872d7f1bb7c5893fb1517e039cdb514.scn"]
+source_file="res://models/food-kit/Models/GLB format/cherries.glb"
+dest_files=["res://.godot/imported/cherries.glb-23948b350db693eddb065473cb6cb3bf.scn"]
 
 [params]
 

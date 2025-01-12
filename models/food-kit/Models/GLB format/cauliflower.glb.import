@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c5cg7y886k5o6"
-path="res://.godot/imported/cauliflower.glb-4577b14c39a987494d46df9dbd6a5edd.scn"
+path="res://.godot/imported/cauliflower.glb-6c1d4e538797efd638adc19b59bf1548.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/cauliflower.glb"
-dest_files=["res://.godot/imported/cauliflower.glb-4577b14c39a987494d46df9dbd6a5edd.scn"]
+source_file="res://models/food-kit/Models/GLB format/cauliflower.glb"
+dest_files=["res://.godot/imported/cauliflower.glb-6c1d4e538797efd638adc19b59bf1548.scn"]
 
 [params]
 

@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dt0f6njagbc5w"
-path="res://.godot/imported/hot-dog.glb-6a969cfc617fc03470f6d5b20795b7d0.scn"
+path="res://.godot/imported/hot-dog.glb-834a6554baad51da9dc53cb18e4285b6.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/hot-dog.glb"
-dest_files=["res://.godot/imported/hot-dog.glb-6a969cfc617fc03470f6d5b20795b7d0.scn"]
+source_file="res://models/food-kit/Models/GLB format/hot-dog.glb"
+dest_files=["res://.godot/imported/hot-dog.glb-834a6554baad51da9dc53cb18e4285b6.scn"]
 
 [params]
 

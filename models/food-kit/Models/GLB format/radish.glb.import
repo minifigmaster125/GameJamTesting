@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://bcbimjfilfv8i"
-path="res://.godot/imported/radish.glb-8362f0538570f40ca918d2200b5dfea6.scn"
+path="res://.godot/imported/radish.glb-7943f23f8d4f0638c38935d0d1021326.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/radish.glb"
-dest_files=["res://.godot/imported/radish.glb-8362f0538570f40ca918d2200b5dfea6.scn"]
+source_file="res://models/food-kit/Models/GLB format/radish.glb"
+dest_files=["res://.godot/imported/radish.glb-7943f23f8d4f0638c38935d0d1021326.scn"]
 
 [params]
 

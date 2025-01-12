@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c8g82st3vl5lm"
-path="res://.godot/imported/meat-patty.glb-55b371fb61034c757290db063ee1d222.scn"
+path="res://.godot/imported/meat-patty.glb-2209821e8c71a6ec20963543243e6340.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/meat-patty.glb"
-dest_files=["res://.godot/imported/meat-patty.glb-55b371fb61034c757290db063ee1d222.scn"]
+source_file="res://models/food-kit/Models/GLB format/meat-patty.glb"
+dest_files=["res://.godot/imported/meat-patty.glb-2209821e8c71a6ec20963543243e6340.scn"]
 
 [params]
 

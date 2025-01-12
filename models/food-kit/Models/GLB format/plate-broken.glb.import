@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cb48rik0v5hh3"
-path="res://.godot/imported/plate-broken.glb-b92abd73ea9e4fea2abfda489a1c62a9.scn"
+path="res://.godot/imported/plate-broken.glb-3d86ab7deec52a0dde8b3ba3626608c6.scn"
 
 [deps]
 
-source_file="res://Models/food-kit/Models/GLB format/plate-broken.glb"
-dest_files=["res://.godot/imported/plate-broken.glb-b92abd73ea9e4fea2abfda489a1c62a9.scn"]
+source_file="res://models/food-kit/Models/GLB format/plate-broken.glb"
+dest_files=["res://.godot/imported/plate-broken.glb-3d86ab7deec52a0dde8b3ba3626608c6.scn"]
 
 [params]
 

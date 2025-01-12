@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dhs8rg1mjeumv"
-path="res://.godot/imported/HatCowboy.glb-da0156ce811bc42760cf034f86a42678.scn"
+path="res://.godot/imported/HatCowboy.glb-717203fff858c25df98e68968c4e085a.scn"
 
 [deps]
 
-source_file="res://Models/Hats/HatCowboy.glb"
-dest_files=["res://.godot/imported/HatCowboy.glb-da0156ce811bc42760cf034f86a42678.scn"]
+source_file="res://models/Hats/HatCowboy.glb"
+dest_files=["res://.godot/imported/HatCowboy.glb-717203fff858c25df98e68968c4e085a.scn"]
 
 [params]
 
