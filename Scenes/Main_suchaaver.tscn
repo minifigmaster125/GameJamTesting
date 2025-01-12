@@ -1,19 +1,21 @@
-[gd_scene load_steps=7 format=3 uid="uid://djecavlxhn72v"]
+[gd_scene load_steps=8 format=3 uid="uid://djecavlxhn72v"]
 
 [ext_resource type="Script" path="res://GameManager.cs" id="1_p68d1"]
 [ext_resource type="Script" path="res://Scripts/View.cs" id="2_7eljt"]
 [ext_resource type="PackedScene" uid="uid://8n4pcv45j4bn" path="res://Assets/player_squirrel.tscn" id="3_p1acu"]
 [ext_resource type="PackedScene" uid="uid://dnqqwuxtluif3" path="res://UI/main_ui.tscn" id="4_l7poa"]
 [ext_resource type="PackedScene" uid="uid://doi3tks2a1oai" path="res://UI/game_over_ui.tscn" id="5_evp1n"]
+[ext_resource type="PackedScene" uid="uid://dufvu1kps27hu" path="res://models/Hats/hat_cowboy.tscn" id="6_s5w3k"]
 
 [sub_resource type="Environment" id="Environment_n10v7"]
 background_mode = 1
 background_color = Color(0.868848, 0.794698, 0.828402, 1)
 background_energy_multiplier = 0.9
 
-[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "_gameOverOverlay")]
+[node name="Main" type="Node3D" node_paths=PackedStringArray("gameUI", "Character", "_gameOverOverlay")]
 script = ExtResource("1_p68d1")
 gameUI = NodePath("MainUI")
+Character = NodePath("CharacterBody3D")
 _gameOverOverlay = NodePath("GameOverLayer")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
@@ -48,6 +50,9 @@ environment = SubResource("Environment_n10v7")
 visible = false
 
 [node name="GameOverUI" parent="GameOverLayer" instance=ExtResource("5_evp1n")]
-_mainScene = null
 
+[node name="HatCowboy" parent="." instance=ExtResource("6_s5w3k")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.830719, 1.46119, 0)
+
+[editable path="CharacterBody3D"]
 [editable path="MainUI"]

@@ -11,6 +11,9 @@ public partial class GameManager : Node3D
 
     private TimerUI _timerUI;
 
+    [Export]
+    public CharacterBody3D Character;
+
     private int _score = 0;
     [Export]
     private CanvasLayer _gameOverOverlay;
@@ -22,16 +25,32 @@ public partial class GameManager : Node3D
         Array<Node> scoreables = GetTree().GetNodesInGroup("Scoreable");
         foreach (ScoreableComponent node in scoreables)
         {
-            node.Scored += UpdateScore;
+            node.Scored += HandleScored;
         };
         _timerUI = gameUI._timerUI;
         _timerUI.GetNode<Timer>("Timer").Timeout += OnTimerTimeout;
     }
 
-    private void UpdateScore(AudioStream stream, int scoreValue)
+    private void HandleScored(int scoreValue, bool isMultiplier, MeshInstance3D model)
     {
-        _score += scoreValue;
+        if (isMultiplier)
+        {
+            _score *= scoreValue;
+        }
+        else
+        {
+            _score += scoreValue;
+        }
+
         gameUI.SetScore(_score);
+
+        if (model != null)
+        {
+            MeshInstance3D tempModel = (MeshInstance3D)model.Duplicate();
+
+            tempModel.GlobalTransform = Character.GetNode<Node3D>("HatLocator").GlobalTransform;
+            Character.AddChild(tempModel);
+        }
     }
 
     private void OnTimerTimeout()

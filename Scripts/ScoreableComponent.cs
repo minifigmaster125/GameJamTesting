@@ -11,10 +11,13 @@ public partial class ScoreableComponent : Node3D
     public bool IsMultiplier = false;
 
     [Export]
+    public MeshInstance3D Model;
+
+    [Export]
     public AudioStream ScoreSound { get; set; }
 
     [Signal]
-    public delegate void ScoredEventHandler(AudioStream stream, int scoreValue);
+    public delegate void ScoredEventHandler(int scoreValue, bool isMultiplier, MeshInstance3D model);
 
     private Camera3D _camera;
     private PackedScene _scoreablePickupUI = GD.Load<PackedScene>("res://UI/ScoreablPickupUI.tscn");
@@ -27,7 +30,7 @@ public partial class ScoreableComponent : Node3D
     public void Score()
     {
         // Emit the signal to the parent
-        EmitSignal(SignalName.Scored, ScoreSound, ScoreValue);
+        EmitSignal(SignalName.Scored, ScoreValue, IsMultiplier, Model);
         var tempAudioPlayer = new AudioStreamPlayer3D
         {
             Stream = ScoreSound,
@@ -65,7 +68,14 @@ public partial class ScoreableComponent : Node3D
 
         // Spawn the "+1" UI element
         var uiElement = (RichTextLabel)_scoreablePickupUI.Instantiate();
-        uiElement.Text = $"[i]+{ScoreValue}[/i]";
+        if (IsMultiplier)
+        {
+            uiElement.Text = $"[i]x{ScoreValue}[/i]";
+        }
+        else
+        {
+            uiElement.Text = $"[i]+{ScoreValue}[/i]";
+        }
         uiElement.Position = screenPosition; // Position the UI element
         GetTree().Root.GetNode<Node3D>("Main").GetNode<CanvasLayer>("ScoreableIndicatorLayer").AddChild(uiElement);
 

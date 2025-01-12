@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://dufvu1kps27hu"]
+
+[ext_resource type="PackedScene" uid="uid://dhs8rg1mjeumv" path="res://models/Hats/HatCowboy.glb" id="1_k840k"]
+[ext_resource type="PackedScene" uid="uid://uyfj82csbkqb" path="res://Assets/scoreable_component.tscn" id="2_72c28"]
+[ext_resource type="AudioStream" uid="uid://b35j8otrmtrn" path="res://sfx/pickup.ogg" id="3_cv384"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2xwl0"]
+size = Vector3(2.5, 1, 2.5)
+
+[node name="HatCowboy" type="RigidBody3D"]
+
+[node name="model" parent="." instance=ExtResource("1_k840k")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.290336, 0)
+shape = SubResource("BoxShape3D_2xwl0")
+
+[node name="ScoreableComponent" parent="." node_paths=PackedStringArray("Model") instance=ExtResource("2_72c28")]
+ScoreValue = 2
+IsMultiplier = true
+Model = NodePath("../model/Circle")
+ScoreSound = ExtResource("3_cv384")
+
+[editable path="model"]

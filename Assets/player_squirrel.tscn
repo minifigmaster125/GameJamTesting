@@ -34,3 +34,6 @@ autoplay = true
 
 [node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("5_p37tb")
+
+[node name="HatLocator" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.578989, 0.612214)
