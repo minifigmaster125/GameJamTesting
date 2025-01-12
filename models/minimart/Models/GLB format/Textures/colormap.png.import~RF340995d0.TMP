@@ -11,7 +11,7 @@ metadata={
 
 [deps]
 
-source_file="res://models/minimart/Models/GLB format/Textures/colormap.png"
+source_file="res://Models/minimart/Models/GLB format/Textures/colormap.png"
 dest_files=["res://.godot/imported/colormap.png-b6d95006502e364dcd0eb553c5a81003.s3tc.ctex"]
 
 [params]

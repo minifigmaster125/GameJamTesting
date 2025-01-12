@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cc1rawuvkqf1b"
-path="res://.godot/imported/wall-door-rotate.glb-bf7eb432f85ec44d1d2ff5db4d6f7bbb.scn"
+path="res://.godot/imported/wall-door-rotate.glb-2a86f3a48c0dbd6104fdf2ef2ae5fbe8.scn"
 
 [deps]
 
-source_file="res://models/minimart/Models/GLB format/wall-door-rotate.glb"
-dest_files=["res://.godot/imported/wall-door-rotate.glb-bf7eb432f85ec44d1d2ff5db4d6f7bbb.scn"]
+source_file="res://Models/minimart/Models/GLB format/wall-door-rotate.glb"
+dest_files=["res://.godot/imported/wall-door-rotate.glb-2a86f3a48c0dbd6104fdf2ef2ae5fbe8.scn"]
 
 [params]
 

@@ -3,7 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://d27h5k47cvwix"
-path.s3tc="res://.godot/imported/platformTest_actualTexture.png-3cac600048dd8af78f37fcacd0b753ea.s3tc.ctex"
+path.s3tc="res://.godot/imported/platformTest_actualTexture.png-00c1b768239abca5fca3a4f59f24dc38.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://models/platformTest_actualTexture.png"
-dest_files=["res://.godot/imported/platformTest_actualTexture.png-3cac600048dd8af78f37fcacd0b753ea.s3tc.ctex"]
+source_file="res://Models/platformTest_actualTexture.png"
+dest_files=["res://.godot/imported/platformTest_actualTexture.png-00c1b768239abca5fca3a4f59f24dc38.s3tc.ctex"]
 
 [params]
 
